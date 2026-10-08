@@ -19,6 +19,10 @@ X-lab AI therefore adopts a long-term direction: making AI affordable—and enab
 
 The value of inclusion lies not only in how many people open a tool, but in whether it helps them learn, create something meaningful and improve their circumstances. Technological progress should expand people's choices, support their growth and serve their dignity.
 
+<!-- diagram:start:access-capability -->
+![Two forces, working together](../site/assets/diagrams/access-capability-en.svg)
+<!-- diagram:end -->
+
 ## 2. Our path
 
 We believe open source and human development can reinforce each other. Open technology and knowledge lower barriers to participation; learning and practice bring new tools, experience and contributions back to open communities.
@@ -28,6 +32,10 @@ We begin with developers. By developers, we mean both professional engineers and
 But developer growth does not automatically create public benefit. We will keep asking whom these tools serve, whether they are understandable, affordable and usable, and whether they address real needs. We will also attend to people and regions with fewer resources. Working with partners in the Global South, we will seek to understand local languages, cultures and conditions and support locally appropriate practice, rather than treating one experience as a universal answer.
 
 Data and evaluation support this path. Through explainable data and continuously improved evaluation, we aim to make different kinds of contribution visible, inform resource allocation and examine the effects of our actions. Evaluation should help people and communities grow, rather than create new barriers.
+
+<!-- diagram:start:path-to-benefit -->
+![From developers to wider public benefit](../site/assets/diagrams/path-to-benefit-en.svg)
+<!-- diagram:end -->
 
 ## 3. Our actions and commitments
 
@@ -40,6 +48,10 @@ Data and evaluation support this path. Through explainable data and continuously
 **Report progress openly and take responsibility for actual outcomes.** We will explain goals, participation conditions and the limits of support, distinguishing plans, pilots and completed work. We will not present aspirations as achievements. Combining evidence with participant feedback, we will examine who received what help, which problems remain and how our actions should change. We will be honest about effects that have not been demonstrated and explain and improve upon commitments we have not fulfilled.
 
 We welcome businesses, public bodies, educational institutions and communities to contribute knowledge, technology, resources and opportunities, and to explore sustainable support for inclusion. Partnerships should respect participants' freedom of choice, clarify responsibilities and avoid exchanging support for opaque data use or unreasonable conditions.
+
+<!-- diagram:start:learning-loop -->
+![Let practice test the promise](../site/assets/diagrams/learning-loop-en.svg)
+<!-- diagram:end -->
 
 ## 4. Our invitation
 

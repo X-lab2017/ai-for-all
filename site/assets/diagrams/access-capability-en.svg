@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 718" width="720" height="718" role="img" aria-labelledby="title desc">
+<title id="title">Two forces, working together</title><desc id="desc">Open source lowers barriers; human development unlocks creativity. Data and evaluation support both.</desc>
+<defs><marker id="access-capability-en-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#78928a" stroke-width="1.2"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="29" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#56746a">X-LAB AI / AI FOR ALL / 01</text>
+<text x="20" y="64" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="25" font-weight="600" fill="#112d22">Two forces, working together</text>
+<path d="M20 86 H700" fill="none" stroke="#dbe5df"/>
+<g transform="translate(0,105)">
+<path class="concept-edge" data-from="open" data-to="outcome" d="M167.5 177 V213 H360 V247" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#access-capability-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="people" data-to="outcome" d="M552.5 177 V213 H360" fill="none" stroke="#8ba299" stroke-width="1.4"/>
+<path class="concept-edge" data-from="support" data-to="outcome" d="M360 415 V355" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#access-capability-en-desktop-arrow)" stroke-dasharray="5 5"/>
+<text x="360" y="121" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" text-anchor="middle" font-size="32" fill="#647c70">×</text>
+<text x="386" y="385" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" text-anchor="middle" font-size="14" fill="#647c70">Support</text>
+<g class="concept-node" data-node="open"><rect x="20" y="45" width="295" height="132" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
+<text x="167.5" y="67" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">OPEN SOURCE</text>
+<text x="167.5" y="93" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#153126">Affordable access</text>
+<text x="167.5" y="119" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" text-anchor="middle" fill="#536c5f">Open technology and knowledge</text>
+<text x="167.5" y="139" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" text-anchor="middle" fill="#536c5f">Lower costs · Wider access</text>
+</g>
+<g class="concept-node" data-node="people"><rect x="405" y="45" width="295" height="132" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
+<text x="552.5" y="67" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">HUMAN CAPABILITY</text>
+<text x="552.5" y="93" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#153126">Capable use</text>
+<text x="552.5" y="119" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" text-anchor="middle" fill="#536c5f">Learning, judgment and creativity</text>
+<text x="552.5" y="139" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" text-anchor="middle" fill="#536c5f">From tools to real problems</text>
+</g>
+<g class="concept-node" data-node="outcome"><rect x="160" y="255" width="400" height="92" rx="5" fill="#f3f9ee" stroke="#63943d" stroke-width="1.2"/>
+<text x="360.0" y="277" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">AI FOR ALL</text>
+<text x="360.0" y="303" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#153126">AI for All</text>
+<text x="360.0" y="329" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" text-anchor="middle" fill="#536c5f">More people can access, learn and create</text>
+</g>
+<g class="concept-node" data-node="support"><rect x="90" y="415" width="540" height="90" rx="5" fill="#f8faf9" stroke="#9aafa4" stroke-width="1.2"/>
+<text x="360.0" y="437" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">SUPPORTING METHOD</text>
+<text x="360.0" y="463" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#153126">Data and evaluation</text>
+<text x="360.0" y="489" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" text-anchor="middle" fill="#536c5f">Make contributions visible · Examine outcomes</text>
+</g>
+</g>
+<path d="M20 652 H700" fill="none" stroke="#dbe5df"/><text x="20" y="680" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" fill="#526e61">“×” expresses mutual reinforcement, not a quantitative formula.</text><text x="20" y="703" font-family="Arial,sans-serif" font-size="10" letter-spacing=".5" fill="#789185">www.x-lab.info/ai-for-all/</text>
+</svg>

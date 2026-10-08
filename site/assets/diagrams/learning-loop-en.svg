@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 751" width="720" height="751" role="img" aria-labelledby="title desc">
+<title id="title">Let practice test the promise</title><desc id="desc">Act, observe, evaluate and improve, with diverse contributions, informed choice and correction throughout.</desc>
+<defs><marker id="learning-loop-en-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#78928a" stroke-width="1.2"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="29" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#56746a">X-LAB AI / AI FOR ALL / 03</text>
+<text x="20" y="64" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="25" font-weight="600" fill="#112d22">Let practice test the promise</text>
+<path d="M20 86 H700" fill="none" stroke="#dbe5df"/>
+<g transform="translate(0,105)">
+<path class="concept-edge" data-from="act" data-to="observe" d="M315 96 H397" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="observe" data-to="evaluate" d="M552.5 152 V259" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="evaluate" data-to="improve" d="M405 323 H323" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="improve" data-to="act" d="M167.5 267 V160" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-en-desktop-arrow)"/>
+<text x="360" y="212" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" text-anchor="middle" font-size="14" fill="#647c70">Open records · Continuous learning</text>
+<g class="concept-node" data-node="act"><rect x="20" y="40" width="295" height="112" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
+<text x="167.5" y="62" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">01 / ACT</text>
+<text x="167.5" y="88" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#153126">Put plans into practice</text>
+<text x="167.5" y="114" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" text-anchor="middle" fill="#536c5f">Clarify goals, conditions and limits</text>
+</g>
+<g class="concept-node" data-node="observe"><rect x="405" y="40" width="295" height="112" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
+<text x="552.5" y="62" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">02 / OBSERVE</text>
+<text x="552.5" y="88" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#153126">Observe what changes</text>
+<text x="552.5" y="114" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" text-anchor="middle" fill="#536c5f">Evidence and participant feedback</text>
+</g>
+<g class="concept-node" data-node="evaluate"><rect x="405" y="267" width="295" height="112" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
+<text x="552.5" y="289" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">03 / EVALUATE</text>
+<text x="552.5" y="315" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#153126">Evaluate and reflect</text>
+<text x="552.5" y="341" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" text-anchor="middle" fill="#536c5f">Identify effects, limits and gaps</text>
+</g>
+<g class="concept-node" data-node="improve"><rect x="20" y="267" width="295" height="112" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
+<text x="167.5" y="289" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">04 / IMPROVE</text>
+<text x="167.5" y="315" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#153126">Adjust and improve</text>
+<text x="167.5" y="341" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" text-anchor="middle" fill="#536c5f">Revise methods, support and next steps</text>
+</g>
+<g class="concept-node" data-node="boundaries"><rect x="20" y="443" width="680" height="96" rx="5" fill="#f8faf9" stroke="#9aafa4" stroke-width="1.2"/>
+<text x="360.0" y="465" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">THROUGHOUT THE CYCLE</text>
+<text x="360.0" y="491" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#153126">Commitments throughout</text>
+<text x="360.0" y="517" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" text-anchor="middle" fill="#536c5f">Diverse contributions · Informed choice · Correction</text>
+</g>
+</g>
+<path d="M20 685 H700" fill="none" stroke="#dbe5df"/><text x="20" y="713" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="13" fill="#526e61">Evaluation should support growth, not create new barriers.</text><text x="20" y="736" font-family="Arial,sans-serif" font-size="10" letter-spacing=".5" fill="#789185">www.x-lab.info/ai-for-all/</text>
+</svg>
