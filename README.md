@@ -6,6 +6,8 @@
 
 X-lab AI 开放实验室 · v1.0 正式版 · 2026 年 10 月 8 日
 
+**[在线阅读宣言](https://www.x-lab.info/ai-for-all/)** · [v1.0.0 首发版本](https://github.com/X-lab2017/ai-for-all/releases/tag/v1.0.0)
+
 [English](translations/en.md) · [行动进展](PROGRESS.md) · [参与共建](CONTRIBUTING.md) · [讨论与反馈](https://github.com/X-lab2017/ai-for-all/issues)
 
 <!-- manifesto:start -->
