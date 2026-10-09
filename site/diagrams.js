@@ -23,15 +23,25 @@ document.querySelectorAll('.concept').forEach(figure => {
   }));
 });
 const sectionLinks = [...document.querySelectorAll('.contents a')];
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver(entries => {
-    entries.filter(entry => entry.isIntersecting).forEach(entry => {
-      sectionLinks.forEach(link => {
-        if (link.hash === '#' + entry.target.id) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-    });
-  }, {rootMargin:'-5% 0px -65% 0px'});
-  document.querySelectorAll('article h2[id]').forEach(heading => observer.observe(heading));
-}
+const headings = [...document.querySelectorAll('article h2[id]')];
+let navigationFrame = 0;
+const updateCurrentSection = () => {
+  navigationFrame = 0;
+  const threshold = window.innerHeight * 0.25;
+  let current = null;
+  headings.forEach(heading => {
+    if (heading.getBoundingClientRect().top <= threshold) current = heading.id;
+  });
+  sectionLinks.forEach(link => {
+    if (link.hash === '#' + current) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
+};
+const scheduleNavigation = () => {
+  if (!navigationFrame) navigationFrame = requestAnimationFrame(updateCurrentSection);
+};
+window.addEventListener('scroll', scheduleNavigation, {passive: true});
+window.addEventListener('resize', scheduleNavigation);
+window.addEventListener('hashchange', scheduleNavigation);
+updateCurrentSection();
 document.querySelectorAll('[data-print]').forEach(button => button.addEventListener('click', () => window.print()));
