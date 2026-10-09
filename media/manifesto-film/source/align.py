@@ -8,11 +8,11 @@ for s in story:
  groups=[c for c in raw if offset<=c['start']<offset+s['seconds']];spans=[];n=0
  for c in groups:
   z=len(norm(c['text']));spans.append((n,n+z,c['start'],c['end']));n+=z
- clauses=re.findall(r'[^，。；]+[，。；]?',s['voice']);parts=[];cur=''
+ clauses=re.findall(r'[^，。；！]+[，。；！]?',s['voice']);parts=[];cur=''
  for q in clauses:
   if len(cur+q)>26 and len(cur)>5:parts.append(cur);cur=''
   cur+=q
-  if cur.endswith('。'):parts.append(cur);cur=''
+  if cur.endswith(('。','！')):parts.append(cur);cur=''
  if cur:parts.append(cur)
  def tm(pos,end=False):
   for a,b,x,y in spans:

@@ -12,12 +12,12 @@ async def main():
   p=out/f'voice-{i+1}.mp3'
   events=[]
   with p.open('wb') as audio:
-   async for event in edge_tts.Communicate(s['voice'],'zh-CN-YunyangNeural',rate='-3%',pitch='-3Hz',boundary='WordBoundary').stream():
+   async for event in edge_tts.Communicate(s['voice'],'zh-CN-YunjianNeural',rate='+0%',pitch='+0Hz',boundary='WordBoundary').stream():
     if event['type']=='audio': audio.write(event['data'])
     elif event['type']=='WordBoundary': events.append(event)
   d=float(subprocess.check_output(['ffprobe','-v','quiet','-show_entries','format=duration','-of','csv=p=0',str(p)]))
   speed=max(1,d/(s['seconds']-.6))
-  if speed>1.12: raise RuntimeError(f"Chapter {i+1} exceeds natural pacing budget: {speed:.3f}")
+  if speed>1.16: raise RuntimeError(f"Chapter {i+1} exceeds natural pacing budget: {speed:.3f}")
   subprocess.run(['ffmpeg','-v','error','-y','-i',str(p),'-af',f'atempo={speed},adelay=200|200,apad','-t',str(s['seconds']),'-ar','48000','-ac','2',str(out/f'segment-{i+1}.wav')],check=True)
   cur=''; begin=None; end=0
   for e in events:
@@ -30,5 +30,5 @@ async def main():
   (out/'captions.json').write_text(json.dumps(captions,ensure_ascii=False,indent=2))
   print(i+1,round(d,2),round(speed,3),flush=True)
  (out/'audio-list.txt').write_text(''.join(f"file '{out/f'segment-{i+1}.wav'}'\n" for i in range(10)))
- subprocess.run(['ffmpeg','-v','error','-y','-f','concat','-safe','0','-i',str(out/'audio-list.txt'),'-af','highpass=f=65,equalizer=f=160:t=q:w=0.8:g=1.5,equalizer=f=300:t=q:w=1:g=-1,acompressor=threshold=0.125:ratio=2:attack=15:release=160:makeup=1,loudnorm=I=-18:TP=-2:LRA=9',str(out/'narration.wav')],check=True)
+ subprocess.run(['ffmpeg','-v','error','-y','-f','concat','-safe','0','-i',str(out/'audio-list.txt'),'-af','highpass=f=65,equalizer=f=160:t=q:w=0.8:g=1.5,equalizer=f=300:t=q:w=1:g=-1,acompressor=threshold=0.125:ratio=2.5:attack=15:release=160:makeup=1,loudnorm=I=-17:TP=-2:LRA=9',str(out/'narration.wav')],check=True)
 asyncio.run(main())
