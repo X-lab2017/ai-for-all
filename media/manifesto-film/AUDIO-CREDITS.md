@@ -1,43 +1,49 @@
-# 大会宣言版 · 声音设计与音乐署名 v3
+# A v4 完整影片 · 声音与音乐署名
 
-依据审听反馈，将整体表达从沉稳介绍调整为坚定的宣言与行动邀请。v3 为待审看成片，不表示主办方认可、联合国制作或背书。
+用户选择 25 秒试听中的 A“庄严磅礴”，并要求语速加快约 15%。本版保持原有 90 秒画面和十章顺序，仅更新人声、配乐、字幕与署名。
 
-## 人声与叙事
+## 人声
 
-- Microsoft AI 男声 `zh-CN-YunjianNeural`，基础语音接口；rate +0%，pitch +0Hz。未使用指定真人声音或 Azure 专属 style 参数。
-- 保持自然声调，使用短句、句间停顿和明确动词加强号召。多数片段不变速，最长适配约 1.09 倍。
-- 开场：让每个人都有创造未来的机会。
-- 中段：让贡献带来成长，让投入支持创造。
-- 结尾：让技术成为机会，让创造惠及更多人。现在，就一起行动！
-- 旁白以中心声像呈现，轻度均衡与压缩，不添加混响。
-- 正式发布需由制作方确认所用语音服务的使用条件；接口可用不等于对发布权利的保证。
+- A 版为 Qwen3-TTS VoiceDesign 生成的原创 AI 男声，无指定真人参考。
+- 前八章采用 `Qwen/Qwen3-TTS-12Hz-1.7B-Base`，以获选 A 版录音为参考在本地延展音色；最后两章直接切分使用获选录音。
+- Base 模型 revision：`fd4b254389122332181a7c3db7f27e918eec64e3`。
+- 参考录音 SHA-256：`2c9c48caf95b73145b20001e31c32a90dc5dad030be0418970bd6141e374a25a`。
+- 官方流程：https://github.com/QwenLM/Qwen3-TTS （Voice Design then Clone；代码及模型 Apache 2.0）。
+- 本轮 `qwen-tts 0.1.1`、`transformers 4.57.3`、`torch 2.14.1`，CPU / BF16 / SDPA，8 线程。逐章固定种子 `20261009 + 章节编号`，归档原始录音以便精确重建。
+- 全部人声使用 FFmpeg `atempo=1.15` 加速，保持音高。没有额外加速来挤压章节；每章保留 0.28 秒引入及适量音乐留白。
+- 轻度均衡、压缩和响度处理；中心声像，不加人声混响。
 
-## 配乐
+## 音乐
 
-“Heroic Age” — Kevin MacLeod (incompetech.com)
+“Reign” — Kevin MacLeod (incompetech.com)
 
-Licensed under Creative Commons Attribution 4.0:
+Licensed under Creative Commons: By Attribution 4.0
 https://creativecommons.org/licenses/by/4.0/
 
-Source: https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100848
+来源：https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1100373
 
-Official file: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Heroic%20Age.mp3
+作者文件：https://incompetech.com/music/royalty-free/mp3-royaltyfree/Reign.mp3
 
-ISRC: USUAN1100848. 作者标注 129 BPM，Action / Bright / Driving / Epic，含管乐、弦乐与打击乐，原为现场演出创作。
+作者许可页：https://incompetech.com/music/royalty-free/licenses/
 
-编辑：取原曲 00:07–01:37，均衡、响度处理、分段电平递进、人声侧链压低、首尾淡化。片尾包含曲名、作者、来源域名、许可证与 excerpt / mix 说明。公开传播请保留署名，音乐不属于公有领域或独家授权。
+ISRC：USUAN1100373。延续 A 版获选配乐，将其钢琴引入与管弦强段编辑为完整的 90 秒结构。
 
-### 已知平台识别情况
+- 第一段：原曲 01:24–02:20（56 秒）。
+- 第二段：原曲 01:44–02:20（36 秒）。
+- 两段用 2 秒交叉淡化连接，总长 90 秒；首尾淡化，最后 2 秒收束。
+- 音乐在影片约 26 秒、60 秒两次进入管弦强段，配合行动机制与后半段邀请。
+- 编辑包含选段、交叉淡化、均衡、人声侧链压低、混音、响度处理及首尾淡化。
+- 片尾和文件元数据包含署名、许可及改动标记；公开发布时将以上署名一并保留于发布说明。音乐不属于本仓库自有原创素材。
 
-作者在 2025-04-07 的公告中列出本曲曾被第三方 Routenote 自动主张版权；作者仍明确允许按署名许可使用，建议保留授权记录并处理错误主张。此事实不等于许可失效，也不保证未来不会出现平台识别问题。
-https://incompetech.com/wordpress/2025/04/whats-going-on-with-spotify/
+## 字幕和校验
 
-## 混音与画面
+- 按实际加速后的语音识别时间戳，对齐经确认的原稿意群；识别拼写不直接替换原文。
+- 人名、模型名、项目名及中文同音词单独核对转写差异。字符匹配用于估算字幕边界，不是音素级强制对齐。
+- 检查十章字幕的顺序、边界与时长，检查结尾全景和署名；以原始音频校验及最终媒体解码、时长和响度测量作技术验证。
+- 感染力和会场效果仍以用户审听为准。
 
-- 总长 90 秒；音乐随叙事分段递进，16 秒、51 秒、78 秒逐步提升相对电平。
-- 人声出现时音乐自动压低；句间恢复，结尾保留音乐收束。
-- 混音目标 -16 LUFS，编码前真峰值目标 -2 dBTP；实际文件测量见下。
-- 开场主张放大、标题强调线与缓慢推进镜头；最后五秒完整框架停留。
-- v2 的 Light Awash 氛围配乐不用于本版。
+音频原始片段、参考音色、完整人声、24-bit 无损混音及校验记录随片归档；制作脚本位于 `source/voice_a.py`、`prepare_a.py`、`align_a.py`、`mix_a.py`。
 
-AAC 成片实测：-15.99 LUFS、-1.79 dBTP、LRA 3.90 LU。
+## 最终文件实测
+
+90.000 秒，1920×1080，30fps，H.264 / AAC 48 kHz 立体声。成片 -16.03 LUFS、-1.97 dBTP、LRA 5.20 LU；完整媒体解码通过。27 条字幕，无重叠、无超出片长，最后字幕结束于 87.86 秒。
