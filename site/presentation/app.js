@@ -5,6 +5,7 @@
   const timeline = story.map((s, i) => ({ ...s, start: story.slice(0, i).reduce((sum, c) => sum + c.seconds * 1000, 0) }));
   const total = story.reduce((sum, s) => sum + s.seconds * 1000, 0);
   const scenes = $$('.scene'), reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  let sceneClock = 0, focusStep = -1, sceneAnimation = null;
   let current = 0, paused = reduced.matches, tour = false, elapsed = 0, clock = 0, last = null, lastPulse = -1, inspecting = false;
   const details = {
     practice: ['成长 / 01', '实践贡献', '从真实问题开始，贡献代码、文档、数据、工具或使用反馈。公共品的采用，也会带来新的问题与下一轮实践。'],
@@ -25,6 +26,29 @@
     benefits: ['三重普惠：互补的受益视角。', '开发者、大众、全球南方不是互斥人群，也不是先后阶段；它们帮助我们看见不同需要并检验受益。']
   };
   const explanations = {"path-0": ["AI 能力", "获取并理解工具，结合人的判断与创造。"], "path-1": ["数字公共品", "形成清晰许可、可复用和可维护的开放成果。"], "path-2": ["采用与本地化", "回应语言、资源条件与具体场景，持续维护。"], "path-3": ["真实帮助", "结合使用者反馈，核验谁获得了什么帮助。"], "connect": ["平台连接", "连接参与者、项目与实践场景，让协作与反馈有入口。"], "evidence": ["数据证据", "记录可追溯的实践信息，说明覆盖范围、数据使用方式及局限。"], "method": ["评价方法", "结合多维证据理解贡献与效果，明确方法适用范围与解释边界。"], "research": ["评价研究", "检验评价对象、方法与基准本身，为质疑、纠错和持续改进提供依据。"]};
+  // Each chapter has one guided reading pass, then rests as a complete composition.
+  const focalPlans = {
+    manifesto: ['.cover-tagline', '.cover-art', '.solid-button'],
+    origins: ['.anniversary', '.linux-figure', '.takeaway'],
+    'open-models': ['.model-grid', '.model-flow', '.takeaway'],
+    forces: ['.force-card:not(.developer)', '.force-card.developer', '.formula-line'],
+    'public-goods': ['.path-step:nth-child(1)', '.path-step:nth-child(3)', '.path-step:nth-child(5)', '.path-step:nth-child(7)'],
+    evaluation: ['.core-orb', '.evaluation-grid', '.explain-panel'],
+    flywheels: ['.growth', '.investment', '.shared-core'],
+    practice: ['.practice-card:nth-child(1)', '.practice-card:nth-child(2)', '.practice-card:nth-child(3)', '.practice-status'],
+    participate: ['.participation-grid', '.commitment-strip'],
+    panorama: ['.map-goal', '.map-forces', '.map-core', '.map-cycles', '.map-benefits']
+  };
+  function clearFocus() { $$('.story-focus').forEach(el => el.classList.remove('story-focus')); }
+  function directAttention() {
+    if (paused || inspecting || (tour && scenes[current].id === 'panorama')) return;
+    const scene = scenes[current], plan = focalPlans[scene.id];
+    const localTime = tour ? elapsed - timeline[current].start : sceneClock;
+    const step = Math.floor(Math.max(0, localTime - 550) / (scene.id === 'panorama' ? 1250 : 1800));
+    if (step === focusStep) return;
+    focusStep = step; clearFocus();
+    if (step < plan.length) scene.querySelector(plan[step])?.classList.add('story-focus');
+  }
   function setDetail(key) {
     const item = details[key]; if (!item) return;
     $$('#flywheels [data-detail]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.detail === key)));
@@ -51,13 +75,17 @@
   function show(index, manual = false) {
     index = Math.max(0, Math.min(scenes.length - 1, index));
     if (manual) { tour = false; elapsed = 0; $('#tour-progress').style.width = '0%'; document.body.classList.remove('tour'); }
+    const direction = index < current ? -1 : 1;
+    sceneAnimation?.cancel();
     document.body.classList.toggle('dark-chapter', scenes[index].classList.contains('dark-scene') || scenes[index].classList.contains('cycles'));
-    $('.brand img').src = document.body.classList.contains('dark-chapter') ? '../assets/XlabAI_Horizontal_ColorDark.svg' : '../assets/XlabAI_Horizontal_ColorLight.svg';
-    current = index; inspecting = false; lastPulse = -1;
+    $('.brand img').src = '../assets/XlabAI_Horizontal_ColorDark.svg';
+    current = index; inspecting = false; lastPulse = -1; sceneClock = 0; focusStep = -1; clearFocus();
+    $$('.pulse').forEach(el => el.classList.remove('pulse'));
     $$('[data-map]').forEach(b => b.setAttribute('aria-pressed', 'false'));
     $('#map-detail h2').textContent = '从一个真实问题开始。';
     $('#map-detail p').textContent = '分享需要、贡献工具与案例，或提供资源和应用场景。';
     scenes.forEach((s, i) => { s.hidden = i !== index; });
+    if (!paused) sceneAnimation = scenes[index].animate([{ transform: `translateX(${direction * 18}px)` }, { transform: 'translateX(0)' }], { duration: 480, easing: 'cubic-bezier(.22,1,.36,1)' });
     history.replaceState(null, '', '#' + scenes[index].id);
     updateControls();
     if (manual) { window.scrollTo({ top: 0, behavior: 'instant' }); $('#stage').focus({ preventScroll: true }); }
@@ -65,6 +93,8 @@
   }
   function applyMotion() {
     document.body.classList.toggle('paused', paused);
+    if (paused) { sceneAnimation?.cancel(); clearFocus(); $$('.pulse').forEach(el => el.classList.remove('pulse')); }
+    else focusStep = -1;
     $('#motion').textContent = paused ? '开启动效' : '暂停动效';
     $('#motion').setAttribute('aria-pressed', String(paused));
     $$('svg').forEach(svg => {
@@ -84,11 +114,12 @@
     } catch { $('#status').textContent = '当前浏览器未允许全屏，可继续浏览演示'; }
   }
   $$('[data-go]').forEach(b => b.addEventListener('click', () => show(Number(b.dataset.go), true)));
-  $$('[data-detail]').forEach(b => { b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', () => { if (tour) toggleTour(); inspecting = true; $$('.pulse').forEach(n => n.classList.remove('pulse')); setDetail(b.dataset.detail); }); });
-  $$('[data-map]').forEach(b => { b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', () => { if (tour) toggleTour(); inspecting = true; setMap(b.dataset.map); }); });
+  $$('[data-detail]').forEach(b => { b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', () => { if (tour) toggleTour(); inspecting = true; clearFocus(); $$('.pulse').forEach(n => n.classList.remove('pulse')); setDetail(b.dataset.detail); }); });
+  $$('[data-map]').forEach(b => { b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', () => { if (tour) toggleTour(); inspecting = true; clearFocus(); setMap(b.dataset.map); }); });
   $('#chapter-select').addEventListener('change', e => show(Number(e.target.value), true));
   $$('[data-explain]').forEach(button => button.addEventListener('click', () => {
     if (tour) toggleTour();
+    inspecting = true; clearFocus();
     const scene = button.closest('.scene'), panel = scene.querySelector('[data-explain-panel]');
     const detail = explanations[button.dataset.explain];
     if (!panel || !detail) return;
@@ -121,7 +152,7 @@
   function tick(now) {
     const delta = last === null ? 0 : now - last; last = now;
     if (!document.hidden) {
-      if (!paused) clock += delta;
+      if (!paused) { clock += delta; sceneClock += delta; }
       if (tour) {
         elapsed = Math.min(total, elapsed + delta);
         const found = timeline.findIndex(s => elapsed < s.start + s.seconds * 1000);
@@ -135,8 +166,9 @@
         }
         if (elapsed >= total) { tour = false; document.body.classList.remove('tour'); updateControls(); }
       }
-      const pulse = Math.floor(clock / 2000) % 4;
-      if (!paused && scenes[current].id === 'flywheels' && !inspecting && pulse !== lastPulse) {
+      directAttention();
+      const pulse = Math.floor(sceneClock / 2000) % 4;
+      if (!paused && scenes[current].id === 'flywheels' && !inspecting && sceneClock > 1200 && pulse !== lastPulse) {
         lastPulse = pulse; $$('.node').forEach((b, i) => b.classList.toggle('pulse', i % 4 === pulse));
       }
     }

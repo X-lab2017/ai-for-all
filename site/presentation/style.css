@@ -21,3 +21,17 @@
 @media print{.dark-chapter{background:white}.panorama{background:#102c25!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}.panorama .ring-orbit{animation:none}}
 
 .panorama .mini-cycles>.mini-wheel:last-child{color:#e8f1dd}.dark-chapter .edition{color:#afc5b6}
+
+/* Editorial motion: persistent brand frame, directional transitions, one focus per beat. */
+body .topbar,body.dark-chapter .topbar,body:has(.cycles:not([hidden])) .topbar{background:#102c25;color:#edf3ed;border-color:#385448}
+.topbar .edition{color:#afc5b6}.topbar .top-actions button{color:#d2dfd4}.topbar .top-actions button:hover{background:#27473a}
+.scene,.tour .scene-heading{animation:none}.scene{overflow-x:clip}.scene-heading{max-width:1220px}.topbar,.controls{transition:background-color .4s,color .4s,border-color .4s}
+.scene-heading h1{max-width:1100px}.scene-heading .lede{max-width:900px}
+.cover-tagline,.cover-art,.solid-button,.anniversary,.linux-figure,.takeaway,.model-grid,.model-flow,.force-card,.formula-line,.path-step,.core-orb,.evaluation-grid,.explain-panel,.wheel,.shared-core,.practice-card,.practice-status,.participation-grid,.commitment-strip{transition:box-shadow .45s,border-color .45s,filter .45s}
+.story-focus{outline:1px solid #7a9d694d;outline-offset:7px;border-radius:6px;box-shadow:0 0 0 5px #83ac6910}
+.cover-tagline.story-focus,.anniversary.story-focus,.cover-art.story-focus,.wheel.story-focus,.model-grid.story-focus,.evaluation-grid.story-focus,.participation-grid.story-focus{outline:0;box-shadow:none;filter:drop-shadow(0 0 9px #aed68740)}
+.path-step.story-focus,.force-card.story-focus,.practice-card.story-focus{border-color:#73945f;background:#e9efdf}.dark-scene .story-focus,.cycles .story-focus{outline-color:#c8df9866;box-shadow:0 0 0 5px #bddd8a09}.dark-scene .cover-art.story-focus,.dark-scene .cover-tagline.story-focus,.cycles .wheel.story-focus{box-shadow:none}
+.panorama .framework-map button.story-focus{border-color:#c8df98;background:#244535;outline:none;box-shadow:0 0 0 1px #bddc8a33}
+.model-card:hover,.practice-card:hover{transform:translateY(-3px)}.halo-one{animation-duration:60s}.halo-two{animation-duration:80s}.paused .story-focus{outline:none;box-shadow:none;filter:none}
+@media(prefers-reduced-motion:reduce){.story-focus{outline:none;box-shadow:none;filter:none}.model-card:hover,.practice-card:hover{transform:none}}
+@media print{.story-focus{outline:none;box-shadow:none;filter:none}}
