@@ -2,6 +2,7 @@
 from html.parser import HTMLParser
 from pathlib import Path
 import xml.etree.ElementTree as ET
+import json,re
 
 ROOT = Path(__file__).resolve().parents[1] / 'site' / 'presentation'
 
@@ -19,14 +20,22 @@ class Page(HTMLParser):
         if tag == 'section' and 'scene' in a.get('class', '').split():
             self.scenes.append(a['id'])
         if tag == 'img':
-            assert a.get('alt'), 'Image missing alternative text'
+            assert 'alt' in a, 'Image missing alternative text'
         for key in ['src', 'href']:
             if key in a:
                 self.links.append(a[key])
 
 p = Page()
 p.feed((ROOT / 'index.html').read_text())
-assert p.scenes == ['origins', 'flywheels', 'panorama']
+assert p.scenes == ['manifesto', 'origins', 'open-models', 'forces', 'public-goods', 'evaluation', 'flywheels', 'practice', 'participate', 'panorama']
+source = (ROOT / 'index.html').read_text()
+story = json.loads(re.search(r'<script id="story-data" type="application/json">(.*?)</script>', source, re.S)[1])
+assert [s['id'] for s in story] == p.scenes
+assert sum(s['seconds'] for s in story) == 90
+assert all(s['voice'] and s['notes'] for s in story)
+assert len(re.findall(r'class="model-card"', source)) == 5
+for name in ['阿里巴巴（Qwen）', '深度求索（DeepSeek）', '智谱 AI（GLM）', '月之暗面（Kimi）', '腾讯（混元 / Hunyuan）']:
+    assert name in source and name in (ROOT / 'narrative.md').read_text(), name
 for link in p.links:
     if link.startswith('#'):
         assert link[1:] in p.ids, link
@@ -37,4 +46,4 @@ for asset in (ROOT / 'assets').glob('*.svg'):
     for node in r.iter():
         assert node.tag.split('}')[-1] not in ('script', 'foreignObject'), asset
         assert not any(key.lower().startswith('on') for key in node.attrib), asset
-print('PASS: three scenes, unique IDs, local assets, descriptive images, passive SVG assets.')
+print('PASS: 10 chapters, 90-second narrative, 5 model families, unique IDs, local assets and passive SVGs.')

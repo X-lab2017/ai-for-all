@@ -34,7 +34,7 @@ These are practical foundations and research references. Each project’s scope,
 
 **Status: open and ongoing.** Launched on 8 October 2026 through [Issue #1](https://github.com/X-lab2017/ai-for-all/issues/1). No prior contribution or score is required.
 
-**Delivered:** the Chinese manifesto, English translation, website, participation guide, issue templates, and five interactive diagrams with static downloads.
+**Delivered:** the Chinese manifesto, English translation, website, participation guide, issue templates, and five interactive diagrams with static downloads. A [ten-chapter interactive presentation (Chinese)](https://www.x-lab.info/ai-for-all/presentation/), official assets for five open-model families, a 90-second silent tour, and chapter-by-chapter speaker notes are now available.
 
 **This revision:** two rounds of proposals and the [expert review in Issue #2](https://github.com/X-lab2017/ai-for-all/issues/2#issuecomment-6071564956) shaped the DPG pathway, two reinforcing cycles and three perspectives on inclusion. Each of the five elements has an interactive diagram. v1.1 was published on 9 October 2026.
 

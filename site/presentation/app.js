@@ -1,6 +1,9 @@
 (() => {
   'use strict';
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const story = JSON.parse($('#story-data').textContent);
+  const timeline = story.map((s, i) => ({ ...s, start: story.slice(0, i).reduce((sum, c) => sum + c.seconds * 1000, 0) }));
+  const total = story.reduce((sum, s) => sum + s.seconds * 1000, 0);
   const scenes = $$('.scene'), reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let current = 0, paused = reduced.matches, tour = false, elapsed = 0, clock = 0, last = null, lastPulse = -1, inspecting = false;
   const details = {
@@ -21,6 +24,7 @@
     cycles: ['两个飞轮：成长与投入。', '成长创造公共品与应用价值，投入支持持续实践。效果证据为下一轮支持提供依据。'],
     benefits: ['三重普惠：互补的受益视角。', '开发者、大众、全球南方不是互斥人群，也不是先后阶段；它们帮助我们看见不同需要并检验受益。']
   };
+  const explanations = {"path-0": ["AI 能力", "获取并理解工具，结合人的判断与创造。"], "path-1": ["数字公共品", "形成清晰许可、可复用和可维护的开放成果。"], "path-2": ["采用与本地化", "回应语言、资源条件与具体场景，持续维护。"], "path-3": ["真实帮助", "结合使用者反馈，核验谁获得了什么帮助。"], "connect": ["平台连接", "连接参与者、项目与实践场景，让协作与反馈有入口。"], "evidence": ["数据证据", "记录可追溯的实践信息，说明覆盖范围、数据使用方式及局限。"], "method": ["评价方法", "结合多维证据理解贡献与效果，明确方法适用范围与解释边界。"], "research": ["评价研究", "检验评价对象、方法与基准本身，为质疑、纠错和持续改进提供依据。"]};
   function setDetail(key) {
     const item = details[key]; if (!item) return;
     $$('#flywheels [data-detail]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.detail === key)));
@@ -33,17 +37,24 @@
     $('#map-detail h2').textContent = mapDetails[key][0]; $('#map-detail p').textContent = mapDetails[key][1];
   }
   function updateControls() {
+    $('#chapter-select').value = String(current);
+    $('#notes-title').textContent = `${String(current + 1).padStart(2, '0')} / ${story[current].title}`;
+    $('#notes-voice').textContent = story[current].voice;
+    $('#notes-detail').textContent = story[current].notes;
     $('#previous').disabled = current === 0; $('#next').disabled = current === scenes.length - 1;
     $('.chapter[aria-current]')?.removeAttribute('aria-current');
     $(`.chapter[data-go="${current}"]`).setAttribute('aria-current', 'step');
-    $('#status').textContent = `${tour ? '自动导览 · 无声' : '自由探索'} · 0${current + 1} / 03`;
-    $('#autoplay').textContent = tour ? 'Ⅱ 暂停导览' : elapsed >= 90000 ? '↺ 重播导览' : elapsed > 0 ? '▷ 继续导览' : '▷ 90 秒导览';
+    $('#status').textContent = `${tour ? '自动导览 · 无声' : '自由探索'} · ${String(current + 1).padStart(2, '0')} / ${scenes.length}`;
+    $('#autoplay').textContent = tour ? 'Ⅱ 暂停导览' : elapsed >= total ? '↺ 重播导览' : elapsed > 0 ? '▷ 继续导览' : '▷ 90 秒导览';
     $('#autoplay').setAttribute('aria-pressed', String(tour));
   }
   function show(index, manual = false) {
     index = Math.max(0, Math.min(scenes.length - 1, index));
     if (manual) { tour = false; elapsed = 0; $('#tour-progress').style.width = '0%'; document.body.classList.remove('tour'); }
     current = index; inspecting = false; lastPulse = -1;
+    $$('[data-map]').forEach(b => b.setAttribute('aria-pressed', 'false'));
+    $('#map-detail h2').textContent = '从一个真实问题开始。';
+    $('#map-detail p').textContent = '分享需要、贡献工具与案例，或提供资源和应用场景。';
     scenes.forEach((s, i) => { s.hidden = i !== index; });
     history.replaceState(null, '', '#' + scenes[index].id);
     updateControls();
@@ -61,7 +72,7 @@
   }
   function toggleTour() {
     tour = !tour; last = null;
-    if (tour && (elapsed === 0 || elapsed >= 90000)) { elapsed = 0; show(0); window.scrollTo({ top: 0, behavior: 'instant' }); }
+    if (tour && (elapsed === 0 || elapsed >= total)) { elapsed = 0; show(0); window.scrollTo({ top: 0, behavior: 'instant' }); }
     document.body.classList.toggle('tour', tour); updateControls();
   }
   async function toggleFullscreen() {
@@ -71,8 +82,20 @@
     } catch { $('#status').textContent = '当前浏览器未允许全屏，可继续浏览演示'; }
   }
   $$('[data-go]').forEach(b => b.addEventListener('click', () => show(Number(b.dataset.go), true)));
-  $$('[data-detail]').forEach(b => { b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', () => { inspecting = true; $$('.pulse').forEach(n => n.classList.remove('pulse')); setDetail(b.dataset.detail); }); });
-  $$('[data-map]').forEach(b => { b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', () => { inspecting = true; setMap(b.dataset.map); }); });
+  $$('[data-detail]').forEach(b => { b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', () => { if (tour) toggleTour(); inspecting = true; $$('.pulse').forEach(n => n.classList.remove('pulse')); setDetail(b.dataset.detail); }); });
+  $$('[data-map]').forEach(b => { b.setAttribute('aria-pressed', 'false'); b.addEventListener('click', () => { if (tour) toggleTour(); inspecting = true; setMap(b.dataset.map); }); });
+  $('#chapter-select').addEventListener('change', e => show(Number(e.target.value), true));
+  $$('[data-explain]').forEach(button => button.addEventListener('click', () => {
+    if (tour) toggleTour();
+    const scene = button.closest('.scene'), panel = scene.querySelector('[data-explain-panel]');
+    const detail = explanations[button.dataset.explain];
+    if (!panel || !detail) return;
+    scene.querySelectorAll('[data-explain]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
+    panel.querySelector('h2').textContent = detail[0]; panel.querySelector('p').textContent = detail[1];
+  }));
+  $$('[data-explain-panel]').forEach(panel => panel.setAttribute('aria-live', 'polite'));
+  $('#notes-open').addEventListener('click', () => { if (tour) toggleTour(); updateControls(); $('#speaker-notes').showModal(); });
+  $('#notes-close').addEventListener('click', () => $('#speaker-notes').close());
   $('#motion').addEventListener('click', () => { paused = !paused; applyMotion(); });
   reduced.addEventListener('change', e => { paused = e.matches; applyMotion(); });
   $('#autoplay').addEventListener('click', toggleTour);
@@ -83,9 +106,11 @@
   $('#sources-open').addEventListener('click', () => { if (tour) toggleTour(); $('#sources').showModal(); });
   $('#sources-close').addEventListener('click', () => $('#sources').close());
   document.addEventListener('keydown', e => {
-    if ($('#sources').open || e.altKey || e.ctrlKey || e.metaKey || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+    if ($('#sources').open || $('#speaker-notes').open || e.altKey || e.ctrlKey || e.metaKey || /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
     if (e.key === 'ArrowRight') { e.preventDefault(); show(current + 1, true); }
     else if (e.key === 'ArrowLeft') { e.preventDefault(); show(current - 1, true); }
+    else if (e.key === 'Home') { e.preventDefault(); show(0, true); }
+    else if (e.key === 'End') { e.preventDefault(); show(scenes.length - 1, true); }
     else if (e.code === 'Space' && !e.target.closest('button,a')) { e.preventDefault(); toggleTour(); }
     else if (e.key.toLowerCase() === 'f' && !e.target.closest('button,a')) { e.preventDefault(); toggleFullscreen(); }
   });
@@ -96,19 +121,20 @@
     if (!document.hidden) {
       if (!paused) clock += delta;
       if (tour) {
-        elapsed = Math.min(90000, elapsed + delta);
-        const next = Math.min(2, Math.floor(elapsed / 30000));
+        elapsed = Math.min(total, elapsed + delta);
+        const found = timeline.findIndex(s => elapsed < s.start + s.seconds * 1000);
+        const next = found < 0 ? scenes.length - 1 : found;
         if (next !== current) { show(next); window.scrollTo({ top: 0, behavior: 'instant' }); }
-        $('#tour-progress').style.width = `${elapsed / 900}%`;
-        if (current === 2 && !inspecting) {
-          const k = Math.floor((elapsed - 60000) / 4000);
+        $('#tour-progress').style.width = `${elapsed / total * 100}%`;
+        if (scenes[current].id === 'panorama' && !inspecting) {
+          const k = Math.floor((elapsed - timeline[current].start) / 1400);
           if (k < 5) { const key = ['goal', 'forces', 'core', 'cycles', 'benefits'][k]; if (!$(`[data-map="${key}"]`).matches('[aria-pressed=true]')) setMap(key); }
           else { $$('[data-map]').forEach(b => b.setAttribute('aria-pressed', 'false')); $('#map-detail h2').textContent = '从一个真实问题开始。'; $('#map-detail p').textContent = '分享需要、贡献工具与案例，或提供资源和应用场景。'; }
         }
-        if (elapsed >= 90000) { tour = false; document.body.classList.remove('tour'); updateControls(); }
+        if (elapsed >= total) { tour = false; document.body.classList.remove('tour'); updateControls(); }
       }
       const pulse = Math.floor(clock / 2000) % 4;
-      if (!paused && current === 1 && !inspecting && pulse !== lastPulse) {
+      if (!paused && scenes[current].id === 'flywheels' && !inspecting && pulse !== lastPulse) {
         lastPulse = pulse; $$('.node').forEach((b, i) => b.classList.toggle('pulse', i % 4 === pulse));
       }
     }
