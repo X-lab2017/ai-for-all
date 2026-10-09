@@ -60,7 +60,7 @@
     });
   }
   function toggleTour() {
-    tour = !tour;
+    tour = !tour; last = null;
     if (tour && (elapsed === 0 || elapsed >= 90000)) { elapsed = 0; show(0); window.scrollTo({ top: 0, behavior: 'instant' }); }
     document.body.classList.toggle('tour', tour); updateControls();
   }
@@ -92,7 +92,7 @@
   document.addEventListener('visibilitychange', () => { last = null; applyMotion(); });
   window.addEventListener('hashchange', () => { const n = scenes.findIndex(s => '#' + s.id === location.hash); if (n >= 0) show(n, true); });
   function tick(now) {
-    const delta = last === null ? 0 : Math.min(now - last, 100); last = now;
+    const delta = last === null ? 0 : now - last; last = now;
     if (!document.hidden) {
       if (!paused) clock += delta;
       if (tour) {
