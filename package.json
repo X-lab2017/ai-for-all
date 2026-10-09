@@ -1,0 +1,8 @@
+{
+  "name": "xlab-ai-for-all",
+  "private": true,
+  "version": "1.1.0",
+  "description": "Optional static image export for the AI for All manifesto",
+  "scripts": {"export:png": "node scripts/export_pngs.cjs"},
+  "devDependencies": {"sharp": "0.35.4"}
+}

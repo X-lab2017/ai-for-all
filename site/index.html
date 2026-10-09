@@ -1,294 +1,551 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>X-lab AI 普惠行动</title><meta name="description" content="以开源降低门槛，以成长释放创造力。"><link rel="icon" href="assets/XlabAI_Symbol_ColorLight.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="diagrams.css"></head><body>
-<a class="skip" href="#manifesto">跳至宣言</a>
-<header><a href="index.html"><img src="assets/XlabAI_Horizontal_ColorDark.svg" alt="X-lab AI 开放实验室"></a><nav><a href="#manifesto">宣言</a><a href="#action">行动</a><a href="en.html">EN</a><a href="https://github.com/X-lab2017/ai-for-all">GitHub</a></nav></header>
-<main><section class="hero"><div class="kicker">X-LAB AI / AI FOR ALL</div><h1>让 AI 用得起，<br><em>更用得好。</em></h1><p class="intro">以开源降低门槛，以成长释放创造力。</p><div class="hero-bottom"><span>AI 普惠宣言 · 长期愿景与行动承诺</span><a class="button" href="#manifesto">阅读宣言</a></div></section>
-<div class="statement"><span>01 / OPEN TECHNOLOGY</span><strong>降低进入门槛</strong><span>02 / HUMAN CAPABILITY</span><strong>支持人的成长</strong></div>
-<section class="reading" id="manifesto"><aside><div class="kicker">THE MANIFESTO</div><h2>共同的方向，<br>公开的承诺。</h2><p>v1.0 · 正式版<br>2026.10.08</p><a href="https://github.com/X-lab2017/ai-for-all/blob/main/README.md">查看原文与修订</a></aside><article><h2>一、我们的愿景</h2>
-<p>AI 正在改变人们获取知识、创造工具和解决问题的方式。但工具的普及，不等于能力的普惠。能够接触 AI，不意味着负担得起持续使用的成本；拥有工具，也不意味着能够理解它、判断它，并把它用于真实的生活与工作。</p>
-<p>我们期待的未来，是更多人能够获得使用 AI 的机会，也具备选择、理解和创造的能力。无论来自哪里、处于怎样的学习阶段，都有机会参与这场变化，而不只是被动接受变化的结果。</p>
-<p>因此，X-lab AI 将“让 AI 用得起，更用得好”作为长期方向。用得起，关乎成本、可获得性与进入的机会；用得好，关乎知识、判断力、创造力，以及解决真实问题的能力。</p>
-<p>普惠的价值，不只在于工具被多少人打开，更在于它是否帮助人们学习新的知识、完成有意义的创造、改善实际处境。技术的发展应当扩大人的选择，支持人的成长，服务人的尊严。</p>
-<figure class="concept" id="access-capability" aria-labelledby="access-capability-heading"><figcaption><span class="concept-index">FIG. 01</span><h3 id="access-capability-heading">两股力量，相互放大</h3></figcaption><p class="concept-hint">点选框内节点，查看它在行动中的含义。</p>
-<div class="concept-canvas concept-desktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 535" width="720" height="535" class="concept-svg" aria-hidden="true">
-<title id="access-capability-zh-desktop-title">两股力量，相互放大</title><desc id="access-capability-zh-desktop-desc">开源降低门槛，人的成长释放创造力；数据与评价为行动提供支撑。</desc>
-<defs><marker id="access-capability-zh-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#78928a" stroke-width="1.2"/></marker></defs>
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 普惠宣言 · X-lab AI</title><meta name="description" content="以数据与评价为内核，让开源之力与开发者之力相互促进，通过数字公共品走向 AI 普惠。"><meta property="og:type" content="website"><meta property="og:title" content="AI 普惠宣言 · X-lab AI"><meta property="og:description" content="以数据与评价为内核，让开源之力与开发者之力相互促进，通过数字公共品走向 AI 普惠。"><meta property="og:url" content="https://www.x-lab.info/ai-for-all/index.html"><meta property="og:image" content="https://www.x-lab.info/ai-for-all/assets/social-preview.png"><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://www.x-lab.info/ai-for-all/index.html"><link rel="alternate" hreflang="zh-CN" href="https://www.x-lab.info/ai-for-all/index.html"><link rel="alternate" hreflang="en" href="https://www.x-lab.info/ai-for-all/en.html"><link rel="icon" href="assets/XlabAI_Symbol_ColorLight.svg"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="diagrams.css"></head>
+<body><a class="skip" href="#manifesto">跳至宣言</a>
+<header><a href="index.html"><img src="assets/XlabAI_Horizontal_ColorDark.svg" alt="X-lab AI" width="155" height="42"></a><nav aria-label="主导航"><a href="#manifesto">宣言</a><a href="#practice">实践</a><a href="en.html" lang="en">EN</a><a href="https://github.com/X-lab2017/ai-for-all">GitHub</a></nav></header>
+<main><section class="hero"><div class="hero-inner"><div class="kicker">X-LAB AI / A PUBLIC COMMITMENT</div><h1>AI 普惠宣言</h1><p class="hero-subtitle">让 AI 用得起，更用得好</p><p class="hero-description">以数据与评价为内核，让开源之力与开发者之力相互促进，通过数字公共品走向 AI 普惠。</p><p class="hero-path">AI <span>→</span> DPG （数字公共品） <span>→</span> AI 普惠</p><div class="hero-meta"><a class="button" href="#manifesto">阅读宣言 <span aria-hidden="true">↓</span></a><span>v1.1 · 2026.10.09 · 长期愿景与行动承诺</span></div><div class="hero-formula"><span class="formula-result">AI 普惠</span><span class="formula-symbol">=</span><span class="formula-part">技术的普惠性<small>用得起</small></span><span class="formula-symbol">×</span><span class="formula-part">开发者的创造力<small>用得好</small></span></div><p class="formula-note">相互促进的理念表达，成效由实践检验。</p></div></section>
+<nav class="framework" aria-label="五要素框架"><a href="#goal-path"><span>一个目标</span><strong>AI 普惠</strong></a><a href="#dual-forces"><span>两股力量</span><strong>开源 × 开发者</strong></a><a href="#evaluation-core"><span>一个内核</span><strong>数据与评价</strong></a><a href="#twin-flywheels"><span>两个飞轮</span><strong>成长与持续投入</strong></a><a href="#inclusion-views"><span>三重普惠</span><strong>多样的受益视角</strong></a></nav>
+<section class="reading" id="manifesto"><aside><div class="kicker">THE MANIFESTO</div><h2>共同的方向，<br>公开的承诺。</h2><p>一个目标，通过数字公共品<br>连接创造与受益。</p><nav class="contents" aria-label="正文目录"><a href="#goal">01　目标与对象</a><a href="#path">02　主张与路径</a><a href="#forces">03　两股力量</a><a href="#core">04　共同内核</a><a href="#cycles">05　两个飞轮</a><a href="#commitments">06　行动与邀请</a></nav><a class="source" href="https://github.com/X-lab2017/ai-for-all/blob/main/README.md">查看原文与修订 ↗</a><br><button class="print-button" type="button" data-print>打印 / 另存为 PDF</button></aside><article><h2 id="goal">一、目标与对象</h2>
+<p>AI 正在改变人们获取知识、创造工具和解决问题的方式。工具的普及，让更多人有机会开始；持续使用的成本、学习的门槛和创造的能力，决定了这种机会能否转化为真实的帮助。</p>
+<p><strong>让 AI 用得起，更用得好，是 X-lab AI 的长期目标。</strong> 我们希望技术扩大人的选择，支持人的成长，让更多人能够学习、创造并改善实际处境。</p>
+<p>我们从三个相互补充的视角理解普惠。<strong>开发者普惠</strong>是关键切入点，支持专业工程师，也支持正在学习、尝试构建工具的人。<strong>大众普惠</strong>关注成果的使用者，让公共品及其应用回应真实的生活与工作需要。<strong>全球南方普惠</strong>拓展地域视角，关注不同地区的语言、资源条件和发展机会，与当地伙伴共同探索适合的实践。</p>
+<p>三重普惠体现了我们看待受益对象的多样性。它们不是互斥的人群，也不是必须依次完成的阶段。</p>
+<figure class="concept" id="inclusion-views" aria-labelledby="inclusion-views-heading"><figcaption><span class="concept-index">三重普惠</span><h3 id="inclusion-views-heading">从不同视角，看见真实需要</h3></figcaption><p class="concept-hint">点选节点，查看关系与解释。</p>
+<p class="visually-hidden">开发者、大众与全球南方，提供三个相互补充的普惠视角。</p>
+<div class="concept-canvas concept-desktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 340" width="980" height="340" class="concept-svg" aria-hidden="true">
+<title id="inclusion-views-zh-desktop-title">从不同视角，看见真实需要</title><desc id="inclusion-views-zh-desktop-desc">开发者、大众与全球南方，提供三个相互补充的普惠视角。</desc>
+<defs><marker id="inclusion-views-zh-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
 <rect width="100%" height="100%" fill="#ffffff"/>
 <g transform="translate(0,0)">
-<path class="concept-edge" data-from="open" data-to="outcome" d="M167.5 177 V213 H360 V247" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#access-capability-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="people" data-to="outcome" d="M552.5 177 V213 H360" fill="none" stroke="#8ba299" stroke-width="1.4"/>
-<path class="concept-edge" data-from="support" data-to="outcome" d="M360 415 V355" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#access-capability-zh-desktop-arrow)" stroke-dasharray="5 5"/>
-<text x="360" y="121" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" text-anchor="middle" font-size="32" fill="#647c70">×</text>
-<text x="386" y="385" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" text-anchor="middle" font-size="14" fill="#647c70">支撑</text>
-<g class="concept-node" data-node="open"><rect x="20" y="45" width="295" height="132" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="167.5" y="67" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">OPEN SOURCE</text>
-<text x="167.5" y="93" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">用得起</text>
-<text x="167.5" y="119" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">开放技术与知识</text>
-<text x="167.5" y="139" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">降低成本 · 扩大可获得性</text>
+<path class="concept-edge" data-from="developers" data-to="shared" data-group="" d="M160 145 V182 H480 V220" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="public" data-to="shared" data-group="" d="M480 145 V220" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="south" data-to="shared" data-group="" d="M800 145 V182 H480" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<g class="concept-node" data-node="developers" data-group=""><rect x="20" y="25" width="280" height="120" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="160.0" y="81.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">开发者普惠</text>
+<text x="160.0" y="112.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">学习 · 创造 · 协作</text>
 </g>
-<g class="concept-node" data-node="people"><rect x="405" y="45" width="295" height="132" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="552.5" y="67" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">HUMAN CAPABILITY</text>
-<text x="552.5" y="93" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">用得好</text>
-<text x="552.5" y="119" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">学习、判断与创造</text>
-<text x="552.5" y="139" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">从理解工具到解决问题</text>
+<g class="concept-node" data-node="public" data-group=""><rect x="340" y="25" width="280" height="120" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="480.0" y="81.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">大众普惠</text>
+<text x="480.0" y="112.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">可用的成果 · 实际的帮助</text>
 </g>
-<g class="concept-node" data-node="outcome"><rect x="160" y="255" width="400" height="92" rx="5" fill="#f3f9ee" stroke="#63943d" stroke-width="1.2"/>
-<text x="360.0" y="277" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">AI FOR ALL</text>
-<text x="360.0" y="303" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">AI 普惠</text>
-<text x="360.0" y="329" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">更多人能够获取、掌握并创造</text>
+<g class="concept-node" data-node="south" data-group=""><rect x="660" y="25" width="280" height="120" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="800.0" y="81.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">全球南方普惠</text>
+<text x="800.0" y="112.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">地域视角 · 本地实践</text>
 </g>
-<g class="concept-node" data-node="support"><rect x="90" y="415" width="540" height="90" rx="5" fill="#f8faf9" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="360.0" y="437" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">SUPPORTING METHOD</text>
-<text x="360.0" y="463" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">数据与评价</text>
-<text x="360.0" y="489" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">让贡献可见 · 让行动可检验</text>
+<g class="concept-node" data-node="shared" data-group=""><rect x="210" y="220" width="540" height="100" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="480.0" y="266.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">更多人的机会与能力</text>
+<text x="480.0" y="297.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">AI 普惠的共同目标</text>
 </g>
 </g>
-</svg><div class="concept-controls" role="group" aria-label="两股力量，相互放大">
-<button type="button" class="concept-hit" data-select="open" style="left:2.77778%;top:8.41121%;width:40.97222%;height:24.67290%" aria-pressed="false" aria-controls="access-capability-detail"><span class="visually-hidden">用得起</span></button>
-<button type="button" class="concept-hit" data-select="people" style="left:56.25000%;top:8.41121%;width:40.97222%;height:24.67290%" aria-pressed="false" aria-controls="access-capability-detail"><span class="visually-hidden">用得好</span></button>
-<button type="button" class="concept-hit" data-select="outcome" style="left:22.22222%;top:47.66355%;width:55.55556%;height:17.19626%" aria-pressed="false" aria-controls="access-capability-detail"><span class="visually-hidden">AI 普惠</span></button>
-<button type="button" class="concept-hit" data-select="support" style="left:12.50000%;top:77.57009%;width:75.00000%;height:16.82243%" aria-pressed="false" aria-controls="access-capability-detail"><span class="visually-hidden">数据与评价</span></button>
+</svg><div class="concept-controls" role="group" aria-label="从不同视角，看见真实需要">
+<button type="button" class="concept-hit" data-select="developers" style="left:2.04082%;top:7.35294%;width:28.57143%;height:35.29412%" aria-pressed="false" aria-controls="inclusion-views-detail"><span class="visually-hidden">开发者普惠</span></button>
+<button type="button" class="concept-hit" data-select="public" style="left:34.69388%;top:7.35294%;width:28.57143%;height:35.29412%" aria-pressed="false" aria-controls="inclusion-views-detail"><span class="visually-hidden">大众普惠</span></button>
+<button type="button" class="concept-hit" data-select="south" style="left:67.34694%;top:7.35294%;width:28.57143%;height:35.29412%" aria-pressed="false" aria-controls="inclusion-views-detail"><span class="visually-hidden">全球南方普惠</span></button>
+<button type="button" class="concept-hit" data-select="shared" style="left:21.42857%;top:64.70588%;width:55.10204%;height:29.41176%" aria-pressed="true" aria-controls="inclusion-views-detail"><span class="visually-hidden">更多人的机会与能力</span></button>
 </div></div>
-<div class="concept-canvas concept-mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 690" width="340" height="690" class="concept-svg" aria-hidden="true">
-<title id="access-capability-zh-mobile-title">两股力量，相互放大</title><desc id="access-capability-zh-mobile-desc">开源降低门槛，人的成长释放创造力；数据与评价为行动提供支撑。</desc>
-<defs><marker id="access-capability-zh-mobile-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#78928a" stroke-width="1.2"/></marker></defs>
+<div class="concept-canvas concept-mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 580" width="360" height="580" class="concept-svg" aria-hidden="true">
+<title id="inclusion-views-zh-mobile-title">从不同视角，看见真实需要</title><desc id="inclusion-views-zh-mobile-desc">开发者、大众与全球南方，提供三个相互补充的普惠视角。</desc>
+<defs><marker id="inclusion-views-zh-mobile-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
 <rect width="100%" height="100%" fill="#ffffff"/>
 <g transform="translate(0,0)">
-<path class="concept-edge" data-from="open" data-to="outcome" d="M310 90 H325 V360 H170 V372" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#access-capability-zh-mobile-arrow)"/>
-<path class="concept-edge" data-from="people" data-to="outcome" d="M170 322 V372" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#access-capability-zh-mobile-arrow)"/>
-<path class="concept-edge" data-from="support" data-to="outcome" d="M170 549 V492" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#access-capability-zh-mobile-arrow)" stroke-dasharray="5 5"/>
-<text x="170" y="180" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" text-anchor="middle" font-size="28" fill="#647c70">×</text>
-<text x="195" y="523" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" text-anchor="middle" font-size="14" fill="#647c70">支撑</text>
-<g class="concept-node" data-node="open"><rect x="30" y="30" width="280" height="120" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="52" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">OPEN SOURCE</text>
-<text x="170.0" y="78" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">用得起</text>
-<text x="170.0" y="104" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">开放技术与知识</text>
-<text x="170.0" y="124" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">降低成本 · 扩大可获得性</text>
+<path class="concept-edge" data-from="developers" data-to="shared" data-group="" d="M25 70 H10 V430 H180 V450" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="public" data-to="shared" data-group="" d="M25 200 H10" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="south" data-to="shared" data-group="" d="M25 330 H10" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<g class="concept-node" data-node="developers" data-group=""><rect x="25" y="20" width="310" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="180.0" y="66.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">开发者普惠</text>
+<text x="180.0" y="97.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">学习 · 创造 · 协作</text>
 </g>
-<g class="concept-node" data-node="people"><rect x="30" y="202" width="280" height="120" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="224" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">HUMAN CAPABILITY</text>
-<text x="170.0" y="250" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">用得好</text>
-<text x="170.0" y="276" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">学习、判断与创造</text>
-<text x="170.0" y="296" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">从理解工具到解决问题</text>
+<g class="concept-node" data-node="public" data-group=""><rect x="25" y="150" width="310" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="180.0" y="196.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">大众普惠</text>
+<text x="180.0" y="227.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">可用的成果 · 实际的帮助</text>
 </g>
-<g class="concept-node" data-node="outcome"><rect x="30" y="380" width="280" height="104" rx="5" fill="#f3f9ee" stroke="#63943d" stroke-width="1.2"/>
-<text x="170.0" y="402" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">AI FOR ALL</text>
-<text x="170.0" y="428" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">AI 普惠</text>
-<text x="170.0" y="454" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">更多人能够获取、掌握并创造</text>
+<g class="concept-node" data-node="south" data-group=""><rect x="25" y="280" width="310" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="180.0" y="326.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">全球南方普惠</text>
+<text x="180.0" y="357.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">地域视角 · 本地实践</text>
 </g>
-<g class="concept-node" data-node="support"><rect x="30" y="549" width="280" height="112" rx="5" fill="#f8faf9" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="571" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">SUPPORTING METHOD</text>
-<text x="170.0" y="597" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">数据与评价</text>
-<text x="170.0" y="623" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">让贡献可见 · 让行动可检验</text>
+<g class="concept-node" data-node="shared" data-group=""><rect x="25" y="450" width="310" height="110" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="180.0" y="501.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">更多人的机会与能力</text>
+<text x="180.0" y="532.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">AI 普惠的共同目标</text>
 </g>
 </g>
-</svg><div class="concept-controls" role="group" aria-label="两股力量，相互放大">
-<button type="button" class="concept-hit" data-select="open" style="left:8.82353%;top:4.34783%;width:82.35294%;height:17.39130%" aria-pressed="false" aria-controls="access-capability-detail"><span class="visually-hidden">用得起</span></button>
-<button type="button" class="concept-hit" data-select="people" style="left:8.82353%;top:29.27536%;width:82.35294%;height:17.39130%" aria-pressed="false" aria-controls="access-capability-detail"><span class="visually-hidden">用得好</span></button>
-<button type="button" class="concept-hit" data-select="outcome" style="left:8.82353%;top:55.07246%;width:82.35294%;height:15.07246%" aria-pressed="false" aria-controls="access-capability-detail"><span class="visually-hidden">AI 普惠</span></button>
-<button type="button" class="concept-hit" data-select="support" style="left:8.82353%;top:79.56522%;width:82.35294%;height:16.23188%" aria-pressed="false" aria-controls="access-capability-detail"><span class="visually-hidden">数据与评价</span></button>
+</svg><div class="concept-controls" role="group" aria-label="从不同视角，看见真实需要">
+<button type="button" class="concept-hit" data-select="developers" style="left:6.94444%;top:3.44828%;width:86.11111%;height:17.24138%" aria-pressed="false" aria-controls="inclusion-views-detail"><span class="visually-hidden">开发者普惠</span></button>
+<button type="button" class="concept-hit" data-select="public" style="left:6.94444%;top:25.86207%;width:86.11111%;height:17.24138%" aria-pressed="false" aria-controls="inclusion-views-detail"><span class="visually-hidden">大众普惠</span></button>
+<button type="button" class="concept-hit" data-select="south" style="left:6.94444%;top:48.27586%;width:86.11111%;height:17.24138%" aria-pressed="false" aria-controls="inclusion-views-detail"><span class="visually-hidden">全球南方普惠</span></button>
+<button type="button" class="concept-hit" data-select="shared" style="left:6.94444%;top:77.58621%;width:86.11111%;height:18.96552%" aria-pressed="true" aria-controls="inclusion-views-detail"><span class="visually-hidden">更多人的机会与能力</span></button>
 </div></div>
-<div class="concept-detail" id="access-capability-detail" role="status" aria-live="polite" aria-atomic="true"><strong>AI 普惠</strong><p>目标是扩大人的选择与实际能力。技术可获得性与人的成长需要共同推进；成效由真实学习、创造和处境改善来检验。</p></div>
-<div class="concept-foot"><span>“×”表达相互促进的行动框架，不是定量公式。</span><a href="assets/diagrams/access-capability-zh.svg" download>下载 SVG</a><a href="assets/diagrams/access-capability-zh.png" download>下载 PNG</a></div>
-<script type="application/json" class="concept-data">{"open": {"title": "用得起", "detail": "开放工具、知识和实践经验，降低学习与使用成本，让更多人有机会开始。开源是降低门槛的路径，仍需关注持续使用的实际成本。"}, "people": {"title": "用得好", "detail": "通过学习、协作和真实问题实践，积累技术能力与判断力。AI 支持人的思考，也需要人理解局限、检验证据并承担责任。"}, "outcome": {"title": "AI 普惠", "detail": "目标是扩大人的选择与实际能力。技术可获得性与人的成长需要共同推进；成效由真实学习、创造和处境改善来检验。"}, "support": {"title": "数据与评价", "detail": "数据与评价服务于贡献识别、资源配置和效果检验。它们是支撑方法，不替代人的判断，也不以单一分数定义人的价值。"}}</script></figure>
-<h2>二、我们的路径</h2>
-<p>我们相信，开源与人的成长能够相互促进：开放的技术和知识降低进入门槛，更多人的学习与实践又为开放生态带来新的工具、经验和贡献。</p>
-<p>我们从开发者出发。这里的开发者，既包括专业工程师，也包括正在学习、尝试构建工具和解决问题的人。支持他们获取资源、积累能力、形成作品，是让 AI 的价值抵达更多使用者的一条具体路径。</p>
-<p>但开发者成长不会自动等于大众受益。我们将持续关注所创造的工具究竟服务了谁，是否易于理解、负担和使用，是否真正回应了需求。我们也将关注资源不足的人群与地区，并与全球南方伙伴共同理解当地的语言、文化和使用条件，支持适合当地的实践，而不把单一经验当成普遍答案。</p>
-<p>数据与评价是这条路径上的支撑方法。我们希望通过可解释的数据和持续改进的评价，让多种贡献被看见，让资源分配更有依据，让行动效果能够被检验。评价的目的，是帮助人和社区成长，而不是制造新的门槛。</p>
-<figure class="concept" id="path-to-benefit" aria-labelledby="path-to-benefit-heading"><figcaption><span class="concept-index">FIG. 02</span><h3 id="path-to-benefit-heading">从开发者出发，让价值抵达更多人</h3></figcaption><p class="concept-hint">点选框内节点，查看它在行动中的含义。</p>
-<div class="concept-canvas concept-desktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 435" width="720" height="435" class="concept-svg" aria-hidden="true">
-<title id="path-to-benefit-zh-desktop-title">从开发者出发，让价值抵达更多人</title><desc id="path-to-benefit-zh-desktop-desc">开发者成长，经由真实应用走向更广泛受益，并接受需求与反馈的检验。</desc>
-<defs><marker id="path-to-benefit-zh-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#78928a" stroke-width="1.2"/></marker></defs>
+<div class="concept-detail" id="inclusion-views-detail" role="status" aria-live="polite" aria-atomic="true"><strong>更多人的机会与能力</strong><p>三个视角共同帮助我们判断谁获得了什么帮助、哪些需要仍未被回应。不同视角可以重叠，不代表三类互斥人群。</p></div>
+<div class="concept-foot"><span>三个视角相互补充，不是先后阶段。</span><div><a href="assets/diagrams/inclusion-views-zh.svg" download>SVG ↓</a><a href="assets/diagrams/inclusion-views-zh.png" download>PNG ↓</a></div></div>
+<script type="application/json" class="concept-data">{"default": "shared", "nodes": {"developers": {"title": "开发者普惠", "detail": "支持专业工程师，也为初学者提供入口。关注学习机会、实践能力与协作体验，让更多人能够参与公共品的创造。"}, "public": {"title": "大众普惠", "detail": "从使用者的需要出发，检查公共品及其应用是否易于理解、负担和使用，是否帮助人们学习、工作与改善处境。"}, "south": {"title": "全球南方普惠", "detail": "关注不同地区的语言、资源条件与发展机会，与当地伙伴共同理解需求、探索适合的实践，拓展普惠的地域视角。"}, "shared": {"title": "更多人的机会与能力", "detail": "三个视角共同帮助我们判断谁获得了什么帮助、哪些需要仍未被回应。不同视角可以重叠，不代表三类互斥人群。"}}}</script></figure>
+<h2 id="path">二、核心主张与路径</h2>
+<p><strong>AI 普惠 = 技术的普惠性（用得起）× 开发者的创造力（用得好）</strong></p>
+<p>技术的开放与可获得性，帮助更多人进入；开发者的学习、判断与创造，让技术走向有意义的应用。乘法表达两股力量相互促进的理念，不是用于计算成效的定量公式。</p>
+<p><strong>我们的路径是：AI → DPG（数字公共品）→ AI 普惠。</strong> 开发者利用 AI 创造和维护可共享的工具、知识与解决方案，让数字公共品经过复用、采用和本地化，转化为更多人能够获得的帮助。</p>
+<p>数字公共品可以包括开放的软件、AI 系统、数据和知识内容。我们重视开放许可、可复用性、公共价值与负责任的使用，并参考数字公共品标准持续改进。具体成果是否符合相应标准，应有可核验的依据。</p>
+<p>公共品需要有人维护，也需要进入真实场景。我们将持续追问：谁在使用？是否负担得起、理解得了、用得起来？哪些人仍然没有受益？</p>
+<span class="anchor-alias" id="path-to-benefit" aria-hidden="true"></span>
+<figure class="concept" id="goal-path" aria-labelledby="goal-path-heading"><figcaption><span class="concept-index">一个目标</span><h3 id="goal-path-heading">AI 经由数字公共品，走向普惠</h3></figcaption><p class="concept-hint">点选节点，查看关系与解释。</p>
+<p class="visually-hidden">AI 能力形成数字公共品，经采用和本地化，让更多人实际受益。</p>
+<div class="concept-canvas concept-desktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 320" width="980" height="320" class="concept-svg" aria-hidden="true">
+<title id="goal-path-zh-desktop-title">AI 经由数字公共品，走向普惠</title><desc id="goal-path-zh-desktop-desc">AI 能力形成数字公共品，经采用和本地化，让更多人实际受益。</desc>
+<defs><marker id="goal-path-zh-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
 <rect width="100%" height="100%" fill="#ffffff"/>
 <g transform="translate(0,0)">
-<path class="concept-edge" data-from="developers" data-to="applications" d="M220 125 H252" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#path-to-benefit-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="applications" data-to="benefit" d="M460 125 H492" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#path-to-benefit-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="benefit" data-to="feedback" d="M600 195 V343 H548" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#path-to-benefit-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="feedback" data-to="developers" d="M180 343 H120 V203" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#path-to-benefit-zh-desktop-arrow)" stroke-dasharray="5 5"/>
-<text x="360" y="239" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" text-anchor="middle" font-size="14" fill="#647c70">受益需要被验证</text>
-<g class="concept-node" data-node="developers"><rect x="20" y="55" width="200" height="140" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="120.0" y="77" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">01 / DEVELOP</text>
-<text x="120.0" y="103" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">开发者成长</text>
-<text x="120.0" y="129" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">学习 · 构建 · 协作</text>
+<path class="concept-edge" data-from="ai" data-to="dpg" data-group="" d="M220 130 H252" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="dpg" data-to="adoption" data-group="" d="M460 130 H492" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="adoption" data-to="benefit" data-group="" d="M700 130 H732" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="benefit" data-to="dpg" data-group="" d="M840 190 V265 H360 V198" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-zh-desktop-arrow)" stroke-dasharray="5 5"/>
+<text x="590" y="253" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="15" fill="#547464">使用反馈与持续改进</text>
+<g class="concept-node" data-node="ai" data-group=""><rect x="20" y="70" width="200" height="120" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="120.0" y="126.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">AI 能力</text>
+<text x="120.0" y="157.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">技术与人的创造</text>
 </g>
-<g class="concept-node" data-node="applications"><rect x="260" y="55" width="200" height="140" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="360.0" y="77" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">02 / APPLY</text>
-<text x="360.0" y="103" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">真实应用</text>
-<text x="360.0" y="129" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">回应具体问题</text>
+<g class="concept-node" data-node="dpg" data-group=""><rect x="260" y="70" width="200" height="120" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="360.0" y="126.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">数字公共品</text>
+<text x="360.0" y="157.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">DPG · 可共享、可复用</text>
 </g>
-<g class="concept-node" data-node="benefit"><rect x="500" y="55" width="200" height="140" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="600.0" y="77" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">03 / BENEFIT</text>
-<text x="600.0" y="103" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">更广泛受益</text>
-<text x="600.0" y="129" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">学习 · 创造 · 处境改善</text>
+<g class="concept-node" data-node="adoption" data-group=""><rect x="500" y="70" width="200" height="120" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="600.0" y="126.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">采用与本地化</text>
+<text x="600.0" y="157.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">走进真实场景</text>
 </g>
-<g class="concept-node" data-node="feedback"><rect x="180" y="292" width="360" height="102" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="360.0" y="314" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">LISTEN &amp; LEARN</text>
-<text x="360.0" y="340" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">需求与反馈</text>
-<text x="360.0" y="366" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">让真实使用反过来改善供给</text>
+<g class="concept-node" data-node="benefit" data-group=""><rect x="740" y="70" width="200" height="120" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="840.0" y="126.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">AI 普惠</text>
+<text x="840.0" y="157.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">更多人学习、创造与受益</text>
 </g>
 </g>
-</svg><div class="concept-controls" role="group" aria-label="从开发者出发，让价值抵达更多人">
-<button type="button" class="concept-hit" data-select="developers" style="left:2.77778%;top:12.64368%;width:27.77778%;height:32.18391%" aria-pressed="false" aria-controls="path-to-benefit-detail"><span class="visually-hidden">开发者成长</span></button>
-<button type="button" class="concept-hit" data-select="applications" style="left:36.11111%;top:12.64368%;width:27.77778%;height:32.18391%" aria-pressed="false" aria-controls="path-to-benefit-detail"><span class="visually-hidden">真实应用</span></button>
-<button type="button" class="concept-hit" data-select="benefit" style="left:69.44444%;top:12.64368%;width:27.77778%;height:32.18391%" aria-pressed="false" aria-controls="path-to-benefit-detail"><span class="visually-hidden">更广泛受益</span></button>
-<button type="button" class="concept-hit" data-select="feedback" style="left:25.00000%;top:67.12644%;width:50.00000%;height:23.44828%" aria-pressed="false" aria-controls="path-to-benefit-detail"><span class="visually-hidden">需求与反馈</span></button>
+</svg><div class="concept-controls" role="group" aria-label="AI 经由数字公共品，走向普惠">
+<button type="button" class="concept-hit" data-select="ai" style="left:2.04082%;top:21.87500%;width:20.40816%;height:37.50000%" aria-pressed="false" aria-controls="goal-path-detail"><span class="visually-hidden">AI 能力</span></button>
+<button type="button" class="concept-hit" data-select="dpg" style="left:26.53061%;top:21.87500%;width:20.40816%;height:37.50000%" aria-pressed="true" aria-controls="goal-path-detail"><span class="visually-hidden">数字公共品</span></button>
+<button type="button" class="concept-hit" data-select="adoption" style="left:51.02041%;top:21.87500%;width:20.40816%;height:37.50000%" aria-pressed="false" aria-controls="goal-path-detail"><span class="visually-hidden">采用与本地化</span></button>
+<button type="button" class="concept-hit" data-select="benefit" style="left:75.51020%;top:21.87500%;width:20.40816%;height:37.50000%" aria-pressed="false" aria-controls="goal-path-detail"><span class="visually-hidden">AI 普惠</span></button>
 </div></div>
-<div class="concept-canvas concept-mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 680" width="340" height="680" class="concept-svg" aria-hidden="true">
-<title id="path-to-benefit-zh-mobile-title">从开发者出发，让价值抵达更多人</title><desc id="path-to-benefit-zh-mobile-desc">开发者成长，经由真实应用走向更广泛受益，并接受需求与反馈的检验。</desc>
-<defs><marker id="path-to-benefit-zh-mobile-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#78928a" stroke-width="1.2"/></marker></defs>
+<div class="concept-canvas concept-mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="360" height="640" class="concept-svg" aria-hidden="true">
+<title id="goal-path-zh-mobile-title">AI 经由数字公共品，走向普惠</title><desc id="goal-path-zh-mobile-desc">AI 能力形成数字公共品，经采用和本地化，让更多人实际受益。</desc>
+<defs><marker id="goal-path-zh-mobile-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
 <rect width="100%" height="100%" fill="#ffffff"/>
 <g transform="translate(0,0)">
-<path class="concept-edge" data-from="developers" data-to="applications" d="M170 150 V191" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#path-to-benefit-zh-mobile-arrow)"/>
-<path class="concept-edge" data-from="applications" data-to="benefit" d="M170 319 V360" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#path-to-benefit-zh-mobile-arrow)"/>
-<path class="concept-edge" data-from="benefit" data-to="feedback" d="M170 488 V529" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#path-to-benefit-zh-mobile-arrow)"/>
-<path class="concept-edge" data-from="feedback" data-to="developers" d="M30 593 H12 V90 H22" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#path-to-benefit-zh-mobile-arrow)" stroke-dasharray="5 5"/>
-<g class="concept-node" data-node="developers"><rect x="30" y="30" width="280" height="120" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="52" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">01 / DEVELOP</text>
-<text x="170.0" y="78" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">开发者成长</text>
-<text x="170.0" y="104" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">学习 · 构建 · 协作</text>
+<path class="concept-edge" data-from="ai" data-to="dpg" data-group="" d="M180 120 V167" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="dpg" data-to="adoption" data-group="" d="M180 275 V322" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="adoption" data-to="benefit" data-group="" d="M180 430 V477" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="benefit" data-to="dpg" data-group="" d="M40 540 H15 V225 H32" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-zh-mobile-arrow)" stroke-dasharray="5 5"/>
+<g class="concept-node" data-node="ai" data-group=""><rect x="40" y="20" width="280" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="180.0" y="66.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">AI 能力</text>
+<text x="180.0" y="97.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">技术与人的创造</text>
 </g>
-<g class="concept-node" data-node="applications"><rect x="30" y="199" width="280" height="120" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="221" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">02 / APPLY</text>
-<text x="170.0" y="247" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">真实应用</text>
-<text x="170.0" y="273" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">回应具体问题</text>
+<g class="concept-node" data-node="dpg" data-group=""><rect x="40" y="175" width="280" height="100" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="180.0" y="221.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">数字公共品</text>
+<text x="180.0" y="252.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">DPG · 可共享、可复用</text>
 </g>
-<g class="concept-node" data-node="benefit"><rect x="30" y="368" width="280" height="120" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="390" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">03 / BENEFIT</text>
-<text x="170.0" y="416" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">更广泛受益</text>
-<text x="170.0" y="442" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">学习 · 创造 · 处境改善</text>
+<g class="concept-node" data-node="adoption" data-group=""><rect x="40" y="330" width="280" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="180.0" y="376.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">采用与本地化</text>
+<text x="180.0" y="407.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">走进真实场景</text>
 </g>
-<g class="concept-node" data-node="feedback"><rect x="30" y="537" width="280" height="112" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="559" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">LISTEN &amp; LEARN</text>
-<text x="170.0" y="585" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">需求与反馈</text>
-<text x="170.0" y="611" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">让真实使用反过来改善供给</text>
+<g class="concept-node" data-node="benefit" data-group=""><rect x="40" y="485" width="280" height="110" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="180.0" y="536.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">AI 普惠</text>
+<text x="180.0" y="567.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">更多人学习、创造与受益</text>
 </g>
 </g>
-</svg><div class="concept-controls" role="group" aria-label="从开发者出发，让价值抵达更多人">
-<button type="button" class="concept-hit" data-select="developers" style="left:8.82353%;top:4.41176%;width:82.35294%;height:17.64706%" aria-pressed="false" aria-controls="path-to-benefit-detail"><span class="visually-hidden">开发者成长</span></button>
-<button type="button" class="concept-hit" data-select="applications" style="left:8.82353%;top:29.26471%;width:82.35294%;height:17.64706%" aria-pressed="false" aria-controls="path-to-benefit-detail"><span class="visually-hidden">真实应用</span></button>
-<button type="button" class="concept-hit" data-select="benefit" style="left:8.82353%;top:54.11765%;width:82.35294%;height:17.64706%" aria-pressed="false" aria-controls="path-to-benefit-detail"><span class="visually-hidden">更广泛受益</span></button>
-<button type="button" class="concept-hit" data-select="feedback" style="left:8.82353%;top:78.97059%;width:82.35294%;height:16.47059%" aria-pressed="false" aria-controls="path-to-benefit-detail"><span class="visually-hidden">需求与反馈</span></button>
+</svg><div class="concept-controls" role="group" aria-label="AI 经由数字公共品，走向普惠">
+<button type="button" class="concept-hit" data-select="ai" style="left:11.11111%;top:3.12500%;width:77.77778%;height:15.62500%" aria-pressed="false" aria-controls="goal-path-detail"><span class="visually-hidden">AI 能力</span></button>
+<button type="button" class="concept-hit" data-select="dpg" style="left:11.11111%;top:27.34375%;width:77.77778%;height:15.62500%" aria-pressed="true" aria-controls="goal-path-detail"><span class="visually-hidden">数字公共品</span></button>
+<button type="button" class="concept-hit" data-select="adoption" style="left:11.11111%;top:51.56250%;width:77.77778%;height:15.62500%" aria-pressed="false" aria-controls="goal-path-detail"><span class="visually-hidden">采用与本地化</span></button>
+<button type="button" class="concept-hit" data-select="benefit" style="left:11.11111%;top:75.78125%;width:77.77778%;height:17.18750%" aria-pressed="false" aria-controls="goal-path-detail"><span class="visually-hidden">AI 普惠</span></button>
 </div></div>
-<div class="concept-detail" id="path-to-benefit-detail" role="status" aria-live="polite" aria-atomic="true"><strong>更广泛受益</strong><p>检查谁实际获得帮助、发生了什么变化，以及哪些人仍未被覆盖。关注资源不足的人群与地区，并与当地伙伴共同理解使用条件。</p></div>
-<div class="concept-foot"><span>这是需要实践验证的路径，不是自动发生的因果关系。</span><a href="assets/diagrams/path-to-benefit-zh.svg" download>下载 SVG</a><a href="assets/diagrams/path-to-benefit-zh.png" download>下载 PNG</a></div>
-<script type="application/json" class="concept-data">{"developers": {"title": "开发者成长", "detail": "从正在学习、构建工具和解决问题的人出发。初学者也应有进入的机会；代码、文档、教学和社区协作都可以创造价值。"}, "applications": {"title": "真实应用", "detail": "将能力转化为工具、服务和知识，回应具体场景中的需要。关注是否容易理解、负担和使用，而不只关注技术是否先进。"}, "benefit": {"title": "更广泛受益", "detail": "检查谁实际获得帮助、发生了什么变化，以及哪些人仍未被覆盖。关注资源不足的人群与地区，并与当地伙伴共同理解使用条件。"}, "feedback": {"title": "需求与反馈", "detail": "把使用者的困难、经验和不同意见带回学习与创造。开发者数量、项目数量或工具触达，都不能单独代替公众受益的证据。"}}</script></figure>
-<h2>三、我们的行动与承诺</h2>
-<p><strong>开放资源与知识，让更多人能够开始。</strong> 我们将推动可共享的工具、课程、案例和实践经验，探索降低学习与使用成本的支持方式。既为初学者保留进入的机会，也让持续贡献获得认可与支持。已有贡献不应成为获得基础学习机会的唯一条件。</p>
-<p><strong>支持学习与创造，让能力在实践中生长。</strong> 我们将鼓励从真实问题出发的学习、协作和项目实践，帮助参与者从理解工具走向构建应用，并在使用反馈中改进。我们重视技术能力，也重视判断输出、追问依据、识别局限和承担责任的能力。AI 可以参与思考，但不应成为放弃思考的理由。</p>
-<p><strong>让贡献被看见，也让评价接受检验。</strong> 代码、文档、维护、教学、翻译、社区协作和使用反馈，都可能创造重要价值。我们不以单一分数定义人的价值，不把可测量的活动等同于全部贡献。我们将说明评价方法及其局限，为质疑、纠错和改进提供渠道，并尊重参与者对个人数据使用的知情与选择。</p>
-<p><strong>公开行动进展，对实际效果负责。</strong> 我们将说明行动目标、参与条件和支持边界，区分计划、试点与已完成事项，不把愿望表述为成果。我们将结合证据与参与者反馈，检查谁获得了什么帮助、哪些问题仍未解决，并据此调整行动。对尚未证实的效果，我们保持诚实；对未能实现的承诺，我们说明原因并改进。</p>
-<p>我们欢迎企业、公共机构、教育机构与社区共同投入知识、技术、资源和机会，探索持续支持普惠的机制。合作应尊重参与者的自主选择，说明各方责任，避免以不透明的数据使用或不合理的附加条件换取支持。</p>
-<figure class="concept" id="learning-loop" aria-labelledby="learning-loop-heading"><figcaption><span class="concept-index">FIG. 03</span><h3 id="learning-loop-heading">让实践，持续检验承诺</h3></figcaption><p class="concept-hint">点选框内节点，查看它在行动中的含义。</p>
-<div class="concept-canvas concept-desktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 568" width="720" height="568" class="concept-svg" aria-hidden="true">
-<title id="learning-loop-zh-desktop-title">让实践，持续检验承诺</title><desc id="learning-loop-zh-desktop-desc">行动、观察、评价与改进形成循环；多元贡献、知情选择和纠错贯穿全程。</desc>
-<defs><marker id="learning-loop-zh-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#78928a" stroke-width="1.2"/></marker></defs>
+<div class="concept-detail" id="goal-path-detail" role="status" aria-live="polite" aria-atomic="true"><strong>数字公共品</strong><p>公共品承载可以持续共享的软件、AI 系统、数据与知识。关注开放许可、复用条件、公共价值与负责任的使用。</p></div>
+<div class="concept-foot"><span>实际受益需要应用与证据来检验。</span><div><a href="assets/diagrams/goal-path-zh.svg" download>SVG ↓</a><a href="assets/diagrams/goal-path-zh.png" download>PNG ↓</a></div></div>
+<script type="application/json" class="concept-data">{"default": "dpg", "nodes": {"ai": {"title": "AI 能力", "detail": "以开放技术和开发者创造力为起点，将 AI 能力用于真实问题，形成可以分享、改进与维护的成果。"}, "dpg": {"title": "数字公共品", "detail": "公共品承载可以持续共享的软件、AI 系统、数据与知识。关注开放许可、复用条件、公共价值与负责任的使用。"}, "adoption": {"title": "采用与本地化", "detail": "维护、文档、服务与本地化帮助公共品进入实际使用。根据语言、成本与场景改进，让开放成果成为可用的帮助。"}, "benefit": {"title": "AI 普惠", "detail": "通过参与者体验和实际变化检验成效。关注谁获得帮助、是否形成能力，以及哪些需要仍未被回应，并将反馈带回公共品改进。"}}}</script></figure>
+<h2 id="forces">三、两股力量</h2>
+<p><strong>开源之力，降低门槛。</strong> 从 AI 基础设施、模型到智能体与应用，开放的技术和知识让学习、改进与复用成为可能。我们支持清晰的许可、可理解的文档和持续维护，关注获取技术与长期使用的实际成本。</p>
+<p><strong>开发者之力，放大创造。</strong> 从 AI Learner 的学习探索，到 AI Builder 的应用构建，再到 AI Engineer 的工程实践，不同阶段的人都可以在真实问题中成长。学习、作品、协作和反馈相互连接，让知识逐渐转化为解决问题的能力。</p>
+<p>开源项目与社区是两股力量相遇的地方。技术降低进入门槛，更多人的实践又带来新的工具、知识和维护力量，共同丰富数字公共品。人的判断力、责任意识与创造力，是这一过程的重要部分。</p>
+<span class="anchor-alias" id="access-capability" aria-hidden="true"></span>
+<figure class="concept" id="dual-forces" aria-labelledby="dual-forces-heading"><figcaption><span class="concept-index">两股力量</span><h3 id="dual-forces-heading">开源降低门槛，创造带来价值</h3></figcaption><p class="concept-hint">点选节点，查看关系与解释。</p>
+<p class="visually-hidden">开源之力与开发者之力相互促进，共同创造和维护数字公共品。</p>
+<div class="concept-canvas concept-desktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 420" width="980" height="420" class="concept-svg" aria-hidden="true">
+<title id="dual-forces-zh-desktop-title">开源降低门槛，创造带来价值</title><desc id="dual-forces-zh-desktop-desc">开源之力与开发者之力相互促进，共同创造和维护数字公共品。</desc>
+<defs><marker id="dual-forces-zh-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
 <rect width="100%" height="100%" fill="#ffffff"/>
 <g transform="translate(0,0)">
-<path class="concept-edge" data-from="act" data-to="observe" d="M315 96 H397" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="observe" data-to="evaluate" d="M552.5 152 V259" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="evaluate" data-to="improve" d="M405 323 H323" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="improve" data-to="act" d="M167.5 267 V160" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-zh-desktop-arrow)"/>
-<text x="360" y="212" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" text-anchor="middle" font-size="14" fill="#647c70">公开记录 · 持续学习</text>
-<g class="concept-node" data-node="act"><rect x="20" y="40" width="295" height="112" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="167.5" y="62" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">01 / ACT</text>
-<text x="167.5" y="88" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">行动实践</text>
-<text x="167.5" y="114" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">明确对象、条件与支持边界</text>
+<path class="concept-edge" data-from="open" data-to="commons" data-group="" d="M222 195 V240 H480 V277" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#dual-forces-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="people" data-to="commons" data-group="" d="M737 195 V240 H480" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="commons" data-to="open" data-group="" d="M245 340 H75 V203" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#dual-forces-zh-desktop-arrow)" stroke-dasharray="5 5"/>
+<text x="480" y="130" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="30" fill="#547464">×</text>
+<g class="concept-node" data-node="open" data-group=""><rect x="40" y="40" width="365" height="155" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="222.5" y="104.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">开源之力</text>
+<text x="222.5" y="135.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">用得起</text>
+<text x="222.5" y="154.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">AI Infra · AI Model · AI Agent</text>
 </g>
-<g class="concept-node" data-node="observe"><rect x="405" y="40" width="295" height="112" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="552.5" y="62" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">02 / OBSERVE</text>
-<text x="552.5" y="88" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">观察变化</text>
-<text x="552.5" y="114" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">结合证据与参与者反馈</text>
+<g class="concept-node" data-node="people" data-group=""><rect x="555" y="40" width="365" height="155" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="737.5" y="104.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">开发者之力</text>
+<text x="737.5" y="135.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">用得好</text>
+<text x="737.5" y="154.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">AI Learner · AI Builder · AI Engineer</text>
 </g>
-<g class="concept-node" data-node="evaluate"><rect x="405" y="267" width="295" height="112" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="552.5" y="289" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">03 / EVALUATE</text>
-<text x="552.5" y="315" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">评价与反思</text>
-<text x="552.5" y="341" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">识别效果、局限与遗漏</text>
-</g>
-<g class="concept-node" data-node="improve"><rect x="20" y="267" width="295" height="112" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="167.5" y="289" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">04 / IMPROVE</text>
-<text x="167.5" y="315" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">调整与改进</text>
-<text x="167.5" y="341" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">修正方法、支持与下一步行动</text>
-</g>
-<g class="concept-node" data-node="boundaries"><rect x="20" y="443" width="680" height="96" rx="5" fill="#f8faf9" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="360.0" y="465" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">THROUGHOUT THE CYCLE</text>
-<text x="360.0" y="491" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">贯穿全程的边界</text>
-<text x="360.0" y="517" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">多元贡献 · 知情选择 · 纠错改进</text>
+<g class="concept-node" data-node="commons" data-group=""><rect x="245" y="285" width="470" height="110" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="480.0" y="336.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">共同创造与维护</text>
+<text x="480.0" y="367.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">让数字公共品持续丰富</text>
 </g>
 </g>
-</svg><div class="concept-controls" role="group" aria-label="让实践，持续检验承诺">
-<button type="button" class="concept-hit" data-select="act" style="left:2.77778%;top:7.04225%;width:40.97222%;height:19.71831%" aria-pressed="false" aria-controls="learning-loop-detail"><span class="visually-hidden">行动实践</span></button>
-<button type="button" class="concept-hit" data-select="observe" style="left:56.25000%;top:7.04225%;width:40.97222%;height:19.71831%" aria-pressed="false" aria-controls="learning-loop-detail"><span class="visually-hidden">观察变化</span></button>
-<button type="button" class="concept-hit" data-select="evaluate" style="left:56.25000%;top:47.00704%;width:40.97222%;height:19.71831%" aria-pressed="false" aria-controls="learning-loop-detail"><span class="visually-hidden">评价与反思</span></button>
-<button type="button" class="concept-hit" data-select="improve" style="left:2.77778%;top:47.00704%;width:40.97222%;height:19.71831%" aria-pressed="false" aria-controls="learning-loop-detail"><span class="visually-hidden">调整与改进</span></button>
-<button type="button" class="concept-hit" data-select="boundaries" style="left:2.77778%;top:77.99296%;width:94.44444%;height:16.90141%" aria-pressed="false" aria-controls="learning-loop-detail"><span class="visually-hidden">贯穿全程的边界</span></button>
+</svg><div class="concept-controls" role="group" aria-label="开源降低门槛，创造带来价值">
+<button type="button" class="concept-hit" data-select="open" style="left:4.08163%;top:9.52381%;width:37.24490%;height:36.90476%" aria-pressed="false" aria-controls="dual-forces-detail"><span class="visually-hidden">开源之力</span></button>
+<button type="button" class="concept-hit" data-select="people" style="left:56.63265%;top:9.52381%;width:37.24490%;height:36.90476%" aria-pressed="false" aria-controls="dual-forces-detail"><span class="visually-hidden">开发者之力</span></button>
+<button type="button" class="concept-hit" data-select="commons" style="left:25.00000%;top:67.85714%;width:47.95918%;height:26.19048%" aria-pressed="true" aria-controls="dual-forces-detail"><span class="visually-hidden">共同创造与维护</span></button>
 </div></div>
-<div class="concept-canvas concept-mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 857" width="340" height="857" class="concept-svg" aria-hidden="true">
-<title id="learning-loop-zh-mobile-title">让实践，持续检验承诺</title><desc id="learning-loop-zh-mobile-desc">行动、观察、评价与改进形成循环；多元贡献、知情选择和纠错贯穿全程。</desc>
-<defs><marker id="learning-loop-zh-mobile-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#78928a" stroke-width="1.2"/></marker></defs>
+<div class="concept-canvas concept-mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 590" width="360" height="590" class="concept-svg" aria-hidden="true">
+<title id="dual-forces-zh-mobile-title">开源降低门槛，创造带来价值</title><desc id="dual-forces-zh-mobile-desc">开源之力与开发者之力相互促进，共同创造和维护数字公共品。</desc>
+<defs><marker id="dual-forces-zh-mobile-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
 <rect width="100%" height="100%" fill="#ffffff"/>
 <g transform="translate(0,0)">
-<path class="concept-edge" data-from="act" data-to="observe" d="M170 145 V186" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-zh-mobile-arrow)"/>
-<path class="concept-edge" data-from="observe" data-to="evaluate" d="M170 309 V350" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-zh-mobile-arrow)"/>
-<path class="concept-edge" data-from="evaluate" data-to="improve" d="M170 473 V514" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-zh-mobile-arrow)"/>
-<path class="concept-edge" data-from="improve" data-to="act" d="M30 580 H12 V87 H22" fill="none" stroke="#8ba299" stroke-width="1.4" marker-end="url(#learning-loop-zh-mobile-arrow)"/>
-<text x="170" y="673" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" text-anchor="middle" font-size="13" fill="#647c70">公开记录 · 持续学习</text>
-<g class="concept-node" data-node="act"><rect x="30" y="30" width="280" height="115" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="52" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">01 / ACT</text>
-<text x="170.0" y="78" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">行动实践</text>
-<text x="170.0" y="104" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">明确对象、条件与支持边界</text>
+<path class="concept-edge" data-from="open" data-to="commons" data-group="" d="M335 95 H350 V410 H180 V452" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#dual-forces-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="people" data-to="commons" data-group="" d="M180 370 V452" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#dual-forces-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="commons" data-to="open" data-group="" d="M25 515 H10 V95 H17" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#dual-forces-zh-mobile-arrow)" stroke-dasharray="5 5"/>
+<text x="180" y="205" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="30" fill="#547464">×</text>
+<g class="concept-node" data-node="open" data-group=""><rect x="25" y="20" width="310" height="150" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="180.0" y="82.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">开源之力</text>
+<text x="180.0" y="113.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">用得起</text>
+<text x="180.0" y="132.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">AI Infra · AI Model · AI Agent</text>
 </g>
-<g class="concept-node" data-node="observe"><rect x="30" y="194" width="280" height="115" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="216" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">02 / OBSERVE</text>
-<text x="170.0" y="242" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">观察变化</text>
-<text x="170.0" y="268" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">结合证据与参与者反馈</text>
+<g class="concept-node" data-node="people" data-group=""><rect x="25" y="220" width="310" height="150" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="180.0" y="272.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">开发者之力</text>
+<text x="180.0" y="303.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">用得好</text>
+<text x="180.0" y="322.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">AI Learner · AI Builder · AI</text>
+<text x="180.0" y="341.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">Engineer</text>
 </g>
-<g class="concept-node" data-node="evaluate"><rect x="30" y="358" width="280" height="115" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="380" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">03 / EVALUATE</text>
-<text x="170.0" y="406" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">评价与反思</text>
-<text x="170.0" y="432" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">识别效果、局限与遗漏</text>
-</g>
-<g class="concept-node" data-node="improve"><rect x="30" y="522" width="280" height="115" rx="5" fill="#fff" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="544" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">04 / IMPROVE</text>
-<text x="170.0" y="570" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">调整与改进</text>
-<text x="170.0" y="596" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">修正方法、支持与下一步行动</text>
-</g>
-<g class="concept-node" data-node="boundaries"><rect x="30" y="705" width="280" height="123" rx="5" fill="#f8faf9" stroke="#9aafa4" stroke-width="1.2"/>
-<text x="170.0" y="727" font-family="Arial,sans-serif" text-anchor="middle" font-size="9.5" letter-spacing="1.1" fill="#5a7867">THROUGHOUT THE CYCLE</text>
-<text x="170.0" y="753" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#153126">贯穿全程的边界</text>
-<text x="170.0" y="779" font-family="Arial, Noto Sans CJK SC, Source Han Sans SC, sans-serif" font-size="14" text-anchor="middle" fill="#536c5f">多元贡献 · 知情选择 · 纠错改进</text>
+<g class="concept-node" data-node="commons" data-group=""><rect x="25" y="460" width="310" height="110" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="180.0" y="511.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">共同创造与维护</text>
+<text x="180.0" y="542.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">让数字公共品持续丰富</text>
 </g>
 </g>
-</svg><div class="concept-controls" role="group" aria-label="让实践，持续检验承诺">
-<button type="button" class="concept-hit" data-select="act" style="left:8.82353%;top:3.50058%;width:82.35294%;height:13.41890%" aria-pressed="false" aria-controls="learning-loop-detail"><span class="visually-hidden">行动实践</span></button>
-<button type="button" class="concept-hit" data-select="observe" style="left:8.82353%;top:22.63711%;width:82.35294%;height:13.41890%" aria-pressed="false" aria-controls="learning-loop-detail"><span class="visually-hidden">观察变化</span></button>
-<button type="button" class="concept-hit" data-select="evaluate" style="left:8.82353%;top:41.77363%;width:82.35294%;height:13.41890%" aria-pressed="false" aria-controls="learning-loop-detail"><span class="visually-hidden">评价与反思</span></button>
-<button type="button" class="concept-hit" data-select="improve" style="left:8.82353%;top:60.91015%;width:82.35294%;height:13.41890%" aria-pressed="false" aria-controls="learning-loop-detail"><span class="visually-hidden">调整与改进</span></button>
-<button type="button" class="concept-hit" data-select="boundaries" style="left:8.82353%;top:82.26371%;width:82.35294%;height:14.35239%" aria-pressed="false" aria-controls="learning-loop-detail"><span class="visually-hidden">贯穿全程的边界</span></button>
+</svg><div class="concept-controls" role="group" aria-label="开源降低门槛，创造带来价值">
+<button type="button" class="concept-hit" data-select="open" style="left:6.94444%;top:3.38983%;width:86.11111%;height:25.42373%" aria-pressed="false" aria-controls="dual-forces-detail"><span class="visually-hidden">开源之力</span></button>
+<button type="button" class="concept-hit" data-select="people" style="left:6.94444%;top:37.28814%;width:86.11111%;height:25.42373%" aria-pressed="false" aria-controls="dual-forces-detail"><span class="visually-hidden">开发者之力</span></button>
+<button type="button" class="concept-hit" data-select="commons" style="left:6.94444%;top:77.96610%;width:86.11111%;height:18.64407%" aria-pressed="true" aria-controls="dual-forces-detail"><span class="visually-hidden">共同创造与维护</span></button>
 </div></div>
-<div class="concept-detail" id="learning-loop-detail" role="status" aria-live="polite" aria-atomic="true"><strong>贯穿全程的边界</strong><p>尊重不同形式的贡献，不以单一分数定义人；尊重数据使用的知情与选择；允许质疑、纠错和持续改进。评价始终服务于人的成长。</p></div>
-<div class="concept-foot"><span>评价帮助人和社区成长，不制造新的门槛。</span><a href="assets/diagrams/learning-loop-zh.svg" download>下载 SVG</a><a href="assets/diagrams/learning-loop-zh.png" download>下载 PNG</a></div>
-<script type="application/json" class="concept-data">{"act": {"title": "行动实践", "detail": "从清晰的服务对象与真实问题开始，说明参与条件、实际资源和责任人。区分计划、试点与已完成事项，不把愿望写成成果。"}, "observe": {"title": "观察变化", "detail": "记录谁获得了什么帮助、遇到了哪些困难。把实际交付、使用变化和参与者反馈放在一起理解，并尊重个人数据选择。"}, "evaluate": {"title": "评价与反思", "detail": "解释评价方法及其局限，检查行动是否回应需求、是否遗漏特定人群。用多种证据形成判断，不把可测量的活动等同于全部价值。"}, "improve": {"title": "调整与改进", "detail": "依据证据与反馈调整行动和资源支持。说明未能兑现的承诺与原因，公开改进记录，再进入下一轮实践。"}, "boundaries": {"title": "贯穿全程的边界", "detail": "尊重不同形式的贡献，不以单一分数定义人；尊重数据使用的知情与选择；允许质疑、纠错和持续改进。评价始终服务于人的成长。"}}</script></figure>
-<h2>四、我们的邀请</h2>
-<p>AI 普惠需要长期实践，也需要多种力量共同参与。</p>
-<p>如果你正在学习，可以提出问题、分享困难和使用体验；如果你正在创造，可以贡献工具、知识和实践经验；如果你能够提供资源，可以与我们共同探索公开、清晰、可持续的支持方式；如果你看到不足，也欢迎提出不同意见，帮助我们修正判断。</p>
-<p>我们不把这份宣言视为已经完成的答案。它是 X-lab AI 对自身方向的公开承诺，也是共同参与的起点。我们将以公开记录连接愿景与行动，让实践不断检验这份承诺。</p>
-<p><strong>以开放连接智慧，以 AI 拓展认知。</strong></p>
-<p><strong>X-lab AI，以开源降低门槛，以成长释放创造力，让 AI 用得起，更用得好。</strong></p></article></section>
-<section class="action" id="action"><div class="kicker">FROM VISION TO PRACTICE</div><div class="action-grid"><div><h2>让实践，<br>检验承诺。</h2><p>第一项行动：宣言公开共建。</p></div><div class="progress"><h1>行动进展</h1>
-<p>我们用公开记录连接宣言与实践。每项行动分别说明状态、参与方式、证据和下一步，不以计划代替成果。</p>
+<div class="concept-detail" id="dual-forces-detail" role="status" aria-live="polite" aria-atomic="true"><strong>共同创造与维护</strong><p>项目与社区让两股力量相遇。更多人的参与带来工具、知识与维护力量，改善开放技术，又为新的学习和创造提供基础。</p></div>
+<div class="concept-foot"><span>“×”表达相互促进的理念，不是定量公式。</span><div><a href="assets/diagrams/dual-forces-zh.svg" download>SVG ↓</a><a href="assets/diagrams/dual-forces-zh.png" download>PNG ↓</a></div></div>
+<script type="application/json" class="concept-data">{"default": "commons", "nodes": {"open": {"title": "开源之力", "detail": "开放的技术、知识和文档降低进入门槛。清晰许可、持续维护和实际使用成本，共同影响技术能否被长期获取与复用。"}, "people": {"title": "开发者之力", "detail": "学习、作品、协作和反馈连接成长。支持不同阶段的人发展技术能力、判断力与责任意识，把工具用于有意义的问题。"}, "commons": {"title": "共同创造与维护", "detail": "项目与社区让两股力量相遇。更多人的参与带来工具、知识与维护力量，改善开放技术，又为新的学习和创造提供基础。"}}}</script></figure>
+<h2 id="core">四、共同内核</h2>
+<p><strong>数据与评价，是连接两股力量、支持两个飞轮运转的共同内核。</strong> 我们希望让贡献被看见，让成长有依据，让资源支持更有针对性，并让行动效果接受检验。</p>
+<p>这一内核包含四类相互配合的工作：平台连接参与者与实践，数据提供可追溯的证据，评价方法与基准帮助解释贡献，评价研究检验方法本身。它们共同服务于决策与改进，不构成机械的先后流程。</p>
+<p>我们的实践基础包括 OpenDigger 的开源数据与指标工作、OpenRank 的协作网络评价方法，以及 OpenShare 对贡献、能力和资源的连接探索。OSIDX 的发展指数工作与 BenchCouncil 的评价科学研究，为基准和方法提供进一步参考。具体项目与公开材料见行动进展。</p>
+<p>评价应当帮助人和社区成长。代码、文档、维护、教学、翻译和社区协作都值得被看见。我们将说明数据覆盖与方法的局限，尊重参与者的知情与选择，为质疑、纠错和改进提供渠道，不以单一分数定义人的价值。</p>
+<figure class="concept" id="evaluation-core" aria-labelledby="evaluation-core-heading"><figcaption><span class="concept-index">一个内核</span><h3 id="evaluation-core-heading">让贡献可见，让行动有据</h3></figcaption><p class="concept-hint">点选节点，查看关系与解释。</p>
+<p class="visually-hidden">平台、数据、基准与理论共同支持数据与评价内核。</p>
+<div class="concept-canvas concept-desktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 460" width="980" height="460" class="concept-svg" aria-hidden="true">
+<title id="evaluation-core-zh-desktop-title">让贡献可见，让行动有据</title><desc id="evaluation-core-zh-desktop-desc">平台、数据、基准与理论共同支持数据与评价内核。</desc>
+<defs><marker id="evaluation-core-zh-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g transform="translate(0,0)">
+<path class="concept-edge" data-from="platform" data-to="core" data-group="" d="M320 95 H365 V185" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="data" data-to="core" data-group="" d="M640 95 H595 V185" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="methods" data-to="core" data-group="" d="M320 385 H365 V285" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="research" data-to="core" data-group="" d="M640 385 H595 V285" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<g class="concept-node" data-node="platform" data-group=""><rect x="25" y="30" width="295" height="130" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="172.5" y="82.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">评价平台</text>
+<text x="172.5" y="113.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">连接参与者与实践</text>
+<text x="172.5" y="132.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">OpenShare</text>
+</g>
+<g class="concept-node" data-node="data" data-group=""><rect x="640" y="30" width="295" height="130" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="787.5" y="82.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">评价数据</text>
+<text x="787.5" y="113.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">提供可追溯的证据</text>
+<text x="787.5" y="132.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">OpenDigger</text>
+</g>
+<g class="concept-node" data-node="core" data-group=""><rect x="320" y="185" width="320" height="100" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="480.0" y="231.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">数据与评价</text>
+<text x="480.0" y="262.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">识别贡献 · 支持成长 · 检验效果</text>
+</g>
+<g class="concept-node" data-node="methods" data-group=""><rect x="25" y="335" width="295" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="172.5" y="372.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">评价方法与基准</text>
+<text x="172.5" y="403.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">解释贡献与发展</text>
+<text x="172.5" y="422.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">OpenRank / OSIDX</text>
+</g>
+<g class="concept-node" data-node="research" data-group=""><rect x="640" y="335" width="295" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="787.5" y="372.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">评价理论与研究</text>
+<text x="787.5" y="403.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">检验方法本身</text>
+<text x="787.5" y="422.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">BenchCouncil</text>
+</g>
+</g>
+</svg><div class="concept-controls" role="group" aria-label="让贡献可见，让行动有据">
+<button type="button" class="concept-hit" data-select="platform" style="left:2.55102%;top:6.52174%;width:30.10204%;height:28.26087%" aria-pressed="false" aria-controls="evaluation-core-detail"><span class="visually-hidden">评价平台</span></button>
+<button type="button" class="concept-hit" data-select="data" style="left:65.30612%;top:6.52174%;width:30.10204%;height:28.26087%" aria-pressed="false" aria-controls="evaluation-core-detail"><span class="visually-hidden">评价数据</span></button>
+<button type="button" class="concept-hit" data-select="core" style="left:32.65306%;top:40.21739%;width:32.65306%;height:21.73913%" aria-pressed="true" aria-controls="evaluation-core-detail"><span class="visually-hidden">数据与评价</span></button>
+<button type="button" class="concept-hit" data-select="methods" style="left:2.55102%;top:72.82609%;width:30.10204%;height:21.73913%" aria-pressed="false" aria-controls="evaluation-core-detail"><span class="visually-hidden">评价方法与基准</span></button>
+<button type="button" class="concept-hit" data-select="research" style="left:65.30612%;top:72.82609%;width:30.10204%;height:21.73913%" aria-pressed="false" aria-controls="evaluation-core-detail"><span class="visually-hidden">评价理论与研究</span></button>
+</div></div>
+<div class="concept-canvas concept-mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" width="360" height="640" class="concept-svg" aria-hidden="true">
+<title id="evaluation-core-zh-mobile-title">让贡献可见，让行动有据</title><desc id="evaluation-core-zh-mobile-desc">平台、数据、基准与理论共同支持数据与评价内核。</desc>
+<defs><marker id="evaluation-core-zh-mobile-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g transform="translate(0,0)">
+<path class="concept-edge" data-from="platform" data-to="core" data-group="" d="M92 160 V200 H130 V240" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="data" data-to="core" data-group="" d="M268 160 V200 H230 V240" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="methods" data-to="core" data-group="" d="M92 460 V410 H130 V360" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="research" data-to="core" data-group="" d="M268 460 V410 H230 V360" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<g class="concept-node" data-node="platform" data-group=""><rect x="15" y="20" width="155" height="140" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="92.5" y="76.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">评价平台</text>
+<text x="92.5" y="102.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">连接参与者与实践</text>
+<text x="92.5" y="119.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">OpenShare</text>
+</g>
+<g class="concept-node" data-node="data" data-group=""><rect x="190" y="20" width="155" height="140" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="267.5" y="76.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">评价数据</text>
+<text x="267.5" y="102.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">提供可追溯的证据</text>
+<text x="267.5" y="119.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">OpenDigger</text>
+</g>
+<g class="concept-node" data-node="core" data-group=""><rect x="40" y="240" width="280" height="120" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="180.0" y="296.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">数据与评价</text>
+<text x="180.0" y="327.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">识别贡献 · 支持成长 · 检验效果</text>
+</g>
+<g class="concept-node" data-node="methods" data-group=""><rect x="15" y="460" width="155" height="150" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="92.5" y="521.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">评价方法与基准</text>
+<text x="92.5" y="547.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">解释贡献与发展</text>
+<text x="92.5" y="564.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">OpenRank / OSIDX</text>
+</g>
+<g class="concept-node" data-node="research" data-group=""><rect x="190" y="460" width="155" height="150" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="267.5" y="521.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">评价理论与研究</text>
+<text x="267.5" y="547.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">检验方法本身</text>
+<text x="267.5" y="564.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">BenchCouncil</text>
+</g>
+</g>
+</svg><div class="concept-controls" role="group" aria-label="让贡献可见，让行动有据">
+<button type="button" class="concept-hit" data-select="platform" style="left:4.16667%;top:3.12500%;width:43.05556%;height:21.87500%" aria-pressed="false" aria-controls="evaluation-core-detail"><span class="visually-hidden">评价平台</span></button>
+<button type="button" class="concept-hit" data-select="data" style="left:52.77778%;top:3.12500%;width:43.05556%;height:21.87500%" aria-pressed="false" aria-controls="evaluation-core-detail"><span class="visually-hidden">评价数据</span></button>
+<button type="button" class="concept-hit" data-select="core" style="left:11.11111%;top:37.50000%;width:77.77778%;height:18.75000%" aria-pressed="true" aria-controls="evaluation-core-detail"><span class="visually-hidden">数据与评价</span></button>
+<button type="button" class="concept-hit" data-select="methods" style="left:4.16667%;top:71.87500%;width:43.05556%;height:23.43750%" aria-pressed="false" aria-controls="evaluation-core-detail"><span class="visually-hidden">评价方法与基准</span></button>
+<button type="button" class="concept-hit" data-select="research" style="left:52.77778%;top:71.87500%;width:43.05556%;height:23.43750%" aria-pressed="false" aria-controls="evaluation-core-detail"><span class="visually-hidden">评价理论与研究</span></button>
+</div></div>
+<div class="concept-detail" id="evaluation-core-detail" role="status" aria-live="polite" aria-atomic="true"><strong>数据与评价</strong><p>共同内核连接证据与行动。评价应服务于人的成长，尊重多种贡献和知情选择，允许质疑、纠错与持续改进。</p></div>
+<div class="concept-foot"><span>四类工作协同配合，不是先后流程。</span><div><a href="assets/diagrams/evaluation-core-zh.svg" download>SVG ↓</a><a href="assets/diagrams/evaluation-core-zh.png" download>PNG ↓</a></div></div>
+<script type="application/json" class="concept-data">{"default": "core", "nodes": {"platform": {"title": "评价平台", "detail": "平台连接贡献、能力和资源需求，让识别结果能够进入实践。OpenShare 提供开发者经济生态的探索入口。"}, "data": {"title": "评价数据", "detail": "OpenDigger 汇集开源相关数据并生产指标，为理解协作、社区和生态提供基础。数据需要解释覆盖范围、时间口径与局限。"}, "core": {"title": "数据与评价", "detail": "共同内核连接证据与行动。评价应服务于人的成长，尊重多种贡献和知情选择，允许质疑、纠错与持续改进。"}, "methods": {"title": "评价方法与基准", "detail": "OpenRank 从协作网络分析贡献与影响力；OSIDX 的发展指数工作拓展生态观察。方法需要结合场景解释，不能把单一指标当作全部价值。"}, "research": {"title": "评价理论与研究", "detail": "参考 BenchCouncil 等评价科学研究，明确评价对象、方法和证据，持续检验评价的有效性与局限。"}}}</script></figure>
+<h2 id="cycles">五、两个飞轮</h2>
+<p><strong>评价内核的运转机制，连接人才成长与供给改善。</strong> 贡献与实践数据进入多维评价，让贡献与成长更可见，吸引和支持更多人才参与；人才在实践中成长，推动公共品供给与应用改善；新的贡献和效果数据回到评价，形成下一轮学习与改进。</p>
+<p><strong>生态价值再生机制，连接资源投入与持续支持。</strong> 企业和机构投入资源，通过贡献识别与资源匹配支持开发者和公共品；实践产生可核验的公共价值与合作回报，为后续投入提供依据，让支持能够持续。</p>
+<p>两个飞轮共用数据与评价内核。资源支持人才与供给，人才与供给创造实际价值，价值证据帮助改进投入。我们将用实践检验这些关系，公开进展、局限和调整。</p>
+<p>合作可以带来人才交流、技术应用、生态洞察和公共价值成果。参与者应有自主选择，合作应明确责任、资源条件与数据使用方式。合理回报需要证据，持续投入需要各方共同维护。</p>
+<span class="anchor-alias" id="learning-loop" aria-hidden="true"></span>
+<figure class="concept" id="twin-flywheels" aria-labelledby="twin-flywheels-heading"><figcaption><span class="concept-index">两个飞轮</span><h3 id="twin-flywheels-heading">让成长与投入，形成持续循环</h3></figcaption><p class="concept-hint">点选节点，查看关系与解释。</p>
+<p class="visually-hidden">人才与供给、资源与价值形成两个闭环，共用数据与评价内核。</p>
+<div class="cycle-controls" role="group" aria-label="突出飞轮">
+<button type="button" data-cycle="all" aria-pressed="true">查看双飞轮</button>
+<button type="button" data-cycle="growth" aria-pressed="false">人才与供给</button>
+<button type="button" data-cycle="value" aria-pressed="false">资源与价值</button>
+</div>
+<div class="concept-canvas concept-desktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" width="980" height="640" class="concept-svg" aria-hidden="true">
+<title id="twin-flywheels-zh-desktop-title">让成长与投入，形成持续循环</title><desc id="twin-flywheels-zh-desktop-desc">人才与供给、资源与价值形成两个闭环，共用数据与评价内核。</desc>
+<defs><marker id="twin-flywheels-zh-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g transform="translate(0,0)">
+<path class="concept-edge" data-from="practice" data-to="evaluate" data-group="growth" d="M235 122.5 H258" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="evaluate" data-to="visible" data-group="growth" d="M372.5 175 V198" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="visible" data-to="talent" data-group="growth" d="M372.5 310 V333" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="talent" data-to="supply" data-group="growth" d="M265 392.5 H242" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="supply" data-to="feedback" data-group="growth" d="M127.5 340 V317" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="feedback" data-to="practice" data-group="growth" d="M127.5 205 V182" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="invest" data-to="match" data-group="value" d="M725 122.5 H748" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="match" data-to="support" data-group="value" d="M862.5 175 V198" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="support" data-to="value" data-group="value" d="M862.5 310 V333" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="value" data-to="evidence" data-group="value" d="M755 392.5 H732" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="evidence" data-to="reinvest" data-group="value" d="M617.5 340 V317" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="reinvest" data-to="invest" data-group="value" d="M617.5 205 V182" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="shared-core" data-to="supply" data-group="" d="M350 510 V480 H127 V445" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="shared-core" data-to="evidence" data-group="" d="M610 510 V480 H617 V445" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<text x="250" y="32" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="15" fill="#547464">评价内核运转</text>
+<text x="740" y="32" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="15" fill="#547464">生态价值再生</text>
+<g class="concept-node" data-node="practice" data-group="growth"><rect x="20" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="127.5" y="119.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">贡献与实践数据</text>
+<text x="127.5" y="150.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">观察真实协作</text>
+</g>
+<g class="concept-node" data-node="evaluate" data-group="growth"><rect x="265" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="372.5" y="119.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">多维评价</text>
+<text x="372.5" y="150.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">解释贡献与局限</text>
+</g>
+<g class="concept-node" data-node="visible" data-group="growth"><rect x="265" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="372.5" y="254.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">贡献与成长可见</text>
+<text x="372.5" y="285.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">看见成长路径</text>
+</g>
+<g class="concept-node" data-node="talent" data-group="growth"><rect x="265" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="372.5" y="389.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">人才参与与成长</text>
+<text x="372.5" y="420.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">吸引并支持参与</text>
+</g>
+<g class="concept-node" data-node="supply" data-group="growth"><rect x="20" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="127.5" y="389.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">供给与应用改善</text>
+<text x="127.5" y="420.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">公共品走向应用</text>
+</g>
+<g class="concept-node" data-node="feedback" data-group="growth"><rect x="20" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="127.5" y="254.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">新的贡献与效果</text>
+<text x="127.5" y="285.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">带回实践数据</text>
+</g>
+<g class="concept-node" data-node="invest" data-group="value"><rect x="510" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="617.5" y="119.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">企业与机构投入</text>
+<text x="617.5" y="150.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">资源支持实践</text>
+</g>
+<g class="concept-node" data-node="match" data-group="value"><rect x="755" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="862.5" y="119.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">贡献识别与匹配</text>
+<text x="862.5" y="150.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">理解能力与需求</text>
+</g>
+<g class="concept-node" data-node="support" data-group="value"><rect x="755" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="862.5" y="240.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">支持开发者</text>
+<text x="862.5" y="267.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">与公共品</text>
+<text x="862.5" y="298.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">连接资源与创造</text>
+</g>
+<g class="concept-node" data-node="value" data-group="value"><rect x="755" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="862.5" y="375.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">公共价值</text>
+<text x="862.5" y="402.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">与合作回报</text>
+<text x="862.5" y="433.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">观察实际变化</text>
+</g>
+<g class="concept-node" data-node="evidence" data-group="value"><rect x="510" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="617.5" y="389.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">投入效果核验</text>
+<text x="617.5" y="420.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">用证据支持判断</text>
+</g>
+<g class="concept-node" data-node="reinvest" data-group="value"><rect x="510" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="617.5" y="254.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">持续投入</text>
+<text x="617.5" y="285.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">改进下一轮支持</text>
+</g>
+<g class="concept-node" data-node="shared-core" data-group=""><rect x="250" y="510" width="460" height="100" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="480.0" y="556.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">数据与评价</text>
+<text x="480.0" y="587.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">资源支持成长，价值证据支持投入</text>
+</g>
+</g>
+</svg><div class="concept-controls" role="group" aria-label="让成长与投入，形成持续循环">
+<button type="button" class="concept-hit" data-select="practice" style="left:2.04082%;top:10.93750%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">贡献与实践数据</span></button>
+<button type="button" class="concept-hit" data-select="evaluate" style="left:27.04082%;top:10.93750%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">多维评价</span></button>
+<button type="button" class="concept-hit" data-select="visible" style="left:27.04082%;top:32.03125%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">贡献与成长可见</span></button>
+<button type="button" class="concept-hit" data-select="talent" style="left:27.04082%;top:53.12500%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">人才参与与成长</span></button>
+<button type="button" class="concept-hit" data-select="supply" style="left:2.04082%;top:53.12500%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">供给与应用改善</span></button>
+<button type="button" class="concept-hit" data-select="feedback" style="left:2.04082%;top:32.03125%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">新的贡献与效果</span></button>
+<button type="button" class="concept-hit" data-select="invest" style="left:52.04082%;top:10.93750%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">企业与机构投入</span></button>
+<button type="button" class="concept-hit" data-select="match" style="left:77.04082%;top:10.93750%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">贡献识别与匹配</span></button>
+<button type="button" class="concept-hit" data-select="support" style="left:77.04082%;top:32.03125%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">支持开发者
+与公共品</span></button>
+<button type="button" class="concept-hit" data-select="value" style="left:77.04082%;top:53.12500%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">公共价值
+与合作回报</span></button>
+<button type="button" class="concept-hit" data-select="evidence" style="left:52.04082%;top:53.12500%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">投入效果核验</span></button>
+<button type="button" class="concept-hit" data-select="reinvest" style="left:52.04082%;top:32.03125%;width:21.93878%;height:16.40625%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">持续投入</span></button>
+<button type="button" class="concept-hit" data-select="shared-core" style="left:25.51020%;top:79.68750%;width:46.93878%;height:15.62500%" aria-pressed="true" aria-controls="twin-flywheels-detail"><span class="visually-hidden">数据与评价</span></button>
+</div></div>
+<div class="concept-canvas concept-mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 1030" width="360" height="1030" class="concept-svg" aria-hidden="true">
+<title id="twin-flywheels-zh-mobile-title">让成长与投入，形成持续循环</title><desc id="twin-flywheels-zh-mobile-desc">人才与供给、资源与价值形成两个闭环，共用数据与评价内核。</desc>
+<defs><marker id="twin-flywheels-zh-mobile-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<g transform="translate(0,0)">
+<path class="concept-edge" data-from="practice" data-to="evaluate" data-group="growth" d="M170 100.0 H183" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="evaluate" data-to="visible" data-group="growth" d="M267.5 150 V163" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="visible" data-to="talent" data-group="growth" d="M267.5 270 V283" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="talent" data-to="supply" data-group="growth" d="M190 340.0 H177" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="supply" data-to="feedback" data-group="growth" d="M92.5 290 V277" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="feedback" data-to="practice" data-group="growth" d="M92.5 170 V157" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="invest" data-to="match" data-group="value" d="M170 545.0 H183" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="match" data-to="support" data-group="value" d="M267.5 595 V608" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="support" data-to="value" data-group="value" d="M267.5 715 V728" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="value" data-to="evidence" data-group="value" d="M190 785.0 H177" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="evidence" data-to="reinvest" data-group="value" d="M92.5 735 V722" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="reinvest" data-to="invest" data-group="value" d="M92.5 615 V602" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-mobile-arrow)"/>
+<path class="concept-edge" data-from="shared-core" data-to="feedback" data-group="" d="M20 945 H6 V220 H15" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="shared-core" data-to="support" data-group="" d="M340 945 H354 V665 H345" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<text x="180" y="25" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="15" fill="#547464">评价内核运转</text>
+<text x="180" y="470" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="15" fill="#547464">生态价值再生</text>
+<g class="concept-node" data-node="practice" data-group="growth"><rect x="15" y="50" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="92.5" y="95.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">贡献与实践数据</text>
+<text x="92.5" y="121.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">观察真实协作</text>
+</g>
+<g class="concept-node" data-node="evaluate" data-group="growth"><rect x="190" y="50" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="267.5" y="95.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">多维评价</text>
+<text x="267.5" y="121.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">解释贡献与局限</text>
+</g>
+<g class="concept-node" data-node="visible" data-group="growth"><rect x="190" y="170" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="267.5" y="215.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">贡献与成长可见</text>
+<text x="267.5" y="241.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">看见成长路径</text>
+</g>
+<g class="concept-node" data-node="talent" data-group="growth"><rect x="190" y="290" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="267.5" y="335.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">人才参与与成长</text>
+<text x="267.5" y="361.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">吸引并支持参与</text>
+</g>
+<g class="concept-node" data-node="supply" data-group="growth"><rect x="15" y="290" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="92.5" y="335.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">供给与应用改善</text>
+<text x="92.5" y="361.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">公共品走向应用</text>
+</g>
+<g class="concept-node" data-node="feedback" data-group="growth"><rect x="15" y="170" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="92.5" y="215.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">新的贡献与效果</text>
+<text x="92.5" y="241.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">带回实践数据</text>
+</g>
+<g class="concept-node" data-node="invest" data-group="value"><rect x="15" y="495" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="92.5" y="540.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">企业与机构投入</text>
+<text x="92.5" y="566.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">资源支持实践</text>
+</g>
+<g class="concept-node" data-node="match" data-group="value"><rect x="190" y="495" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="267.5" y="540.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">贡献识别与匹配</text>
+<text x="267.5" y="566.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">理解能力与需求</text>
+</g>
+<g class="concept-node" data-node="support" data-group="value"><rect x="190" y="615" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="267.5" y="649.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">支持开发者</text>
+<text x="267.5" y="671.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">与公共品</text>
+<text x="267.5" y="697.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">连接资源与创造</text>
+</g>
+<g class="concept-node" data-node="value" data-group="value"><rect x="190" y="735" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="267.5" y="769.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">公共价值</text>
+<text x="267.5" y="791.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">与合作回报</text>
+<text x="267.5" y="817.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">观察实际变化</text>
+</g>
+<g class="concept-node" data-node="evidence" data-group="value"><rect x="15" y="735" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="92.5" y="780.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">投入效果核验</text>
+<text x="92.5" y="806.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">用证据支持判断</text>
+</g>
+<g class="concept-node" data-node="reinvest" data-group="value"><rect x="15" y="615" width="155" height="100" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="92.5" y="660.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="17" font-weight="600" fill="#173b2b">持续投入</text>
+<text x="92.5" y="686.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">改进下一轮支持</text>
+</g>
+<g class="concept-node" data-node="shared-core" data-group=""><rect x="20" y="890" width="320" height="115" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="180.0" y="944.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">数据与评价</text>
+<text x="180.0" y="975.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">资源支持成长，价值证据支持投入</text>
+</g>
+</g>
+</svg><div class="concept-controls" role="group" aria-label="让成长与投入，形成持续循环">
+<button type="button" class="concept-hit" data-select="practice" style="left:4.16667%;top:4.85437%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">贡献与实践数据</span></button>
+<button type="button" class="concept-hit" data-select="evaluate" style="left:52.77778%;top:4.85437%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">多维评价</span></button>
+<button type="button" class="concept-hit" data-select="visible" style="left:52.77778%;top:16.50485%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">贡献与成长可见</span></button>
+<button type="button" class="concept-hit" data-select="talent" style="left:52.77778%;top:28.15534%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">人才参与与成长</span></button>
+<button type="button" class="concept-hit" data-select="supply" style="left:4.16667%;top:28.15534%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">供给与应用改善</span></button>
+<button type="button" class="concept-hit" data-select="feedback" style="left:4.16667%;top:16.50485%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">新的贡献与效果</span></button>
+<button type="button" class="concept-hit" data-select="invest" style="left:4.16667%;top:48.05825%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">企业与机构投入</span></button>
+<button type="button" class="concept-hit" data-select="match" style="left:52.77778%;top:48.05825%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">贡献识别与匹配</span></button>
+<button type="button" class="concept-hit" data-select="support" style="left:52.77778%;top:59.70874%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">支持开发者
+与公共品</span></button>
+<button type="button" class="concept-hit" data-select="value" style="left:52.77778%;top:71.35922%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">公共价值
+与合作回报</span></button>
+<button type="button" class="concept-hit" data-select="evidence" style="left:4.16667%;top:71.35922%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">投入效果核验</span></button>
+<button type="button" class="concept-hit" data-select="reinvest" style="left:4.16667%;top:59.70874%;width:43.05556%;height:9.70874%" aria-pressed="false" aria-controls="twin-flywheels-detail"><span class="visually-hidden">持续投入</span></button>
+<button type="button" class="concept-hit" data-select="shared-core" style="left:5.55556%;top:86.40777%;width:88.88889%;height:11.16505%" aria-pressed="true" aria-controls="twin-flywheels-detail"><span class="visually-hidden">数据与评价</span></button>
+</div></div>
+<div class="concept-detail" id="twin-flywheels-detail" role="status" aria-live="polite" aria-atomic="true"><strong>数据与评价</strong><p>两个飞轮共享证据与评价。资源支持人才与供给，人才与供给创造价值，效果证据帮助改进下一轮投入。</p></div>
+<div class="concept-foot"><span>关系需要在实践中检验，成效由证据说明。</span><div><a href="assets/diagrams/twin-flywheels-zh.svg" download>SVG ↓</a><a href="assets/diagrams/twin-flywheels-zh.png" download>PNG ↓</a></div></div>
+<script type="application/json" class="concept-data">{"default": "shared-core", "nodes": {"practice": {"title": "贡献与实践数据", "detail": "记录贡献、协作与实践，说明数据来源与覆盖范围。"}, "evaluate": {"title": "多维评价", "detail": "结合多种证据解释贡献，说明方法与局限。"}, "visible": {"title": "贡献与成长可见", "detail": "让贡献与成长更容易被理解，为支持和参与提供依据。"}, "talent": {"title": "人才参与与成长", "detail": "吸引更多人参与，通过学习、协作和真实问题支持成长。"}, "supply": {"title": "供给与应用改善", "detail": "将成长转化为可维护的公共品与可用的应用，回应使用者需要。"}, "feedback": {"title": "新的贡献与效果", "detail": "把新的贡献、采用体验与受益变化带回数据与评价。"}, "invest": {"title": "企业与机构投入", "detail": "企业与机构按明确条件投入技术、资金、实践机会等资源。"}, "match": {"title": "贡献识别与匹配", "detail": "识别贡献与资源需求，在参与者自主选择的基础上匹配支持。"}, "support": {"title": "支持开发者\n与公共品", "detail": "把资源投入学习、创造、维护与应用，让支持进入真实实践。"}, "value": {"title": "公共价值\n与合作回报", "detail": "关注公共受益，以及人才合作、技术应用和生态洞察等合理回报。"}, "evidence": {"title": "投入效果核验", "detail": "结合证据与反馈核验投入效果，解释局限，不预设必然回报。"}, "reinvest": {"title": "持续投入", "detail": "根据实际价值和效果证据改进资源安排，让支持能够持续。"}, "shared-core": {"title": "数据与评价", "detail": "两个飞轮共享证据与评价。资源支持人才与供给，人才与供给创造价值，效果证据帮助改进下一轮投入。"}}}</script></figure>
+<h2 id="commitments">六、行动承诺与邀请</h2>
+<p><strong>开放资源，让更多人能够开始。</strong> 我们将推动可共享的工具、课程、案例和实践经验，为初学者保留进入机会。已有贡献不应成为获得基础学习机会的唯一条件。</p>
+<p><strong>支持创造，让能力在实践中生长。</strong> 我们鼓励从真实问题出发的学习、项目和社区协作，重视理解工具、检验证据、判断输出和承担责任的能力。</p>
+<p><strong>公开记录，对实际效果负责。</strong> 我们将区分计划、试点与已完成事项，说明行动目标、参与条件与支持边界。结合证据与使用者反馈，记录谁获得了什么帮助、哪些问题仍未解决，以及下一步如何改进。</p>
+<p>我们邀请开发者分享问题、贡献工具与知识；邀请企业、教育机构和公共机构提供资源与实践机会；邀请国际组织、社区和各地区伙伴分享经验，共同建设适合不同需求的数字公共品。不同意见同样是共建的一部分。</p>
+<p><strong>一个目标、两股力量、一个内核、两个飞轮、三重普惠。</strong> 我们将以公开记录连接愿景与行动，让实践持续检验这份承诺。</p>
+<p><strong>以开放连接智慧，以 AI 拓展认知。</strong></p></article></section>
+<section class="practice" id="practice"><div class="practice-inner"><div class="kicker">FROM VISION TO PRACTICE</div><div class="section-intro"><h2>实践基础与行动进展</h2><p>从已有的数据、方法与社区出发，用公开记录连接愿景与行动。</p></div><div class="practice-content"><p>我们用公开记录连接宣言与实践，分别说明既有基础、当前行动和下一步。</p>
+<h2>实践基础</h2>
+<h3>OpenDigger · 开源数据与指标</h3>
+<p>X-lab 发起的开源数据分析项目，为理解开发者协作、项目与社区提供数据及指标基础。它是数据与评价工作的实践入口。</p>
+<p><a href="https://github.com/X-lab2017/open-digger">项目仓库</a> · <a href="https://open-digger.cn/">项目网站</a></p>
+<h3>OpenRank · 协作网络评价</h3>
+<p>OpenRank 系列方法从协作网络分析贡献与影响力。我们关注方法的解释、适用场景及局限，并结合多种证据理解贡献。</p>
+<p><a href="https://open-digger.cn/blog/2025-08-09-openrank-introduction">OpenRank 方法介绍</a></p>
+<h3>OpenShare · 开发者生态</h3>
+<p>OpenShare 探索贡献、开发者能力、组织需求与资源回报之间的连接，为开发者经济生态提供实践入口。具体参与方式与可用资源，以平台当前规则为准。</p>
+<p><a href="https://open-share.com/">访问 OpenShare</a></p>
+<h3>全球开源观察 · 报告与方法研究</h3>
+<p>《2026 全球开源发展报告》预览版已公开，提供全球开源生态观察；该发布材料也介绍了 OSIDX 开源发展指数的后续工作。BenchCouncil 的评价科学研究，为评价对象、方法与证据的讨论提供公开参考。</p>
+<p><a href="https://open-digger.cn/blog/2026-07-23-global-open-source-development-report">报告预览版发布记录</a> · <a href="https://www.benchcouncil.org/Evaluatology/">BenchCouncil 评价科学</a></p>
+<p>上述内容说明实践基础和研究参考，各项目的范围、许可与状态以其公开文档为准。它们不等同于本行动已经实现的普惠成效。</p>
 <h2>001 · 宣言公开共建</h2>
-<p><strong>状态：公开共建中。</strong> 2026-10-08 启动，欢迎参与 <a href="https://github.com/X-lab2017/ai-for-all/issues/1">首轮讨论</a>。</p>
-<p><strong>目标：</strong> 将长期愿景转化为能够被理解、讨论和检验的共同承诺。</p>
-<p><strong>首批交付：</strong> 中文宣言、英文译本、在线阅读网站、参与指南，以及三类 Issue 模板。</p>
-<p><strong>参与方式：</strong> 阅读宣言，指出遗漏与问题，或提出一个具体的行动建议。无需既有开源贡献或评价分数。</p>
-<p><strong>反馈入口：</strong> https://github.com/X-lab2017/ai-for-all/issues</p>
-<p><strong>处理方式：</strong> 由仓库维护者阅读和归类；正文修改通过 Pull Request 说明理由。尚未确认固定响应时限，不作即时回复承诺。</p>
-<p><strong>我们关注的结果：</strong> 收到了哪些不同视角；哪些建议促成了具体修改；哪些分歧仍需讨论；是否形成具备明确对象、资源和负责人的下一项行动。</p>
-<p><strong>下一步：</strong> 汇总首轮反馈并记录处理结果，形成下一项行动提案。</p>
-<h2>后续行动的启动条件</h2>
-<p>学习资源、开发者实践和资源支持是候选方向。每项行动应先明确服务对象、参与条件、实际可用资源、责任人、数据使用方式和效果核验方法，再公开招募。</p>
-<p>本页暂不宣布 Token、算力或其他权益可领取，也不公布尚未确认的合作关系。资源与规则核实后，再以独立行动 Issue 记录启动。</p>
-<h2>回顾与证据</h2>
-<p>原则上每季度回顾行动进展，说明受益变化、局限和调整。项目链接、交付物、反馈摘要与方法说明将作为证据；不公开参与者的非公开个人信息。</p></div></div></section>
-<section class="join"><div class="kicker">BUILD TOGETHER</div><h2>每一个问题，<br>都可以成为参与的开始。</h2><p>分享困难、贡献经验、提出不同意见，帮助我们把愿景变成可检验的行动。</p><div class="join-links"><a class="button" href="https://github.com/X-lab2017/ai-for-all/issues/new/choose">提出建议或行动</a><a href="https://github.com/X-lab2017/ai-for-all/blob/main/CONTRIBUTING.md">参与指南</a></div></section></main>
-<footer><strong>X-lab AI · AI for All</strong><div><a href="https://github.com/X-lab2017/xlab-ai-brand">品牌资源</a><a href="https://github.com/X-lab2017/ai-for-all/blob/main/NOTICE.md">许可说明</a><a href="https://github.com/X-lab2017/ai-for-all/issues">讨论与反馈</a></div><p>以开放连接智慧，以 AI 拓展认知。</p></footer><script src="diagrams.js" defer></script></body></html>
+<p><strong>状态：持续开放。</strong> 2026-10-08 启动，欢迎参与 <a href="https://github.com/X-lab2017/ai-for-all/issues/1">首轮讨论</a>。无需既有开源贡献或评价分数。</p>
+<p><strong>已交付：</strong> 中文宣言、英文译本、在线网站、参与指南、反馈模板，以及五要素交互图解和静态下载。</p>
+<p><strong>本轮修订：</strong> 根据 <a href="https://github.com/X-lab2017/ai-for-all/issues/2">Issue #2</a> 的两轮方案与<a href="https://github.com/X-lab2017/ai-for-all/issues/2#issuecomment-6071564956">专家评审</a>，重构 DPG 主路径、双飞轮与三重普惠，并为五个要素分别提供交互图。v1.1 发布于 2026-10-09。</p>
+<p><strong>下一步：</strong> 收集读者对概念关系、实际需求与图解使用的反馈，将处理结果通过 Issue、PR 与版本记录公开。</p>
+<h2>后续行动</h2>
+<p>学习资源、开发者实践与资源支持是候选方向。每项行动先明确服务对象、参与条件、可用资源、责任人和核验方法，再通过独立 Issue 公布。</p>
+<p>阶段性增长指标将在基线、期限与衡量方法明确后发布。资源领取条件以具体项目公告为准。</p>
+<p>原则上每季度回顾行动进展，说明受益变化、局限和调整。记录使用公开证据与经同意的反馈，不公开参与者的非公开个人信息。</p></div></div></section>
+<section class="join" id="join"><div class="join-inner"><div class="kicker">BUILD TOGETHER</div><h2>每一个问题，<br>都可以成为参与的开始。</h2><p>分享需要、贡献经验、提出不同意见。与我们共同建设可共享的成果，让更多人获得使用 AI 的机会与能力。</p><div class="join-links"><a class="button" href="https://github.com/X-lab2017/ai-for-all/issues/new/choose">提出建议或行动 ↗</a><a href="https://github.com/X-lab2017/ai-for-all/blob/main/CONTRIBUTING.md">参与指南</a><a href="https://github.com/X-lab2017/ai-for-all/tree/main/site/assets/diagrams">五幅图解下载</a></div></div></section></main>
+<footer><strong>X-lab AI · AI for All</strong><div><a href="https://github.com/X-lab2017/ai-for-all/blob/main/SOURCES.md">术语与来源</a><a href="https://github.com/X-lab2017/ai-for-all/blob/main/CHANGELOG.md">版本记录</a><a href="https://github.com/X-lab2017/ai-for-all/blob/main/NOTICE.md">许可说明</a><a href="https://github.com/X-lab2017/xlab-ai-brand">品牌资源</a></div><p>以开放连接智慧，以 AI 拓展认知。</p></footer><script src="diagrams.js" defer></script></body></html>

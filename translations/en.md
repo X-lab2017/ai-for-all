@@ -1,69 +1,97 @@
-# The X-lab AI Manifesto for AI for All
+# AI for All Manifesto
 
-## Making AI affordable—and enabling people to use it well
+## Make AI affordable and useful
 
-**Lower barriers through open source. Unlock creativity through growth.**
+**X-lab AI Open Laboratory · v1.1 · 9 October 2026**
 
-X-lab AI Open Laboratory · v1.0 release · 8 October 2026
-
-[中文](../README.md) · [Action progress](../PROGRESS.md) · [Contributing](../CONTRIBUTING.md)
+[Read online](https://www.x-lab.info/ai-for-all/en.html) · [中文](../README.md) · [Progress](../PROGRESS.md) · [Contribute](../CONTRIBUTING.md)
 
 <!-- manifesto:start -->
-## 1. Our vision
+## 1. Our goal and the people it serves
 
-AI is changing how people access knowledge, create tools and solve problems. But widespread access to tools does not necessarily mean widespread capability. Being able to try AI does not mean being able to afford sustained use; having a tool does not mean being able to understand it, exercise judgment and apply it to real life and work.
+AI is changing how people access knowledge, create tools and solve problems. Wider access gives more people an opportunity to begin. The cost of sustained use, barriers to learning and the ability to create determine whether that opportunity becomes real help.
 
-We envision a future in which more people can access AI and develop the ability to choose, understand and create with it. Wherever people live and wherever they are in their learning journey, they should have opportunities to participate in this change, rather than simply experience its consequences.
+**Making AI affordable and useful is X-lab AI’s long-term goal.** We want technology to expand people’s choices, support their growth and help more people learn, create and improve their circumstances.
 
-X-lab AI therefore adopts a long-term direction: making AI affordable—and enabling people to use it well. Affordability involves cost, availability and opportunities to get started. Effective use involves knowledge, judgment, creativity and the ability to solve real problems.
+We approach inclusion through three complementary perspectives. **Developer inclusion** is a key starting point, supporting professional engineers as well as people learning and trying to build tools. **Public inclusion** focuses on those who use the results, so public goods and their applications address real needs in life and work. **Global South inclusion** broadens the geographic perspective, attending to languages, resource conditions and development opportunities, and exploring appropriate practice with local partners.
 
-The value of inclusion lies not only in how many people open a tool, but in whether it helps them learn, create something meaningful and improve their circumstances. Technological progress should expand people's choices, support their growth and serve their dignity.
+These perspectives reflect the diversity of people and needs we seek to understand. They are neither mutually exclusive groups nor stages that must be completed in sequence.
 
-<!-- diagram:start:access-capability -->
-![Two forces, working together](../site/assets/diagrams/access-capability-en.svg)
+<!-- diagram:start:inclusion-views -->
+![Three perspectives on inclusion](../site/assets/diagrams/inclusion-views-en.svg)
 <!-- diagram:end -->
 
-## 2. Our path
+## 2. Our proposition and path
 
-We believe open source and human development can reinforce each other. Open technology and knowledge lower barriers to participation; learning and practice bring new tools, experience and contributions back to open communities.
+**AI for All = Accessible technology (affordable access) × Developer creativity (capable use)**
 
-We begin with developers. By developers, we mean both professional engineers and people learning to build tools and solve problems. Helping them access resources, develop capabilities and create useful work is a concrete way to extend AI's benefits to more users.
+Open, accessible technology helps more people participate. Developers’ learning, judgment and creativity turn technology into useful applications. Multiplication expresses mutual reinforcement; it is not a quantitative formula for measuring impact.
 
-But developer growth does not automatically create public benefit. We will keep asking whom these tools serve, whether they are understandable, affordable and usable, and whether they address real needs. We will also attend to people and regions with fewer resources. Working with partners in the Global South, we will seek to understand local languages, cultures and conditions and support locally appropriate practice, rather than treating one experience as a universal answer.
+**Our path is AI → DPGs (digital public goods) → AI for All.** Developers use AI to create and maintain shareable tools, knowledge and solutions. Reuse, adoption and local adaptation turn these public goods into help that more people can access.
 
-Data and evaluation support this path. Through explainable data and continuously improved evaluation, we aim to make different kinds of contribution visible, inform resource allocation and examine the effects of our actions. Evaluation should help people and communities grow, rather than create new barriers.
+Digital public goods can include open software, AI systems, data and knowledge collections. We value open licensing, reuse, public value and responsible use, and draw on the Digital Public Goods Standard to improve our work. Claims that a particular solution meets a standard should have verifiable evidence.
 
-<!-- diagram:start:path-to-benefit -->
-![From developers to wider public benefit](../site/assets/diagrams/path-to-benefit-en.svg)
+Public goods need maintenance and real-world use. We will keep asking who uses them, whether they are affordable, understandable and usable, and who still does not benefit.
+
+<!-- diagram:start:goal-path -->
+![One goal: connect AI to inclusion through digital public goods](../site/assets/diagrams/goal-path-en.svg)
 <!-- diagram:end -->
 
-## 3. Our actions and commitments
+## 3. Two forces
 
-**Open resources and knowledge, so more people can begin.** We will advance shareable tools, courses, examples and practical knowledge, and explore support that reduces the cost of learning and use. We will preserve entry opportunities for beginners while recognizing and supporting sustained contribution. Prior contribution should not be the sole condition for access to basic learning opportunities.
+**Open source lowers barriers.** From AI infrastructure and models to agents and applications, open technology and knowledge enable learning, improvement and reuse. We support clear licensing, understandable documentation and sustained maintenance, while attending to the real cost of access and continued use.
 
-**Support learning and creation, so capability grows through practice.** We will encourage learning, collaboration and projects grounded in real problems, helping participants move from understanding tools to building applications and improving them through user feedback. We value technical skills alongside the ability to assess outputs, ask for evidence, recognize limitations and take responsibility. AI can participate in thinking; it should not become a reason to stop thinking.
+**Developers expand what people can create.** AI Learners explore, AI Builders develop applications, and AI Engineers put systems into practice. People at different stages can grow through real problems. Learning, useful work, collaboration and feedback help turn knowledge into problem-solving capability.
 
-**Make contributions visible, and keep evaluation open to scrutiny.** Code, documentation, maintenance, teaching, translation, community collaboration and user feedback can all create significant value. We will not define a person's worth by a single score or equate measurable activity with all contribution. We will explain evaluation methods and their limitations, provide channels for questions, corrections and improvement, and respect informed choice about the use of personal data.
+Open-source projects and communities bring these forces together. Technology lowers barriers to entry; more people contribute tools, knowledge and maintenance, enriching digital public goods. Human judgment, responsibility and creativity are essential to this process.
 
-**Report progress openly and take responsibility for actual outcomes.** We will explain goals, participation conditions and the limits of support, distinguishing plans, pilots and completed work. We will not present aspirations as achievements. Combining evidence with participant feedback, we will examine who received what help, which problems remain and how our actions should change. We will be honest about effects that have not been demonstrated and explain and improve upon commitments we have not fulfilled.
-
-We welcome businesses, public bodies, educational institutions and communities to contribute knowledge, technology, resources and opportunities, and to explore sustainable support for inclusion. Partnerships should respect participants' freedom of choice, clarify responsibilities and avoid exchanging support for opaque data use or unreasonable conditions.
-
-<!-- diagram:start:learning-loop -->
-![Let practice test the promise](../site/assets/diagrams/learning-loop-en.svg)
+<!-- diagram:start:dual-forces -->
+![Two forces: open source and developers reinforce each other](../site/assets/diagrams/dual-forces-en.svg)
 <!-- diagram:end -->
 
-## 4. Our invitation
+## 4. A shared core
 
-AI for all requires sustained practice and many forms of participation.
+**Data and evaluation connect the two forces and support both reinforcing cycles.** We aim to make contributions visible, ground support for growth in evidence, direct resources where they help and examine the effects of our actions.
 
-If you are learning, bring your questions, difficulties and experiences. If you are creating, contribute tools, knowledge and practical lessons. If you can provide resources, join us in exploring open, clear and sustainable ways to support others. If you see shortcomings, bring your disagreements and help us revise our judgments.
+The core brings together four kinds of work. Platforms connect participants and practice. Data provide traceable evidence. Methods and benchmarks help interpret contributions. Evaluation research examines the methods themselves. They work together to support decisions and improvement, rather than forming a fixed sequence.
 
-We do not consider this manifesto a finished answer. It is X-lab AI's public commitment to a direction and an invitation to participate. We will connect vision with action through public records and let practice continually test this commitment.
+Our practical foundations include OpenDigger’s open-source data and metrics, OpenRank’s collaboration-network evaluation methods, and OpenShare’s exploration of connections among contributions, capabilities and resources. Work on the OSIDX development index and BenchCouncil’s evaluation science research provide further references for benchmarks and methods. Project links and public materials appear in the progress record.
+
+Evaluation should help people and communities grow. Code, documentation, maintenance, teaching, translation and community collaboration all deserve recognition. We will explain limits in data coverage and methods, respect informed choice, and provide channels for questions, corrections and improvement. A single score cannot define a person’s worth.
+
+<!-- diagram:start:evaluation-core -->
+![A shared core: data and evaluation connect practice and improvement](../site/assets/diagrams/evaluation-core-en.svg)
+<!-- diagram:end -->
+
+## 5. Two reinforcing cycles
+
+**The evaluation cycle connects talent development with better supply.** Contribution and practice data inform multidimensional evaluation, making contributions and growth more visible and attracting and supporting more participants. People grow through practice and improve public goods and their applications. New contribution and outcome data inform the next round of evaluation, learning and improvement.
+
+**The ecosystem value cycle connects resources with sustained support.** Businesses and institutions contribute resources. Contribution recognition and resource matching support developers and public goods. Practice generates verifiable public value and benefits for partners, providing evidence for continued investment.
+
+Both cycles share the data and evaluation core. Resources support people and supply; people and supply create real value; evidence of that value helps improve resource decisions. We will test these relationships in practice and report progress, limitations and adjustments.
+
+Partnerships can bring talent exchange, technology adoption, ecosystem insights and public value. Participants should retain freedom of choice. Partnerships should clarify responsibilities, resource conditions and data use. Reasonable returns need evidence, and continued support requires shared stewardship.
+
+<!-- diagram:start:twin-flywheels -->
+![Two cycles: people and supply, resources and value](../site/assets/diagrams/twin-flywheels-en.svg)
+<!-- diagram:end -->
+
+## 6. Commitments and invitation
+
+**Open resources so more people can begin.** We will advance shareable tools, courses, examples and practical knowledge, preserving entry opportunities for beginners. Prior contribution should not be the sole condition for access to basic learning opportunities.
+
+**Support creation so capability grows through practice.** We encourage learning, projects and community collaboration grounded in real problems, and value the ability to understand tools, examine evidence, assess outputs and take responsibility.
+
+**Keep public records and take responsibility for outcomes.** We will distinguish plans, pilots and completed work, and explain goals, participation conditions and the limits of support. Combining evidence with user feedback, we will record who received what help, which problems remain and how our actions should improve.
+
+We invite developers to share questions, tools and knowledge; businesses, educational institutions and public bodies to offer resources and practical opportunities; and international organizations, communities and regional partners to share experience and build digital public goods for different needs. Disagreement is also part of co-creation.
+
+**One goal. Two forces. One shared core. Two reinforcing cycles. Three perspectives on inclusion.** We will connect vision with action through public records and let practice continually test this commitment.
 
 **Connect knowledge through openness. Expand understanding with AI.**
-
-**X-lab AI: lower barriers through open source, unlock creativity through growth, and make AI affordable—and useful—for more people.**
 <!-- manifesto:end -->
 
-The Chinese text is authoritative. This translation is maintained alongside it. Our first action is an open discussion of this manifesto; see the Chinese [progress record](../PROGRESS.md) and [contribution guide](../CONTRIBUTING.md). Content and brand permissions are described in [NOTICE.md](../NOTICE.md).
+---
+
+The Chinese text is authoritative. This translation and the website are maintained alongside it. See [Issue #2](https://github.com/X-lab2017/ai-for-all/issues/2) for the review, [sources](../SOURCES.md) for public references, and [permissions](../NOTICE.md) for reuse terms.
