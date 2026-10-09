@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+  "reference": "v3 synthetic voice, not a real person",
+  "reference_text": "让 AI 用得起，更用得好！让每个人，都有创造未来的机会。",
+  "reference_sha256": "497882beac860f47b1b41d4e12badc1c55bf2ef1c4c1a7ff1d479f0b556868e1",
+  "language": "English",
+  "seed_base": 20261019,
+  "offline": true
+}

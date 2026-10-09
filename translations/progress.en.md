@@ -47,3 +47,10 @@ Learning resources, developer practice and resource support are candidate direct
 Growth targets will follow defined baselines, timeframes and measurement methods. Resource eligibility follows each project’s announcements.
 
 We aim to review progress quarterly, explaining changes, limitations and adjustments, using public evidence and feedback shared with consent.
+
+
+## Launch materials
+
+The launch package brings together three ninety-second films, Chinese and English slides and manifestos, speaking scripts, the framework and a fixed QR code. Visitors can read, download and choose a route for feedback, contributions or practical collaboration.
+
+[Launch and participation page](https://www.x-lab.info/ai-for-all/launch/en.html)

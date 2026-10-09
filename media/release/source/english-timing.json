@@ -1,0 +1,82 @@
+[
+  {
+    "chapter": 1,
+    "start": 0,
+    "delay": 0.45,
+    "raw_seconds": 6.64,
+    "spoken_seconds": 6.452833,
+    "speed": 1.03
+  },
+  {
+    "chapter": 2,
+    "start": 8,
+    "delay": 0.2,
+    "raw_seconds": 6.08,
+    "spoken_seconds": 5.906292,
+    "speed": 1.03
+  },
+  {
+    "chapter": 3,
+    "start": 16,
+    "delay": 0.2,
+    "raw_seconds": 7.12,
+    "spoken_seconds": 6.912583,
+    "speed": 1.03
+  },
+  {
+    "chapter": 4,
+    "start": 25,
+    "delay": 0.2,
+    "raw_seconds": 7.2,
+    "spoken_seconds": 6.999208,
+    "speed": 1.03
+  },
+  {
+    "chapter": 5,
+    "start": 33,
+    "delay": 0.2,
+    "raw_seconds": 7.04,
+    "spoken_seconds": 6.8345,
+    "speed": 1.03
+  },
+  {
+    "chapter": 6,
+    "start": 42,
+    "delay": 0.2,
+    "raw_seconds": 6.56,
+    "spoken_seconds": 6.373917,
+    "speed": 1.03
+  },
+  {
+    "chapter": 7,
+    "start": 51,
+    "delay": 0.2,
+    "raw_seconds": 9.92,
+    "spoken_seconds": 9.643083,
+    "speed": 1.03
+  },
+  {
+    "chapter": 8,
+    "start": 63,
+    "delay": 0.2,
+    "raw_seconds": 6.08,
+    "spoken_seconds": 5.911375,
+    "speed": 1.03
+  },
+  {
+    "chapter": 9,
+    "start": 71,
+    "delay": 0.2,
+    "raw_seconds": 7.12,
+    "spoken_seconds": 6.415542,
+    "speed": 1.1125
+  },
+  {
+    "chapter": 10,
+    "start": 78,
+    "delay": 0.2,
+    "raw_seconds": 7.68,
+    "spoken_seconds": 7.453333,
+    "speed": 1.03
+  }
+]

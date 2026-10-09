@@ -1,0 +1,4 @@
+(()=>{'use strict';const video=document.querySelector('video'),label=document.querySelector('#current-version'),download=document.querySelector('#download-video'),buttons=[...document.querySelectorAll('[data-video]')],error=document.querySelector('#video-error');
+video.addEventListener('error',()=>{error.hidden=false;});
+for(const b of buttons)b.addEventListener('click',()=>{if(b.getAttribute('aria-pressed')==='true')return;const wasPlaying=!video.paused,at=video.ended?0:(video.currentTime||0);video.pause();error.hidden=true;for(const x of buttons)x.setAttribute('aria-pressed',String(x===b));video.src=b.dataset.video;video.poster=b.dataset.poster;download.href=b.dataset.video;label.textContent=b.dataset.label;video.onloadedmetadata=()=>{video.currentTime=Math.min(at,Math.max(0,(video.duration||90)-.1));if(wasPlaying)video.play().catch(()=>{});};video.load();});
+})();

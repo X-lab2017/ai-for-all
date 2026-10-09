@@ -4,7 +4,7 @@
 
 **X-lab AI Open Laboratory · v1.1 · 9 October 2026**
 
-[Read online](https://www.x-lab.info/ai-for-all/en.html) · [中文](../README.md) · [Progress](../PROGRESS.md) · [Contribute](../CONTRIBUTING.md)
+[Launch materials](https://www.x-lab.info/ai-for-all/launch/en.html) · [Read online](https://www.x-lab.info/ai-for-all/en.html) · [中文](../README.md) · [Progress](../PROGRESS.md) · [Contribute](../CONTRIBUTING.md)
 
 <!-- manifesto:start -->
 ## 1. Our goal and the people it serves
