@@ -19,7 +19,7 @@ document.querySelectorAll('.concept').forEach(figure => {
     const group = button.dataset.cycle;
     figure.querySelectorAll('[data-cycle]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
     figure.querySelectorAll('[data-group]').forEach(item => item.classList.toggle('is-muted', group !== 'all' && item.dataset.group && item.dataset.group !== group));
-    select(group === 'growth' ? 'practice' : group === 'value' ? 'invest' : 'shared-core');
+    select(group === 'growth' ? 'growth-hub' : group === 'value' ? 'value-hub' : 'shared-core');
   }));
 });
 const sectionLinks = [...document.querySelectorAll('.contents a')];

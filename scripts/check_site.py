@@ -46,7 +46,7 @@ for mode in ['desktop','mobile']:
  for group in ['growth','value']:
   edges=[e for e in loop['edges'][mode] if e['group']==group];pairs={e['fr']:e['to'] for e in edges};start=edges[0]['fr'];current=start;visited=set()
   while current not in visited:visited.add(current);current=pairs[current]
-  assert current==start and len(visited)==6,(mode,group)
+  assert current==start and len(visited)==4,(mode,group)
 assert '三重普惠' in (ROOT/'README.md').read_text()
 assert '全球南方贯穿' not in (ROOT/'README.md').read_text()
 print('PASS: 2 languages, 5 diagrams, local assets, anchors, aria targets, 4 closed cycles, current SVG exports.')

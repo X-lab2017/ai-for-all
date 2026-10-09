@@ -1,81 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 825" width="980" height="825" class="concept-svg" role="img" aria-labelledby="title desc">
-<title id="title">让成长与投入，形成持续循环</title><desc id="desc">人才与供给、资源与价值形成两个闭环，共用数据与评价内核。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 985" width="980" height="985" class="concept-svg" role="img" aria-labelledby="title desc">
+<title id="title">让成长与投入，形成持续循环</title><desc id="desc">成长飞轮与投入飞轮各含四步。公共品与应用创造价值，资源与机会支持成长；数据与评价是两个飞轮共享的证据与决策底座。</desc>
 <defs><marker id="twin-flywheels-zh-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="20" y="27" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#567467">X-LAB AI / AI FOR ALL / v1.1</text>
 <text x="20" y="66" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="600" fill="#143a2c">让成长与投入，形成持续循环</text>
 <path d="M20 88 H960" stroke="#dce5df"/>
 <g transform="translate(0,110)">
-<path class="concept-edge" data-from="practice" data-to="evaluate" data-group="growth" d="M235 122.5 H258" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="evaluate" data-to="visible" data-group="growth" d="M372.5 175 V198" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="visible" data-to="talent" data-group="growth" d="M372.5 310 V333" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="talent" data-to="supply" data-group="growth" d="M265 392.5 H242" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="supply" data-to="feedback" data-group="growth" d="M127.5 340 V317" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="feedback" data-to="practice" data-group="growth" d="M127.5 205 V182" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="invest" data-to="match" data-group="value" d="M725 122.5 H748" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="match" data-to="support" data-group="value" d="M862.5 175 V198" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="support" data-to="value" data-group="value" d="M862.5 310 V333" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="value" data-to="evidence" data-group="value" d="M755 392.5 H732" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="evidence" data-to="reinvest" data-group="value" d="M617.5 340 V317" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="reinvest" data-to="invest" data-group="value" d="M617.5 205 V182" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
-<path class="concept-edge" data-from="shared-core" data-to="supply" data-group="" d="M350 510 V480 H127 V445" fill="none" stroke="#8aa497" stroke-width="1.5"/>
-<path class="concept-edge" data-from="shared-core" data-to="evidence" data-group="" d="M610 510 V480 H617 V445" fill="none" stroke="#8aa497" stroke-width="1.5"/>
-<text x="250" y="32" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="15" fill="#547464">评价内核运转</text>
-<text x="740" y="32" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="15" fill="#547464">生态价值再生</text>
-<g class="concept-node" data-node="practice" data-group="growth"><rect x="20" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="127.5" y="119.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">贡献与实践数据</text>
-<text x="127.5" y="150.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">观察真实协作</text>
+<circle cx="250" cy="230" r="170" fill="#258272" fill-opacity=".035" stroke="#258272" stroke-opacity=".15" stroke-width="24"/>
+<circle cx="730" cy="230" r="170" fill="#596daf" fill-opacity=".035" stroke="#596daf" stroke-opacity=".15" stroke-width="24"/>
+<text x="490" y="475" text-anchor="middle" font-family="Arial,Source Han Sans SC,sans-serif" font-size="18" fill="#526d60">公共品与应用 → 创造价值</text>
+<path d="M250 492 H730" stroke="#258272" stroke-width="2" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<text x="490" y="530" text-anchor="middle" font-family="Arial,Source Han Sans SC,sans-serif" font-size="18" fill="#526d60">支持成长 ← 资源与机会</text>
+<path d="M730 546 H250" stroke="#596daf" stroke-width="2" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path d="M250 570 V622 H730 V570 M490 622 V656" fill="none" stroke="#93a69c" stroke-dasharray="4 5" stroke-width="1.5"/>
+<text x="490" y="595" text-anchor="middle" font-family="Arial,Source Han Sans SC,sans-serif" font-size="15" fill="#526d60">实践证据汇入 ↓　↑ 评价依据反馈</text>
+<path class="concept-edge" data-from="practice" data-to="visible" data-group="growth" d="M335 83 A170 170 0 0 1 417 187" fill="none" stroke="#258272" stroke-width="3" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="visible" data-to="talent" data-group="growth" d="M417 273 A170 170 0 0 1 335 377" fill="none" stroke="#258272" stroke-width="3" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="talent" data-to="supply" data-group="growth" d="M165 377 A170 170 0 0 1 83 273" fill="none" stroke="#258272" stroke-width="3" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="supply" data-to="practice" data-group="growth" d="M83 187 A170 170 0 0 1 165 83" fill="none" stroke="#258272" stroke-width="3" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="invest" data-to="support" data-group="value" d="M815 83 A170 170 0 0 1 897 187" fill="none" stroke="#596daf" stroke-width="3" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="support" data-to="value" data-group="value" d="M897 273 A170 170 0 0 1 815 377" fill="none" stroke="#596daf" stroke-width="3" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="value" data-to="evidence" data-group="value" d="M645 377 A170 170 0 0 1 563 273" fill="none" stroke="#596daf" stroke-width="3" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="evidence" data-to="invest" data-group="value" d="M563 187 A170 170 0 0 1 645 83" fill="none" stroke="#596daf" stroke-width="3" marker-end="url(#twin-flywheels-zh-desktop-arrow)"/>
+<g class="concept-node" data-node="practice" data-group="growth"><rect x="168" y="26" width="164" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="250.0" y="56.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="16" font-weight="600" fill="#173b2b">实践贡献</text>
+<text x="250.0" y="81.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">协作 · 真实问题</text>
 </g>
-<g class="concept-node" data-node="evaluate" data-group="growth"><rect x="265" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="372.5" y="119.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">多维评价</text>
-<text x="372.5" y="150.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">解释贡献与局限</text>
+<g class="concept-node" data-node="visible" data-group="growth"><rect x="354" y="194" width="132" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="420.0" y="224.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="16" font-weight="600" fill="#173b2b">贡献可见</text>
+<text x="420.0" y="249.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">认可 · 成长依据</text>
 </g>
-<g class="concept-node" data-node="visible" data-group="growth"><rect x="265" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="372.5" y="254.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">贡献与成长可见</text>
-<text x="372.5" y="285.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">看见成长路径</text>
+<g class="concept-node" data-node="talent" data-group="growth"><rect x="168" y="362" width="164" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="250.0" y="392.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="16" font-weight="600" fill="#173b2b">人才成长</text>
+<text x="250.0" y="417.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">学习 · 参与 · 创造</text>
 </g>
-<g class="concept-node" data-node="talent" data-group="growth"><rect x="265" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="372.5" y="389.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">人才参与与成长</text>
-<text x="372.5" y="420.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">吸引并支持参与</text>
+<g class="concept-node" data-node="supply" data-group="growth"><rect x="14" y="194" width="132" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="80.0" y="216.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="16" font-weight="600" fill="#173b2b">公共品与应用</text>
+<text x="80.0" y="241.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">创造 · 维护 ·</text>
+<text x="80.0" y="258.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">采用</text>
 </g>
-<g class="concept-node" data-node="supply" data-group="growth"><rect x="20" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="127.5" y="389.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">供给与应用改善</text>
-<text x="127.5" y="420.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">公共品走向应用</text>
+<g class="concept-node" data-node="growth-hub" data-group="growth"><rect x="165" y="178" width="170" height="104" rx="6" fill="#e4f3ee" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="250.0" y="229.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="600" fill="#173b2b">成长飞轮</text>
+<text x="250.0" y="264.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">人才与供给</text>
 </g>
-<g class="concept-node" data-node="feedback" data-group="growth"><rect x="20" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="127.5" y="254.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">新的贡献与效果</text>
-<text x="127.5" y="285.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">带回实践数据</text>
+<g class="concept-node" data-node="invest" data-group="value"><rect x="648" y="26" width="164" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="730.0" y="56.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="16" font-weight="600" fill="#173b2b">资源投入</text>
+<text x="730.0" y="81.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">技术 · 资金 · 机会</text>
 </g>
-<g class="concept-node" data-node="invest" data-group="value"><rect x="510" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="617.5" y="119.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">企业与机构投入</text>
-<text x="617.5" y="150.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">资源支持实践</text>
+<g class="concept-node" data-node="support" data-group="value"><rect x="834" y="194" width="132" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="900.0" y="216.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="16" font-weight="600" fill="#173b2b">匹配支持</text>
+<text x="900.0" y="241.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">识别需求 ·</text>
+<text x="900.0" y="258.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">支持实践</text>
 </g>
-<g class="concept-node" data-node="match" data-group="value"><rect x="755" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="862.5" y="119.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">贡献识别与匹配</text>
-<text x="862.5" y="150.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">理解能力与需求</text>
+<g class="concept-node" data-node="value" data-group="value"><rect x="648" y="362" width="164" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="730.0" y="392.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="16" font-weight="600" fill="#173b2b">价值实现</text>
+<text x="730.0" y="417.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">公共受益 · 合作回报</text>
 </g>
-<g class="concept-node" data-node="support" data-group="value"><rect x="755" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="862.5" y="240.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">支持开发者</text>
-<text x="862.5" y="267.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">与公共品</text>
-<text x="862.5" y="298.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">连接资源与创造</text>
+<g class="concept-node" data-node="evidence" data-group="value"><rect x="494" y="194" width="132" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="560.0" y="216.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="16" font-weight="600" fill="#173b2b">效果验证</text>
+<text x="560.0" y="241.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">核验成效 ·</text>
+<text x="560.0" y="258.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">改进投入</text>
 </g>
-<g class="concept-node" data-node="value" data-group="value"><rect x="755" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="862.5" y="375.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">公共价值</text>
-<text x="862.5" y="402.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">与合作回报</text>
-<text x="862.5" y="433.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">观察实际变化</text>
+<g class="concept-node" data-node="value-hub" data-group="value"><rect x="645" y="178" width="170" height="104" rx="6" fill="#edf0fa" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="730.0" y="229.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="26" font-weight="600" fill="#173b2b">投入飞轮</text>
+<text x="730.0" y="264.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">资源与价值</text>
 </g>
-<g class="concept-node" data-node="evidence" data-group="value"><rect x="510" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="617.5" y="389.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">投入效果核验</text>
-<text x="617.5" y="420.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">用证据支持判断</text>
-</g>
-<g class="concept-node" data-node="reinvest" data-group="value"><rect x="510" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="617.5" y="254.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">持续投入</text>
-<text x="617.5" y="285.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">改进下一轮支持</text>
-</g>
-<g class="concept-node" data-node="shared-core" data-group=""><rect x="250" y="510" width="460" height="100" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
-<text x="480.0" y="556.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">数据与评价</text>
-<text x="480.0" y="587.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">资源支持成长，价值证据支持投入</text>
+<g class="concept-node" data-node="shared-core" data-group=""><rect x="265" y="668" width="450" height="102" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="490.0" y="713.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="16" font-weight="600" fill="#173b2b">数据与评价</text>
+<text x="490.0" y="738.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">识别贡献 · 匹配资源 · 核验效果</text>
 </g>
 </g>
-<path d="M20 763 H960" stroke="#dce5df"/><text x="20" y="789" font-family="Arial,Source Han Sans SC,sans-serif" font-size="14" fill="#526d60">关系需要在实践中检验，成效由证据说明。</text><text x="20" y="812" font-family="Arial,sans-serif" font-size="11" fill="#718a7b">www.x-lab.info/ai-for-all/</text>
+<path d="M20 923 H960" stroke="#dce5df"/><text x="20" y="949" font-family="Arial,Source Han Sans SC,sans-serif" font-size="14" fill="#526d60">先看双轮，再点选四个环节。循环关系以实践与证据检验。</text><text x="20" y="972" font-family="Arial,sans-serif" font-size="11" fill="#718a7b">www.x-lab.info/ai-for-all/</text>
 </svg>

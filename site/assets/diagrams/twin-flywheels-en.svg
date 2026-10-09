@@ -1,88 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 825" width="980" height="825" class="concept-svg" role="img" aria-labelledby="title desc">
-<title id="title">Connect growth and resources in reinforcing cycles</title><desc id="desc">People and supply, resources and value form two closed cycles around a shared data and evaluation core.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 985" width="980" height="985" class="concept-svg" role="img" aria-labelledby="title desc">
+<title id="title">Connect growth and resources in reinforcing cycles</title><desc id="desc">Two four-step cycles: public goods create value; resources support growth. Data and evaluation form their shared evidence and decision foundation.</desc>
 <defs><marker id="twin-flywheels-en-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
 <rect width="100%" height="100%" fill="#ffffff"/>
 <text x="20" y="27" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#567467">X-LAB AI / AI FOR ALL / v1.1</text>
 <text x="20" y="66" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="600" fill="#143a2c">Connect growth and resources in reinforcing cycles</text>
 <path d="M20 88 H960" stroke="#dce5df"/>
 <g transform="translate(0,110)">
-<path class="concept-edge" data-from="practice" data-to="evaluate" data-group="growth" d="M235 122.5 H258" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="evaluate" data-to="visible" data-group="growth" d="M372.5 175 V198" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="visible" data-to="talent" data-group="growth" d="M372.5 310 V333" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="talent" data-to="supply" data-group="growth" d="M265 392.5 H242" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="supply" data-to="feedback" data-group="growth" d="M127.5 340 V317" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="feedback" data-to="practice" data-group="growth" d="M127.5 205 V182" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="invest" data-to="match" data-group="value" d="M725 122.5 H748" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="match" data-to="support" data-group="value" d="M862.5 175 V198" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="support" data-to="value" data-group="value" d="M862.5 310 V333" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="value" data-to="evidence" data-group="value" d="M755 392.5 H732" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="evidence" data-to="reinvest" data-group="value" d="M617.5 340 V317" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="reinvest" data-to="invest" data-group="value" d="M617.5 205 V182" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
-<path class="concept-edge" data-from="shared-core" data-to="supply" data-group="" d="M350 510 V480 H127 V445" fill="none" stroke="#8aa497" stroke-width="1.5"/>
-<path class="concept-edge" data-from="shared-core" data-to="evidence" data-group="" d="M610 510 V480 H617 V445" fill="none" stroke="#8aa497" stroke-width="1.5"/>
-<text x="250" y="32" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="15" fill="#547464">People and supply</text>
-<text x="740" y="32" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="15" fill="#547464">Resources and value</text>
-<g class="concept-node" data-node="practice" data-group="growth"><rect x="20" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="127.5" y="118.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Practice data</text>
-<text x="127.5" y="146.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Observe collaboration</text>
+<circle cx="250" cy="230" r="170" fill="#258272" fill-opacity=".035" stroke="#258272" stroke-opacity=".15" stroke-width="24"/>
+<circle cx="730" cy="230" r="170" fill="#596daf" fill-opacity=".035" stroke="#596daf" stroke-opacity=".15" stroke-width="24"/>
+<text x="490" y="475" text-anchor="middle" font-family="Arial,Source Han Sans SC,sans-serif" font-size="18" fill="#526d60">Public goods &amp; adoption → Value</text>
+<path d="M250 492 H730" stroke="#258272" stroke-width="2" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
+<text x="490" y="530" text-anchor="middle" font-family="Arial,Source Han Sans SC,sans-serif" font-size="18" fill="#526d60">Growth ← Resources &amp; opportunities</text>
+<path d="M730 546 H250" stroke="#596daf" stroke-width="2" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
+<path d="M250 570 V622 H730 V570 M490 622 V656" fill="none" stroke="#93a69c" stroke-dasharray="4 5" stroke-width="1.5"/>
+<text x="490" y="595" text-anchor="middle" font-family="Arial,Source Han Sans SC,sans-serif" font-size="15" fill="#526d60">Evidence in ↓  ↑ Guidance back</text>
+<path class="concept-edge" data-from="practice" data-to="visible" data-group="growth" d="M335 83 A170 170 0 0 1 417 187" fill="none" stroke="#258272" stroke-width="3" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="visible" data-to="talent" data-group="growth" d="M417 273 A170 170 0 0 1 335 377" fill="none" stroke="#258272" stroke-width="3" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="talent" data-to="supply" data-group="growth" d="M165 377 A170 170 0 0 1 83 273" fill="none" stroke="#258272" stroke-width="3" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="supply" data-to="practice" data-group="growth" d="M83 187 A170 170 0 0 1 165 83" fill="none" stroke="#258272" stroke-width="3" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="invest" data-to="support" data-group="value" d="M815 83 A170 170 0 0 1 897 187" fill="none" stroke="#596daf" stroke-width="3" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="support" data-to="value" data-group="value" d="M897 273 A170 170 0 0 1 815 377" fill="none" stroke="#596daf" stroke-width="3" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="value" data-to="evidence" data-group="value" d="M645 377 A170 170 0 0 1 563 273" fill="none" stroke="#596daf" stroke-width="3" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="evidence" data-to="invest" data-group="value" d="M563 187 A170 170 0 0 1 645 83" fill="none" stroke="#596daf" stroke-width="3" marker-end="url(#twin-flywheels-en-desktop-arrow)"/>
+<g class="concept-node" data-node="practice" data-group="growth"><rect x="168" y="26" width="164" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="250.0" y="47.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" font-weight="600" fill="#173b2b">Contribute</text>
+<text x="250.0" y="70.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">Practice &amp;</text>
+<text x="250.0" y="87.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">collaborate</text>
 </g>
-<g class="concept-node" data-node="evaluate" data-group="growth"><rect x="265" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="372.5" y="106.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Multidimensional</text>
-<text x="372.5" y="130.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">evaluation</text>
-<text x="372.5" y="158.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Interpret contributions</text>
+<g class="concept-node" data-node="visible" data-group="growth"><rect x="354" y="194" width="132" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="420.0" y="215.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" font-weight="600" fill="#173b2b">Recognition</text>
+<text x="420.0" y="238.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">Make growth</text>
+<text x="420.0" y="255.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">visible</text>
 </g>
-<g class="concept-node" data-node="visible" data-group="growth"><rect x="265" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="372.5" y="241.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Visible</text>
-<text x="372.5" y="265.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">contribution</text>
-<text x="372.5" y="293.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Make growth visible</text>
+<g class="concept-node" data-node="talent" data-group="growth"><rect x="168" y="362" width="164" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="250.0" y="391.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" font-weight="600" fill="#173b2b">Capability</text>
+<text x="250.0" y="414.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">Learn &amp; create</text>
 </g>
-<g class="concept-node" data-node="talent" data-group="growth"><rect x="265" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="372.5" y="376.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Participation and</text>
-<text x="372.5" y="400.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">growth</text>
-<text x="372.5" y="428.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Attract and support people</text>
+<g class="concept-node" data-node="supply" data-group="growth"><rect x="14" y="194" width="132" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="80.0" y="223.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" font-weight="600" fill="#173b2b">Public goods</text>
+<text x="80.0" y="246.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">Build &amp; adopt</text>
 </g>
-<g class="concept-node" data-node="supply" data-group="growth"><rect x="20" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="127.5" y="376.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Better goods and</text>
-<text x="127.5" y="400.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">use</text>
-<text x="127.5" y="428.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Improve public goods</text>
+<g class="concept-node" data-node="growth-hub" data-group="growth"><rect x="165" y="178" width="170" height="104" rx="6" fill="#e4f3ee" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="250.0" y="226.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="20" font-weight="600" fill="#173b2b">GROWTH</text>
+<text x="250.0" y="255.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">People &amp; public goods</text>
 </g>
-<g class="concept-node" data-node="feedback" data-group="growth"><rect x="20" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="127.5" y="253.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">New evidence</text>
-<text x="127.5" y="281.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Return to practice data</text>
+<g class="concept-node" data-node="invest" data-group="value"><rect x="648" y="26" width="164" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="730.0" y="55.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" font-weight="600" fill="#173b2b">Resources</text>
+<text x="730.0" y="78.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">Commit resources</text>
 </g>
-<g class="concept-node" data-node="invest" data-group="value"><rect x="510" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="617.5" y="106.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Resource</text>
-<text x="617.5" y="130.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">investment</text>
-<text x="617.5" y="158.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Resources for practice</text>
+<g class="concept-node" data-node="support" data-group="value"><rect x="834" y="194" width="132" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="900.0" y="223.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" font-weight="600" fill="#173b2b">Support</text>
+<text x="900.0" y="246.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">Match &amp; support</text>
 </g>
-<g class="concept-node" data-node="match" data-group="value"><rect x="755" y="70" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="862.5" y="106.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Recognize and</text>
-<text x="862.5" y="130.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">match</text>
-<text x="862.5" y="158.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Understand needs</text>
+<g class="concept-node" data-node="value" data-group="value"><rect x="648" y="362" width="164" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="730.0" y="383.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" font-weight="600" fill="#173b2b">Value</text>
+<text x="730.0" y="406.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">Public &amp; partner</text>
+<text x="730.0" y="423.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">value</text>
 </g>
-<g class="concept-node" data-node="support" data-group="value"><rect x="755" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="862.5" y="232.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Support people</text>
-<text x="862.5" y="256.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">and goods</text>
-<text x="862.5" y="284.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Connect resources to</text>
-<text x="862.5" y="302.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">creation</text>
+<g class="concept-node" data-node="evidence" data-group="value"><rect x="494" y="194" width="132" height="72" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="560.0" y="223.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" font-weight="600" fill="#173b2b">Evidence</text>
+<text x="560.0" y="246.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">Verify &amp; improve</text>
 </g>
-<g class="concept-node" data-node="value" data-group="value"><rect x="755" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="862.5" y="376.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Public and</text>
-<text x="862.5" y="400.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">partner value</text>
-<text x="862.5" y="428.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Observe actual changes</text>
+<g class="concept-node" data-node="value-hub" data-group="value"><rect x="645" y="178" width="170" height="104" rx="6" fill="#edf0fa" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="730.0" y="226.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="20" font-weight="600" fill="#173b2b">INVESTMENT</text>
+<text x="730.0" y="255.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">Resources &amp; value</text>
 </g>
-<g class="concept-node" data-node="evidence" data-group="value"><rect x="510" y="340" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="617.5" y="388.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Examine outcomes</text>
-<text x="617.5" y="416.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Evidence for decisions</text>
-</g>
-<g class="concept-node" data-node="reinvest" data-group="value"><rect x="510" y="205" width="215" height="105" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
-<text x="617.5" y="253.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Continued support</text>
-<text x="617.5" y="281.0" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Improve future support</text>
-</g>
-<g class="concept-node" data-node="shared-core" data-group=""><rect x="250" y="510" width="460" height="100" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
-<text x="480.0" y="555.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Data and evaluation</text>
-<text x="480.0" y="583.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Resources support growth; evidence informs investment</text>
+<g class="concept-node" data-node="shared-core" data-group=""><rect x="265" y="668" width="450" height="102" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="490.0" y="712.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" font-weight="600" fill="#173b2b">Data &amp; evaluation</text>
+<text x="490.0" y="735.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="12" fill="#567063">Recognize · Match · Verify</text>
 </g>
 </g>
-<path d="M20 763 H960" stroke="#dce5df"/><text x="20" y="789" font-family="Arial,Source Han Sans SC,sans-serif" font-size="14" fill="#526d60">Test these relationships in practice; explain outcomes with evidence.</text><text x="20" y="812" font-family="Arial,sans-serif" font-size="11" fill="#718a7b">www.x-lab.info/ai-for-all/</text>
+<path d="M20 923 H960" stroke="#dce5df"/><text x="20" y="949" font-family="Arial,Source Han Sans SC,sans-serif" font-size="14" fill="#526d60">Explore each four-step cycle. Test these relationships through practice and evidence.</text><text x="20" y="972" font-family="Arial,sans-serif" font-size="11" fill="#718a7b">www.x-lab.info/ai-for-all/</text>
 </svg>

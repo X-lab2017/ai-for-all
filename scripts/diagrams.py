@@ -27,31 +27,35 @@ DIAGRAMS.append(dict(id='evaluation-core',label=L('一个内核','ONE SHARED COR
  N('core','数据与评价','Data and evaluation','识别贡献 · 支持成长 · 检验效果','Recognize · Support · Examine','共同内核连接证据与行动。评价应服务于人的成长，尊重多种贡献和知情选择，允许质疑、纠错与持续改进。','The shared core connects evidence with action. Evaluation serves human development, respects varied contributions and informed choice, and remains open to correction.',[320,185,320,100],[40,240,280,120],'accent'),
  N('methods','评价方法与基准','Methods and benchmarks','解释贡献与发展\nOpenRank / OSIDX','Interpret contribution and development\nOpenRank / OSIDX','OpenRank 从协作网络分析贡献与影响力；OSIDX 的发展指数工作拓展生态观察。方法需要结合场景解释，不能把单一指标当作全部价值。','OpenRank examines contribution and influence through collaboration networks; OSIDX work extends ecosystem observation. Interpret methods in context, beyond a single metric.',[25,335,295,100],[15,460,155,150]),
  N('research','评价理论与研究','Evaluation research','检验方法本身\nBenchCouncil','Examine the methods\nBenchCouncil','参考 BenchCouncil 等评价科学研究，明确评价对象、方法和证据，持续检验评价的有效性与局限。','Draw on evaluation science, including BenchCouncil research, to clarify objects, methods and evidence and examine validity and limitations.',[640,335,295,100],[190,460,155,150])],edges={'desktop':[E('platform','core','M320 95 H365 V185','line'),E('data','core','M640 95 H595 V185','line'),E('methods','core','M320 385 H365 V285','line'),E('research','core','M640 385 H595 V285','line')],'mobile':[E('platform','core','M92 160 V200 H130 V240','line'),E('data','core','M268 160 V200 H230 V240','line'),E('methods','core','M92 460 V410 H130 V360','line'),E('research','core','M268 460 V410 H230 V360','line')]},labels=[]))
-# Both cycles preserve the reviewed causal links; all arrows close back into practice.
-cycle_nodes=[]
-left=[('practice','贡献与实践数据','Practice data','观察真实协作','Observe collaboration','记录贡献、协作与实践，说明数据来源与覆盖范围。','Record contributions, collaboration and practice, with clear sources and coverage.'),('evaluate','多维评价','Multidimensional evaluation','解释贡献与局限','Interpret contributions','结合多种证据解释贡献，说明方法与局限。','Interpret contributions through varied evidence and explain methodological limits.'),('visible','贡献与成长可见','Visible contribution','看见成长路径','Make growth visible','让贡献与成长更容易被理解，为支持和参与提供依据。','Make contributions and growth understandable to inform support and participation.'),('talent','人才参与与成长','Participation and growth','吸引并支持参与','Attract and support people','吸引更多人参与，通过学习、协作和真实问题支持成长。','Attract participation and support growth through learning, collaboration and real problems.'),('supply','供给与应用改善','Better goods and use','公共品走向应用','Improve public goods','将成长转化为可维护的公共品与可用的应用，回应使用者需要。','Turn growth into maintainable public goods and usable applications that address needs.'),('feedback','新的贡献与效果','New evidence','带回实践数据','Return to practice data','把新的贡献、采用体验与受益变化带回数据与评价。','Return new contributions, adoption experience and observed outcomes to evaluation.')]
-right=[('invest','企业与机构投入','Resource investment','资源支持实践','Resources for practice','企业与机构按明确条件投入技术、资金、实践机会等资源。','Businesses and institutions contribute technology, funding or opportunities under clear conditions.'),('match','贡献识别与匹配','Recognize and match','理解能力与需求','Understand needs','识别贡献与资源需求，在参与者自主选择的基础上匹配支持。','Understand contributions and resource needs, matching support with participants’ informed choice.'),('support','支持开发者\n与公共品','Support people and goods','连接资源与创造','Connect resources to creation','把资源投入学习、创造、维护与应用，让支持进入真实实践。','Direct resources to learning, creation, maintenance and adoption.'),('value','公共价值\n与合作回报','Public and partner value','观察实际变化','Observe actual changes','关注公共受益，以及人才合作、技术应用和生态洞察等合理回报。','Examine public benefit and reasonable partner benefits such as talent collaboration, adoption and insights.'),('evidence','投入效果核验','Examine outcomes','用证据支持判断','Evidence for decisions','结合证据与反馈核验投入效果，解释局限，不预设必然回报。','Examine effects with evidence and feedback, explain limitations and avoid assuming guaranteed returns.'),('reinvest','持续投入','Continued support','改进下一轮支持','Improve future support','根据实际价值和效果证据改进资源安排，让支持能够持续。','Use evidence of value and outcomes to improve resource decisions and sustain support.')]
-positions=[(0,0),(245,0),(245,135),(245,270),(0,270),(0,135)]
-mobile_positions=[(0,0),(175,0),(175,120),(175,240),(0,240),(0,120)]
-for group,items,dx,my in [('growth',left,20,50),('value',right,510,495)]:
- for i,t in enumerate(items):
-  id,zh,en,sz,se,dz,de=t;x,y=positions[i];mx,yy=mobile_positions[i]
-  cycle_nodes.append(N(id,zh,en,sz,se,dz,de,[dx+x,70+y,215,105],[15+mx,my+yy,155,100],group=group))
-cycle_nodes.append(N('shared-core','数据与评价','Data and evaluation','资源支持成长，价值证据支持投入','Resources support growth; evidence informs investment','两个飞轮共享证据与评价。资源支持人才与供给，人才与供给创造价值，效果证据帮助改进下一轮投入。','Both cycles share evidence and evaluation. Resources support people and supply; people create value; evidence helps improve the next round of investment.',[250,510,460,100],[20,890,320,115],'accent'))
-cycle_edges={'desktop':[],'mobile':[]}
-for mode in cycle_edges:
- for group,items in [('growth',left),('value',right)]:
-  ids=[n[0] for n in items]
-  ns=[next(n for n in cycle_nodes if n['id']==id) for id in ids]
-  for i in range(6):
-   a=ns[i][mode];b=ns[(i+1)%6][mode];x,y,w,h=a;X,Y,W,H=b
-   if Y==y:
-    path=f'M{x+w if X>x else x} {y+h/2} H{X-7 if X>x else X+W+7}'
-   else:path=f'M{x+w/2} {y+h if Y>y else y} V{Y-7 if Y>y else Y+H+7}'
-   cycle_edges[mode].append(E(ids[i],ids[(i+1)%6],path,'arrow',group))
-cycle_edges['desktop'] += [E('shared-core','supply','M350 510 V480 H127 V445','line'),E('shared-core','evidence','M610 510 V480 H617 V445','line')]
-cycle_edges['mobile'] += [E('shared-core','feedback','M20 945 H6 V220 H15','line'),E('shared-core','support','M340 945 H354 V665 H345','line')]
-DIAGRAMS.append(dict(id='twin-flywheels',label=L('两个飞轮','TWO REINFORCING CYCLES'),title=L('让成长与投入，形成持续循环','Connect growth and resources in reinforcing cycles'),summary=L('人才与供给、资源与价值形成两个闭环，共用数据与评价内核。','People and supply, resources and value form two closed cycles around a shared data and evaluation core.'),note=L('关系需要在实践中检验，成效由证据说明。','Test these relationships in practice; explain outcomes with evidence.'),default='shared-core',height={'desktop':640,'mobile':1030},nodes=cycle_nodes,edges=cycle_edges,labels=[('desktop',250,32,'评价内核运转','People and supply'),('desktop',740,32,'生态价值再生','Resources and value'),('mobile',180,25,'评价内核运转','People and supply'),('mobile',180,470,'生态价值再生','Resources and value')]))
+# Four-step cycles: detail is disclosed on selection, not crowded into the overview.
+left=[('practice','实践贡献','Contribute','协作 · 真实问题','Practice & collaborate','记录贡献与实践数据，以多维评价理解贡献，说明数据覆盖和方法局限。','Record practice and contributions; use multidimensional evaluation with explicit coverage and limitations.'),('visible','贡献可见','Recognition','认可 · 成长依据','Make growth visible','让贡献与成长可见，为人才参与和有针对性的支持提供依据。','Make contributions and growth visible to inform participation and targeted support.'),('talent','人才成长','Capability','学习 · 参与 · 创造','Learn & create','吸引和支持人才参与，在学习、协作与真实问题中成长，把能力转化为创造。','Support participation and growth through learning, collaboration and real problems.'),('supply','公共品与应用','Public goods','创造 · 维护 · 采用','Build & adopt','将成长转化为公共品供给与实际应用；新的贡献、使用反馈和受益变化进入下一轮实践。','Turn capability into public goods and adoption. New contributions, user feedback and outcomes inform further practice.')]
+right=[('invest','资源投入','Resources','技术 · 资金 · 机会','Commit resources','企业与机构在明确条件下投入资源；上一轮验证的成效为持续投入提供依据。','Organizations commit resources under clear terms; validated outcomes inform continued investment.'),('support','匹配支持','Support','识别需求 · 支持实践','Match & support','结合贡献识别与资源需求，在参与者自主选择的基础上，支持开发者学习、创造、维护和应用。','Recognize contributions and needs; match resources to learning, creation, maintenance and adoption with informed choice.'),('value','价值实现','Value','公共受益 · 合作回报','Public & partner value','公共品与应用形成可观察的公共价值，以及人才合作、技术应用和生态洞察等合理合作回报。','Public goods and adoption generate observable public benefit and reasonable partner benefits.'),('evidence','效果验证','Evidence','核验成效 · 改进投入','Verify & improve','结合证据与反馈核验成效，说明局限，改进下一轮资源安排；不预设必然回报。','Verify outcomes with evidence and feedback, explain limits and improve future support without assuming guaranteed returns.')]
+cycle_nodes=[];cycle_edges={'desktop':[],'mobile':[]}
+for group,items,cx,offset in [('growth',left,250,0),('value',right,730,440)]:
+ desktop=[(cx-82,26,164,72),(cx+104,194,132,72),(cx-82,362,164,72),(cx-236,194,132,72)]
+ mobile=[(117,18+offset,126,64),(245,150+offset,112,64),(117,282+offset,126,64),(3,150+offset,112,64)]
+ for i,t in enumerate(items):cycle_nodes.append(N(*t,desktop[i],mobile[i],group=group))
+ cycle_nodes.append(N(group+'-hub','成长飞轮' if group=='growth' else '投入飞轮','GROWTH' if group=='growth' else 'INVESTMENT','人才与供给' if group=='growth' else '资源与价值','People & public goods' if group=='growth' else 'Resources & value','让贡献被看见，让人才成长，让公共品在使用中持续改进。' if group=='growth' else '让资源进入实践，让价值得到验证，让支持持续发生。','Make contributions visible, grow capability and improve public goods through use.' if group=='growth' else 'Turn resources into practice, validate value and sustain support.',[cx-85,178,170,104],[124,139+offset,112,86],'hub',group))
+ for mode in cycle_edges:
+  if mode=='desktop':
+   paths=[f'M{cx+85} 83 A170 170 0 0 1 {cx+167} 187',f'M{cx+167} 273 A170 170 0 0 1 {cx+85} 377',f'M{cx-85} 377 A170 170 0 0 1 {cx-167} 273',f'M{cx-167} 187 A170 170 0 0 1 {cx-85} 83']
+  else:
+   paths=[f'M245 {62+offset} Q290 {87+offset} 294 {143+offset}',f'M294 {221+offset} Q290 {269+offset} 245 {300+offset}',f'M115 {300+offset} Q70 {269+offset} 66 {221+offset}',f'M66 {143+offset} Q70 {87+offset} 115 {62+offset}']
+  for i,path in enumerate(paths):cycle_edges[mode].append(E(items[i][0],items[(i+1)%4][0],path,'arrow',group))
+cycle_nodes.append(N('shared-core','数据与评价','Data & evaluation','识别贡献 · 匹配资源 · 核验效果','Recognize · Match · Verify','两个飞轮把贡献、采用体验与成效证据汇入共同内核；内核用多维评价支持贡献识别、资源匹配与效果核验，将依据反馈给两个飞轮。它是共同的证据与决策基础，不是独立的第三个飞轮。','Both cycles supply contribution, adoption and outcome evidence. The shared core supports recognition, resource matching and verification, returning evidence-informed guidance to both cycles. It is a common foundation, not a third cycle.',[265,668,450,102],[25,1010,310,108],'accent'))
+DIAGRAMS.append(dict(id='twin-flywheels',label=L('两个飞轮','TWO REINFORCING CYCLES'),title=L('让成长与投入，形成持续循环','Connect growth and resources in reinforcing cycles'),summary=L('成长飞轮与投入飞轮各含四步。公共品与应用创造价值，资源与机会支持成长；数据与评价是两个飞轮共享的证据与决策底座。','Two four-step cycles: public goods create value; resources support growth. Data and evaluation form their shared evidence and decision foundation.'),note=L('先看双轮，再点选四个环节。循环关系以实践与证据检验。','Explore each four-step cycle. Test these relationships through practice and evidence.'),default='shared-core',height={'desktop':800,'mobile':1150},nodes=cycle_nodes,edges=cycle_edges,labels=[]))
+
+def cycle_background(mode,lang,prefix):
+ out=[]
+ def txt(x,y,zh,en,size=16,color='#526d60'):
+  return f'<text x="{x}" y="{y}" text-anchor="middle" font-family="Arial,Source Han Sans SC,sans-serif" font-size="{size}" fill="{color}">{esc(zh if lang=="zh" else en)}</text>'
+ for group,cx,cy,r,color in ([('growth',250,230,170,'#258272'),('value',730,230,170,'#596daf')] if mode=='desktop' else [('growth',180,182,122,'#258272'),('value',180,622,122,'#596daf')]):
+  out.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{color}" fill-opacity=".035" stroke="{color}" stroke-opacity=".15" stroke-width="24"/>')
+ if mode=='desktop':
+  out += [txt(490,475,'公共品与应用 → 创造价值','Public goods & adoption → Value',18),'<path d="M250 492 H730" stroke="#258272" stroke-width="2" marker-end="url(#'+prefix+'-arrow)"/>',txt(490,530,'支持成长 ← 资源与机会','Growth ← Resources & opportunities',18),'<path d="M730 546 H250" stroke="#596daf" stroke-width="2" marker-end="url(#'+prefix+'-arrow)"/>','<path d="M250 570 V622 H730 V570 M490 622 V656" fill="none" stroke="#93a69c" stroke-dasharray="4 5" stroke-width="1.5"/>',txt(490,595,'实践证据汇入 ↓　↑ 评价依据反馈','Evidence in ↓  ↑ Guidance back',15)]
+ else:
+  out += [txt(180,380,'公共品与应用 → 创造价值','Public goods → Value',14),txt(180,407,'支持成长 ← 资源与机会','Growth ← Resources',14),'<path d="M50 802 V934 H310 V802 M180 934 V998" fill="none" stroke="#93a69c" stroke-dasharray="4 5" stroke-width="1.5"/>',txt(180,863,'两个飞轮，共享一个底座','Two cycles, one shared foundation',15),txt(180,895,'实践证据 ↓　↑ 评价依据','Evidence ↓  ↑ Guidance',14)]
+ return out
 
 def esc(s):return html.escape(str(s),quote=True)
 def wrap(text,width,fontsize):
@@ -75,16 +79,18 @@ def svg(d,lang,mobile=False,export=False):
  if export:
   out += [f'<text x="20" y="27" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#567467">X-LAB AI / AI FOR ALL / v1.1</text>',f'<text x="20" y="66" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="600" fill="#143a2c">{esc(d["title"][lang])}</text>',f'<path d="M20 88 H960" stroke="#dce5df"/>']
  out.append(f'<g transform="translate(0,{pad})">')
+ if d['id']=='twin-flywheels':out.extend(cycle_background(mode,lang,prefix))
  for ed in d['edges'][mode]:
   attrs=f' class="concept-edge" data-from="{ed["fr"]}" data-to="{ed["to"]}" data-group="{ed["group"]}"'
-  out.append(f'<path{attrs} d="{ed["path"]}" fill="none" stroke="#8aa497" stroke-width="1.5"'+('' if ed['kind']=='line' else f' marker-end="url(#{prefix}-arrow)"')+(' stroke-dasharray="5 5"' if ed['kind']=='feedback' else '')+'/>')
+  out.append(f'<path{attrs} d="{ed["path"]}" fill="none" stroke="{('#258272' if ed['group']=='growth' else '#596daf' if ed['group']=='value' else '#8aa497')}" stroke-width="{3 if d['id']=='twin-flywheels' else 1.5}"'+('' if ed['kind']=='line' else f' marker-end="url(#{prefix}-arrow)"')+(' stroke-dasharray="5 5"' if ed['kind']=='feedback' else '')+'/>')
  for m,x,y,zh,en in d.get('labels',[]):
   if m==mode:out.append(f'<text x="{x}" y="{y}" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="{30 if zh=="×" else 15}" fill="#547464">{esc(zh if lang=="zh" else en)}</text>')
  for n in d['nodes']:
   x,y,nw,nh=n[mode];small=nw<180;fs=(17 if small else 22) if lang=='zh' else (15 if small else 19);subfs=(12 if small else 14) if lang=='zh' else (11.5 if small else 13)
+  if d['id']=='twin-flywheels':fs=((18 if lang=='zh' else 13) if mobile else (26 if lang=='zh' else 20)) if n['kind']=='hub' else (16 if lang=='zh' else 14);subfs=11 if mobile else 12
   title=wrap(n['title'][lang],nw-24,fs);subs=wrap(n['sub'][lang],nw-24,subfs)
   lineh=fs+5;subh=subfs+5;block=len(title)*lineh+len(subs)*subh+5;ty=y+(nh-block)/2+fs
-  out.append(f'<g class="concept-node" data-node="{n["id"]}" data-group="{n["group"]}"><rect x="{x}" y="{y}" width="{nw}" height="{nh}" rx="6" fill="{("#f1f8e9" if n["kind"]=="accent" else "#fff")}" stroke="{("#75a34d" if n["kind"]=="accent" else "#a1b5a9")}" stroke-width="1.4"/>')
+  out.append(f'<g class="concept-node" data-node="{n["id"]}" data-group="{n["group"]}"><rect x="{x}" y="{y}" width="{nw}" height="{nh}" rx="6" fill="{('#e4f3ee' if n['group']=='growth' else '#edf0fa') if n['kind']=='hub' else ('#f1f8e9' if n['kind']=='accent' else '#fff')}" stroke="{("#75a34d" if n["kind"]=="accent" else "#a1b5a9")}" stroke-width="1.4"/>')
   for t in title:
    out.append(f'<text x="{x+nw/2}" y="{ty}" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="{fs}" font-weight="600" fill="#173b2b">{esc(t)}</text>');ty+=lineh
   ty+=4
@@ -103,7 +109,7 @@ def figure(d,lang):
  out.append(f'<p class="visually-hidden">{esc(d["summary"][lang])}</p>')
  if d['id']=='twin-flywheels':
   out.append('<div class="cycle-controls" role="group" aria-label="'+('突出飞轮' if lang=='zh' else 'Highlight a cycle')+'">')
-  for key,zh,en in [('all','查看双飞轮','Both cycles'),('growth','人才与供给','People and supply'),('value','资源与价值','Resources and value')]:out.append(f'<button type="button" data-cycle="{key}" aria-pressed="{str(key=="all").lower()}">{zh if lang=="zh" else en}</button>')
+  for key,zh,en in [('all','查看双飞轮','Both cycles'),('growth','成长飞轮','Growth cycle'),('value','投入飞轮','Investment cycle')]:out.append(f'<button type="button" data-cycle="{key}" aria-pressed="{str(key=="all").lower()}">{zh if lang=="zh" else en}</button>')
   out.append('</div>')
  for mobile in [False,True]:
   mode='mobile' if mobile else 'desktop';w=360 if mobile else 980
