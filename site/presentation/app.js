@@ -51,6 +51,7 @@
   function show(index, manual = false) {
     index = Math.max(0, Math.min(scenes.length - 1, index));
     if (manual) { tour = false; elapsed = 0; $('#tour-progress').style.width = '0%'; document.body.classList.remove('tour'); }
+    document.body.classList.toggle('dark-chapter', scenes[index].classList.contains('dark-scene') || scenes[index].classList.contains('cycles'));
     current = index; inspecting = false; lastPulse = -1;
     $$('[data-map]').forEach(b => b.setAttribute('aria-pressed', 'false'));
     $('#map-detail h2').textContent = '从一个真实问题开始。';
