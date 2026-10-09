@@ -35,3 +35,5 @@ body .topbar,body.dark-chapter .topbar,body:has(.cycles:not([hidden])) .topbar{b
 .model-card:hover,.practice-card:hover{transform:translateY(-3px)}.halo-one{animation-duration:60s}.halo-two{animation-duration:80s}.paused .story-focus{outline:none;box-shadow:none;filter:none}
 @media(prefers-reduced-motion:reduce){.story-focus{outline:none;box-shadow:none;filter:none}.model-card:hover,.practice-card:hover{transform:none}}
 @media print{.story-focus{outline:none;box-shadow:none;filter:none}}
+
+#stage{overflow-x:clip}
