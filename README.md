@@ -4,7 +4,7 @@
 
 **X-lab AI 开放实验室 · v1.1 · 2026 年 10 月 9 日**
 
-[在线阅读](https://www.x-lab.info/ai-for-all/) · [English](translations/en.md) · [行动进展](PROGRESS.md) · [参与共建](CONTRIBUTING.md) · [修订记录](CHANGELOG.md)
+[在线阅读](https://www.x-lab.info/ai-for-all/) · [互动演示](https://www.x-lab.info/ai-for-all/presentation/) · [English](translations/en.md) · [行动进展](PROGRESS.md) · [参与共建](CONTRIBUTING.md) · [修订记录](CHANGELOG.md)
 
 <!-- manifesto:start -->
 ## 一、目标与对象
