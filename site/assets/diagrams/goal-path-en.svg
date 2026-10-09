@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 505" width="980" height="505" class="concept-svg" role="img" aria-labelledby="title desc">
+<title id="title">Connect AI to inclusion through public goods</title><desc id="desc">AI enables digital public goods; adoption and local adaptation turn them into real benefit.</desc>
+<defs><marker id="goal-path-en-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="27" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#567467">X-LAB AI / AI FOR ALL / v1.1</text>
+<text x="20" y="66" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="600" fill="#143a2c">Connect AI to inclusion through public goods</text>
+<path d="M20 88 H960" stroke="#dce5df"/>
+<g transform="translate(0,110)">
+<path class="concept-edge" data-from="ai" data-to="dpg" data-group="" d="M220 130 H252" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="dpg" data-to="adoption" data-group="" d="M460 130 H492" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="adoption" data-to="benefit" data-group="" d="M700 130 H732" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-en-desktop-arrow)"/>
+<path class="concept-edge" data-from="benefit" data-to="dpg" data-group="" d="M840 190 V265 H360 V198" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#goal-path-en-desktop-arrow)" stroke-dasharray="5 5"/>
+<text x="590" y="253" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="15" fill="#547464">Feedback and improvement</text>
+<g class="concept-node" data-node="ai" data-group=""><rect x="20" y="70" width="200" height="120" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="120.0" y="116.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">AI capabilities</text>
+<text x="120.0" y="144.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Technology and human</text>
+<text x="120.0" y="162.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">creativity</text>
+</g>
+<g class="concept-node" data-node="dpg" data-group=""><rect x="260" y="70" width="200" height="120" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="360.0" y="104.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Digital public</text>
+<text x="360.0" y="128.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">goods</text>
+<text x="360.0" y="156.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">DPGs · Shareable and</text>
+<text x="360.0" y="174.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">reusable</text>
+</g>
+<g class="concept-node" data-node="adoption" data-group=""><rect x="500" y="70" width="200" height="120" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="600.0" y="113.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">Adoption and</text>
+<text x="600.0" y="137.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">adaptation</text>
+<text x="600.0" y="165.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">Use in real settings</text>
+</g>
+<g class="concept-node" data-node="benefit" data-group=""><rect x="740" y="70" width="200" height="120" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="840.0" y="116.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="19" font-weight="600" fill="#173b2b">AI for All</text>
+<text x="840.0" y="144.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">More people learn,</text>
+<text x="840.0" y="162.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="13" fill="#567063">create and benefit</text>
+</g>
+</g>
+<path d="M20 443 H960" stroke="#dce5df"/><text x="20" y="469" font-family="Arial,Source Han Sans SC,sans-serif" font-size="14" fill="#526d60">Real benefit needs adoption and evidence.</text><text x="20" y="492" font-family="Arial,sans-serif" font-size="11" fill="#718a7b">www.x-lab.info/ai-for-all/</text>
+</svg>

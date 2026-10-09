@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 605" width="980" height="605" class="concept-svg" role="img" aria-labelledby="title desc">
+<title id="title">开源降低门槛，创造带来价值</title><desc id="desc">开源之力与开发者之力相互促进，共同创造和维护数字公共品。</desc>
+<defs><marker id="dual-forces-zh-desktop-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L6 3.5 L0 7" fill="none" stroke="#708d81" stroke-width="1.2"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="27" font-family="Arial,sans-serif" font-size="12" letter-spacing="2" fill="#567467">X-LAB AI / AI FOR ALL / v1.1</text>
+<text x="20" y="66" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="28" font-weight="600" fill="#143a2c">开源降低门槛，创造带来价值</text>
+<path d="M20 88 H960" stroke="#dce5df"/>
+<g transform="translate(0,110)">
+<path class="concept-edge" data-from="open" data-to="commons" data-group="" d="M222 195 V240 H480 V277" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#dual-forces-zh-desktop-arrow)"/>
+<path class="concept-edge" data-from="people" data-to="commons" data-group="" d="M737 195 V240 H480" fill="none" stroke="#8aa497" stroke-width="1.5"/>
+<path class="concept-edge" data-from="commons" data-to="open" data-group="" d="M245 340 H75 V203" fill="none" stroke="#8aa497" stroke-width="1.5" marker-end="url(#dual-forces-zh-desktop-arrow)" stroke-dasharray="5 5"/>
+<text x="480" y="130" font-family="Arial,Source Han Sans SC,sans-serif" text-anchor="middle" font-size="30" fill="#547464">×</text>
+<g class="concept-node" data-node="open" data-group=""><rect x="40" y="40" width="365" height="155" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="222.5" y="104.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">开源之力</text>
+<text x="222.5" y="135.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">用得起</text>
+<text x="222.5" y="154.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">AI Infra · AI Model · AI Agent</text>
+</g>
+<g class="concept-node" data-node="people" data-group=""><rect x="555" y="40" width="365" height="155" rx="6" fill="#fff" stroke="#a1b5a9" stroke-width="1.4"/>
+<text x="737.5" y="104.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">开发者之力</text>
+<text x="737.5" y="135.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">用得好</text>
+<text x="737.5" y="154.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">AI Learner · AI Builder · AI Engineer</text>
+</g>
+<g class="concept-node" data-node="commons" data-group=""><rect x="245" y="285" width="470" height="110" rx="6" fill="#f1f8e9" stroke="#75a34d" stroke-width="1.4"/>
+<text x="480.0" y="336.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="22" font-weight="600" fill="#173b2b">共同创造与维护</text>
+<text x="480.0" y="367.5" text-anchor="middle" font-family="Arial,Source Han Sans SC,Noto Sans CJK SC,sans-serif" font-size="14" fill="#567063">让数字公共品持续丰富</text>
+</g>
+</g>
+<path d="M20 543 H960" stroke="#dce5df"/><text x="20" y="569" font-family="Arial,Source Han Sans SC,sans-serif" font-size="14" fill="#526d60">“×”表达相互促进的理念，不是定量公式。</text><text x="20" y="592" font-family="Arial,sans-serif" font-size="11" fill="#718a7b">www.x-lab.info/ai-for-all/</text>
+</svg>

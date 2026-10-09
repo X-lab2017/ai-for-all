@@ -26,6 +26,15 @@ README.md 是中文权威版本。修改通过 Pull Request 说明理由，同�
 
 提出建议不等于项目已被承诺。维护者会结合需求、资源和可执行性判断，明确状态、负责人和支持边界后再启动行动。
 
-## 维护示意图
+## 网站与五幅图解的维护
 
-三幅图的节点、关系、中英文解释和布局由 `scripts/diagrams.py` 统一维护。正文中的 diagram 标记为插图位置；请保持中文、英文位置一致。运行 `python3 scripts/build_site.py` 会更新网页和 SVG。修改图形后，使用支持中文字体的 SVG 渲染器同步导出 PNG。网站交互位于 `site/diagrams.js`，仅切换图解说明，不收集用户数据。
+中文正文以 README.md 为准，英文译本位于 translations/en.md。行动进展分别位于 PROGRESS.md 和 translations/progress.en.md。更新事实时在 SOURCES.md 记录可核对的公开依据。
+
+1. 修改正文与译文中的对应段落，保留 manifesto 和 diagram 标记。
+2. 在 scripts/diagrams.py 同步修改五个要素的中英文节点、解释及宽窄屏布局。
+3. 运行 `python3 scripts/build_site.py` 生成网站、SVG 与分享图源文件。
+4. 需要更新 PNG 时，运行 `npm install`，然后运行 `npm run export:png`。渲染环境需提供中文字体，例如 Source Han Sans SC。
+5. 运行 `python3 scripts/check_site.py` 与 `node --check site/diagrams.js`。检查英文长标签、手机图解、键盘操作与下载。
+6. 通过 PR 说明原因并关联相应 Issue；正文、译文、图解、行动进展与版本记录一起提交。
+
+正文和图解不将设想写成已完成事项。评价指标服务于理解和改进，不能代表个人全部价值或自动证明普惠成效。历史图源保留兼容链接，新版索引明确标注适用版本。
