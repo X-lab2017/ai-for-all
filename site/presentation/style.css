@@ -19,3 +19,5 @@
 @media(max-width:700px){.panorama .map-engine{grid-template-columns:1fr}.panorama .map-goal{padding:18px}.panorama .map-forces{padding:20px}.panorama .mini-cycles{gap:12px}.panorama .mini-wheel{width:110px;height:110px}.panorama .mini-wheel strong{font-size:23px}.panorama .mini-exchange{min-width:42px;font-size:9px}.panorama .map-benefits{padding:18px}.panorama .map-feedback{padding:12px 0;font-size:9px}.panorama .map-feedback span{margin-left:15px}.panorama .panorama-bottom{min-height:0}.panorama .map-core{padding:18px}}
 @media(prefers-reduced-motion:reduce){.ring-orbit{animation:none!important}}
 @media print{.dark-chapter{background:white}.panorama{background:#102c25!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}.panorama .ring-orbit{animation:none}}
+
+.panorama .mini-cycles>.mini-wheel:last-child{color:#e8f1dd}.dark-chapter .edition{color:#afc5b6}
