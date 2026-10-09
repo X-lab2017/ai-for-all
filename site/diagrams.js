@@ -43,5 +43,7 @@ const scheduleNavigation = () => {
 window.addEventListener('scroll', scheduleNavigation, {passive: true});
 window.addEventListener('resize', scheduleNavigation);
 window.addEventListener('hashchange', scheduleNavigation);
+window.addEventListener('load', scheduleNavigation);
+window.addEventListener('pageshow', scheduleNavigation);
 updateCurrentSection();
 document.querySelectorAll('[data-print]').forEach(button => button.addEventListener('click', () => window.print()));

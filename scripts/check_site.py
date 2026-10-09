@@ -24,7 +24,7 @@ for name,lang in [('index.html','zh'),('en.html','en')]:
  for target in p.controls:assert target in p.ids,(name,target)
  for link in p.links:
   if link.startswith('#'):assert link[1:] in p.ids,(name,link)
-  elif not re.match(r'^[a-z]+:',link):assert (SITE/link.split('#')[0]).exists(),(name,link)
+  elif not re.match(r'^[a-z]+:',link):assert (SITE/link.split('#')[0].split('?')[0]).exists(),(name,link)
  assert len(p.data)==5
  for d in p.data:assert d['default'] in d['nodes']
  for old in ['access-capability','path-to-benefit','learning-loop']:assert old in p.ids
