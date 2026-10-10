@@ -102,7 +102,7 @@
 
 ## 版本与发布材料
 
-中文正文为当前权威版本。[英文译本](translations/en.md)已同步至 v1.2，网页支持中英文与亮暗主题切换。最新[13 章互动演示](https://www.x-lab.info/ai-for-all/presentation/)已同步至 v1.2，提供中英文、随章节／亮色／暗色主题与 180 秒自动导览。2026 年 10 月 9 日的[大会发布包](https://www.x-lab.info/ai-for-all/launch/archive-v1.1.html)和[互动演示](https://www.x-lab.info/ai-for-all/presentation-v1.1/)对应 v1.1，保留作为历史材料。
+中文正文为当前权威版本。[英文译本](translations/en.md)已同步至 v1.2，网页支持中英文与亮暗主题切换。最新[13 章互动演示](https://www.x-lab.info/ai-for-all/presentation/)已同步至 v1.2，提供中英文、随章节／亮色／暗色主题与 180 秒自动导览。2026 年 10 月 9 日的大会资料对应 v1.1，源文件保留在仓库。发布资料栏目暂时下线，待内容对齐并重新确认后恢复。
 
 [中文 v1.1](versions/v1.1.zh.md) · [English v1.1](versions/v1.1.en.md) · [术语与来源](SOURCES.md) · [许可说明](NOTICE.md)
 
@@ -114,6 +114,6 @@
 - [最新设计版 PDF](site/downloads/AI-for-All-Manifesto-v1.2-Designed-ZH.pdf)
 - V5 是影片修订号，宣言仍为 v1.2；`launch/` 内大会材料保留历史 v1.1 版本范围。
 
-## 当前发布资料
+## 发布资料状态
 
-[统一资料入口](https://www.x-lab.info/ai-for-all/launch/)现默认提供宣言 v1.2、影片 V5、13 章网页演示及最新资料包。当前包含中英文 Markdown、中文设计版 PDF、V5 成片与制作源码、讲述稿、二维码和校验清单。旧版 PPT、英文 PDF、配音影片、现场文稿及双飞轮图保留在独立历史归档，不作为当前版本推荐。
+发布资料栏目暂时下线。导航与页脚入口已撤下，原页面显示暂未开放，资料包及历史资料不再随网站部署。源码与文件保留在仓库，待内容对齐并重新确认后恢复上线。

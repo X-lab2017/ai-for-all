@@ -15,6 +15,7 @@ for section,folder in [('manifesto',''),('film','film/'),('presentation','presen
   motion=extract('button','motion')
   home=prefix+('en.html?lang=en' if en else 'index.html?lang=zh')
   items=[('manifesto',home,t('宣言正文','Manifesto')),('film',prefix+'film/'+('en.html' if en else 'index.html')+'?lang='+lang,t('宣言影片','Film')),('presentation',prefix+'presentation/'+('en.html' if en else 'index.html')+'?lang='+lang,t('互动演示','Presentation')),('resources',prefix+'launch/'+('en.html' if en else 'index.html')+'?lang='+lang,t('发布资料','Resources'))]
+  items=[item for item in items if item[0]!='resources']
   links=''.join(f'<a href="{url}"'+(' aria-current="page"' if key==section else '')+f'>{name}</a>' for key,url,name in items)
   settings=f'<details class="nav-settings"><summary>{t("显示设置","Display")}<span aria-hidden="true">⌄</span></summary><div class="nav-settings-panel">{theme}{motion}</div></details>'
   brand=f'<a class="nav-brand" href="{home}" aria-label="{t("AI 普惠宣言首页","AI for All home")}"><img class="nav-logo-light" src="{prefix}assets/brand.svg" alt="X-lab AI" width="132" height="40"><img class="nav-logo-dark" src="{prefix}assets/brand-dark.svg" alt="" width="132" height="40"></a>'

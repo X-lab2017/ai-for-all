@@ -26,9 +26,10 @@ jobs:
       - run: python3 scripts/check_site.py
       - run: python3 scripts/check_presentation.py
       - run: python3 scripts/check_release.py
+      - run: python3 scripts/stage_public_site.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: .publish-site
       - uses: actions/deploy-pages@v4
         id: deployment
