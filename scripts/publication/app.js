@@ -1,0 +1,28 @@
+(()=>{'use strict';
+const $=(s,p=document)=>p.querySelector(s), $$=(s,p=document)=>[...p.querySelectorAll(s)];
+document.body.classList.add('enhanced');
+const tabs=$$('.wheel-tab'), panels=$$('.wheel-panel'), tablist=$('.wheel-tabs');
+tablist.setAttribute('role','tablist');
+tabs.forEach((tab,i)=>{tab.setAttribute('role','tab');panels[i].setAttribute('role','tabpanel');panels[i].setAttribute('aria-labelledby',tab.id);panels[i].tabIndex=0;tab.addEventListener('click',()=>select(i));tab.addEventListener('keydown',e=>{let n=i;if(e.key==='ArrowRight')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft')n=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=tabs.length-1;else return;e.preventDefault();select(n);tabs[n].focus();});});
+function select(i){tabs.forEach((t,j)=>{t.setAttribute('aria-selected',String(i===j));t.tabIndex=i===j?0:-1;panels[j].hidden=i!==j;});}select(0);
+$$('[data-pan-wheel]').forEach(a=>a.addEventListener('click',()=>select(Number(a.dataset.panWheel))));
+const clusterButtons=$$('[data-cluster]'), network=$('.network-figure');
+clusterButtons.forEach(b=>b.addEventListener('click',()=>{const active=b.getAttribute('aria-pressed')!=='true';clusterButtons.forEach(x=>x.setAttribute('aria-pressed',String(active&&x===b)));$$('[data-community]',network).forEach(el=>{const match=el.dataset.community.split(' ').includes(b.dataset.cluster)||el.dataset.community==='4';el.classList.toggle('net-dim',active&&!match);el.classList.toggle('net-bright',active&&match);});}));
+const reduce=matchMedia('(prefers-reduced-motion: reduce)'), motion=$('#motion');let paused=reduce.matches, last=0;let manual=false;
+function motionLabel(){motion.setAttribute('aria-pressed',String(paused));motion.textContent=paused?'开启动效':'暂停动效';document.body.classList.toggle('motion-paused',paused);}
+motion.addEventListener('click',()=>{manual=true;paused=!paused;motionLabel();});reduce.addEventListener('change',e=>{if(!manual){paused=e.matches;motionLabel();}});motionLabel();
+const areas=$$('.motion-area'), visible=new Set(), obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)visible.add(e.target);else visible.delete(e.target);}),{threshold:.05});
+areas.forEach(a=>{a._t=0;a._speed=1;a._hover=false;a.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')a._hover=true;});a.addEventListener('pointerleave',()=>a._hover=false);a._tracks=$$('[data-track]',a).map(el=>{const path=document.getElementById(el.dataset.track);return {el,path,len:path.getTotalLength(),phase:Number(el.dataset.phase||0),period:Number(el.dataset.period||42000),appear:Number(el.dataset.appear||0)};});a._tracks.forEach(t=>{const p=t.path.getPointAtLength(t.phase*t.len);t.el.setAttribute('cx',p.x);t.el.setAttribute('cy',p.y);if(t.appear)t.el.style.opacity='0';});obs.observe(a);});
+function frame(now){const dt=last?Math.min(now-last,60):0;last=now;if(!paused&&!document.hidden){for(const a of visible){if(a.closest('[hidden]'))continue;const target=a._hover?3:1;a._speed+=(target-a._speed)*(1-Math.exp(-dt/450));a._t+=dt*a._speed;const seconds=a._t/1000;
+$$('[data-perspective]',a).forEach(el=>{const angle=-Math.PI/2+Number(el.dataset.perspective)*Math.PI*2/3+seconds*Math.PI*2/165;el.setAttribute('transform',`translate(${320+192*Math.cos(angle)} ${320+192*Math.sin(angle)})`);});
+$$('[data-satellite]',a).forEach(el=>{const angle=-Math.PI/2+Number(el.dataset.satellite)*Math.PI*2/3-seconds*Math.PI*2/95;el.setAttribute('transform',`translate(${80*Math.cos(angle)} ${80*Math.sin(angle)})`);});
+$$('[data-growth]',a).forEach(el=>{const p=Math.max(0,Math.min(1,(seconds-Number(el.dataset.growth)*5)/7));el.style.strokeDashoffset=String(1-p);});
+$$('[data-bud]',a).forEach(el=>{const i=Number(el.dataset.bud),p=Math.max(0,Math.min(1,(seconds-15-i*.6)/5));el.style.opacity=String(.2+.8*p);const aura=el.querySelector('.bud-aura');aura.setAttribute('r',String(10+p*(5+2*Math.sin(seconds*.5+i))));});
+a._tracks.forEach((t,i)=>{if(t.appear)t.el.style.opacity=String(Math.max(0,Math.min(1,(seconds-t.appear)/2)));const p=t.path.getPointAtLength(((a._t/t.period+t.phase)%1)*t.len);t.el.setAttribute('cx',p.x);t.el.setAttribute('cy',p.y);});}}requestAnimationFrame(frame);}requestAnimationFrame(frame);
+const anchors=$$('.chapter-nav a'), sections=anchors.map(a=>$(a.getAttribute('href')));let queued=false;
+function updateScroll(){queued=false;const y=window.scrollY, total=document.documentElement.scrollHeight-window.innerHeight;$('.progress').style.transform=`scaleX(${total>0?Math.min(1,y/total):0})`;let current=-1;sections.forEach((s,i)=>{if(s.getBoundingClientRect().top<180)current=i;});anchors.forEach((a,i)=>{if(i===current)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});}
+window.addEventListener('scroll',()=>{if(!queued){queued=true;requestAnimationFrame(updateScroll);}},{passive:true});window.addEventListener('resize',updateScroll);updateScroll();
+const full=$('#fulltext details');let openBeforePrint=false;
+$('#print').addEventListener('click',()=>window.print());
+window.addEventListener('beforeprint',()=>{openBeforePrint=full.open;full.open=true;});window.addEventListener('afterprint',()=>{full.open=openBeforePrint;});
+})();

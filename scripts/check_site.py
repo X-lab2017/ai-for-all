@@ -18,7 +18,7 @@ class Page(HTMLParser):
   if t=='script':self.in_data=False
  def handle_data(self,s):
   if self.in_data:self.data.append(json.loads(s))
-for name,lang in [('index.html','zh'),('en.html','en')]:
+for name,lang in [('v1.1.html','zh'),('en.html','en')]:
  p=Page();p.feed((SITE/name).read_text());assert p.figures==5,(name,p.figures)
  assert len(p.ids)==len(set(p.ids)),f'duplicate IDs in {name}'
  for target in p.controls:assert target in p.ids,(name,target)
@@ -47,6 +47,9 @@ for mode in ['desktop','mobile']:
   edges=[e for e in loop['edges'][mode] if e['group']==group];pairs={e['fr']:e['to'] for e in edges};start=edges[0]['fr'];current=start;visited=set()
   while current not in visited:visited.add(current);current=pairs[current]
   assert current==start and len(visited)==4,(mode,group)
-assert '三重普惠' in (ROOT/'README.md').read_text()
-assert '全球南方贯穿' not in (ROOT/'README.md').read_text()
+assert '三重普惠' in (ROOT/'versions/v1.1.zh.md').read_text()
+assert '全球南方贯穿' not in (ROOT/'versions/v1.1.zh.md').read_text()
 print('PASS: 2 languages, 5 diagrams, local assets, anchors, aria targets, 4 closed cycles, current SVG exports.')
+
+# The current publication has five chapters and three flywheels.
+exec((ROOT/"scripts/publication/check.py").read_text())

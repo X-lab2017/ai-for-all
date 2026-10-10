@@ -52,13 +52,15 @@ for lang in ['zh','en']:
 <section class="join" id="join"><div class="kicker">BUILD TOGETHER</div><h2>{t('从一个真实问题开始','Start with a real need')}</h2><p>{t('无论你正在学习、构建工具，还是希望提供应用场景，都可以参与。基础参与不需要已有贡献分数。','Whether you are learning, building a tool or offering a practical setting, you can take part. No prior contribution score is needed to begin.')}</p><div class="roles">{roles}</div><p class="small">{t('参与讨论和提交建议需要 GitHub 账号。提案公开可见；具体合作与资源条件由双方后续明确。','A GitHub account is needed to post a contribution or proposal. Proposals are public. Partnership and resource conditions are agreed in subsequent discussion.')}</p><div class="actions"><a href="{REPO}/issues">{t('查看已有讨论','Browse existing discussions')} ↗</a></div></section>
 <details><summary>{t('署名与材料使用说明','Attribution and use of materials')}</summary><p>Music: “Heroic Age” — Kevin MacLeod (incompetech.com). <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Excerpt, equalization, ducking and mix.</p><p>{t('宣言、图解、名称与标识的使用范围见仓库许可说明。第三方材料遵循各自许可；影片已保留音乐署名。','Consult the repository notice for manifesto, diagram and brand reuse terms. Third-party materials retain their own terms. Music attribution remains in each film.')} <a href="downloads/CREDITS.txt">{t('完整署名','Full credits')}</a> · <a href="{REPO}/blob/main/NOTICE.md">{t('许可说明','Permissions')}</a></p></details>
 <footer><span>X-lab AI · AI for All</span><div class="credits-links"><a href="{REPO}">GitHub</a><a href="{REPO}/blob/main/PROGRESS.md">{t('公开进展','Public progress')}</a><a href="{REPO}/blob/main/CHANGELOG.md">{t('版本记录','Changelog')}</a></div></footer></div></body></html>'''
+    notice=t('本页视频、PPT、PDF 及全景图对应 v1.1（2026-10-09）。当前中文宣言已更新至 v1.2。','These films, slides, PDFs and diagrams are v1.1 materials (2026-10-09). The current Chinese manifesto is v1.2.')
+    page=page.replace('<body>','<body><aside style="padding:16px 24px;text-align:center;background:#e8eddc;color:#173b31">'+notice+' <a href="../index.html">'+t('阅读当前宣言 →','Read the current manifesto →')+'</a></aside>',1)
     (OUT/('index.html' if zh else 'en.html')).write_text(page)
 
 def inline(s):
     s=e(s.replace("’", "'").replace("‘", "'"))
     s=re.sub(r'\*\*(.+?)\*\*',r'<strong>\1</strong>',s)
     return re.sub(r'\[([^]]+)\]\(([^)]+)\)',lambda m:f'<a href="{m[2]}">{m[1]}</a>',s)
-for lang,source in [('zh','README.md'),('en','translations/en.md')]:
+for lang,source in [('zh','versions/v1.1.zh.md'),('en','translations/en.md')]:
     raw=(ROOT/source).read_text().split('<!-- manifesto:start -->')[1].split('<!-- manifesto:end -->')[0]
     parts=re.split(r'^## ',raw.strip(),flags=re.M)[1:]
     sections=[]
