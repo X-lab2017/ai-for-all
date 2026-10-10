@@ -1,0 +1,11 @@
+{
+"linux":[
+{"label":"Linux Foundation · 35th anniversary report summary (2026-10-06)","note":"The report describes Linux on all 500 TOP500 supercomputers, an 8–9-week release cycle, and nearly 10 changes per hour. These statements reflect the report's publication date."},
+{"label":"LFX Insights · Contributor dashboard","note":"Transcribed from two screenshots provided on 2026-10-10. Organizations: US 258 (26%), Germany 83 (8%), China 44 (4%), UK 35 (3%), France 31 (3%). Contributors: US 642 (7%), Germany 236 (3%), India 219 (2%), China 214 (2%), UK 122 (1%). Complete filters and global totals are not visible. Do not infer totals or interpret these as shares of contribution activity. The original link retains the requested annual range; the screenshots have not been independently verified against that range."},
+{"label":"Original screenshot · Organizations by region","note":"User-supplied screenshot retained for verification."},
+{"label":"Original screenshot · Contributors by region","note":"User-supplied screenshot retained for verification."}],
+"models":[
+{"label":"ATOM Project · Open-model ecosystem","note":"Project background. Open models vary in openness; licenses apply separately to each version."},
+{"label":"The ATOM Report · v2 (2026-05-25), Sections 2–3","note":"Tracked Hugging Face cumulative downloads through March 2026: China 1.15B, US 723M, Europe 163M. In February 2026, 70% of new derivatives in the sample used Chinese base models. Geography follows the releasing organization's headquarters. Limited sample coverage; downloads are not unique users or active usage."}],
+"manifesto":[{"label":"AI for All Manifesto · Official v1.2 text","note":"This presentation summarizes the approved manifesto for spoken delivery. Refer to the official text for the full framework and role descriptions."}]
+}

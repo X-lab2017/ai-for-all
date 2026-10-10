@@ -102,6 +102,6 @@
 
 ## 版本与发布材料
 
-中文正文为当前权威版本。[英文译本](translations/en.md)已同步至 v1.2，网页支持中英文与亮暗主题切换。最新[13 章互动演示](https://www.x-lab.info/ai-for-all/presentation/)已同步至 v1.2，提供中英文、随章节／亮色／暗色主题与 180 秒自动导览。2026 年 10 月 9 日的[大会发布包](https://www.x-lab.info/ai-for-all/launch/)和[互动演示](https://www.x-lab.info/ai-for-all/presentation-v1.1/)对应 v1.1，保留作为历史材料。
+中文正文为当前权威版本。[英文译本](translations/en.md)已同步至 v1.2，网页支持中英文与亮暗主题切换。2026 年 10 月 9 日的[大会发布包](https://www.x-lab.info/ai-for-all/launch/)和[互动演示](https://www.x-lab.info/ai-for-all/presentation/)对应 v1.1，保留作为历史材料。
 
 [中文 v1.1](versions/v1.1.zh.md) · [English v1.1](versions/v1.1.en.md) · [术语与来源](SOURCES.md) · [许可说明](NOTICE.md)
