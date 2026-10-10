@@ -13,6 +13,7 @@ def fragments(s):
  return [v.strip() for v in re.split(r'\*\*',s)if v.strip()]
 
 UI={
+'互动演示':'Interactive demo',
 '互动演示 · v1.2':'Interactive presentation · v1.2','互动演示 · v1.1':'Presentation archive · v1.1',
 'AI 普惠宣言':'AI for All Manifesto','让 AI 用得起，更用得好':'Make AI affordable and useful','X-lab AI 开放实验室 · v1.2 · 2026 年 10 月 10 日':'X-lab AI Open Laboratory · v1.2 · 10 October 2026',
 '一':'1','二':'2','三':'3','万':'∞','生':'↻','共 同 的 愿 景':'A SHARED VISION',
@@ -95,6 +96,7 @@ def translate_page(page):
  if missing:raise ValueError('Missing English UI text: '+repr(sorted(missing)))
  result=''.join(parser.out)
  result=result.replace('href="presentation/"','href="presentation/en.html?lang=en"')
+ result=result.replace('href="presentation/?lang=zh"','href="presentation/en.html?lang=en"')
  result=result.replace('href="AI-for-All-manifesto.md"','href="AI-for-All-manifesto-EN.md"')
  result=result.replace('href="en.html?lang=en"','href="index.html?lang=zh"').replace('data-language="en"','data-language="zh"').replace('<span>English</span>','<span>中文</span>')
  result=result.replace('href="https://www.x-lab.info/ai-for-all/"','href="https://www.x-lab.info/ai-for-all/en.html"',1).replace('property="og:url" content="https://www.x-lab.info/ai-for-all/"','property="og:url" content="https://www.x-lab.info/ai-for-all/en.html"')
