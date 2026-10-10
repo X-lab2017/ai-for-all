@@ -116,7 +116,10 @@ def growth(x,y,w,h):
  s=growth_art(lambda *a,**k:'')
  css='text{font-family:CN;fill:#173b31;text-anchor:middle}.label{font-size:20px}.growth-subtitle{font-size:14px}.caption{font-size:16px}.growth-base{fill:none;stroke:#d2d8c9;stroke-width:4px}.growth-line{fill:none;stroke:#69875e;stroke-width:2.2px}.growth-label circle{fill:#f7f6ef;stroke:#92a184;stroke-width:1px}.growth-bud circle{fill:#69875e}.bud-aura{fill:#e0e8d1}.growth-leaf{fill:#8ca774}'
  s='<svg xmlns="http://www.w3.org/2000/svg" width="600" height="550"><style>'+css+'</style>'+s+'</svg>'
- d=svg2rlg(io.BytesIO(s.encode()));scale=min(w/600,h/550);d.scale(scale,scale);renderPDF.draw(d,c,x,H-y-550*scale)
+ d=svg2rlg(io.BytesIO(s.encode()))
+ # svglib converts SVG pixels to points; center using its actual dimensions.
+ dw,dh=d.width,d.height;scale=min(w/dw,h/dh);d.scale(scale,scale)
+ renderPDF.draw(d,c,x+(w-dw*scale)/2,H-y-dh*scale)
 
 # 01 / Cover
 page(is_dark=True);c.bookmarkPage('cover');c.addOutlineEntry('AI 普惠宣言','cover',0,False)
@@ -184,8 +187,8 @@ paras(sections[3]['blocks'][1:],M,552,IW,11.5,21)
 # 08 / Renewal
 page('生生不息','05 / CONTINUOUS RENEWAL')
 para(sections[4]['blocks'][0],M,181,IW,16,25)
-growth(118,199,360,305)
-paras(sections[4]['blocks'][1:-2],M,506,IW,11,19)
+growth(M,225,IW,265)
+paras(sections[4]['blocks'][1:-2],M,520,IW,11,19)
 
 # 09 / The exact five geometric motifs from interactive slide 12.
 page('从共同愿景，到共同实践','FROM VISION TO PRACTICE')
@@ -197,7 +200,7 @@ labels=[('一','一心普惠','共同愿景'),('二','二力相生','开放 × �
 for i,((g,t,sub),body) in enumerate(zip(labels,icons)):
  x=M+i*(IW/5);center=x+IW/10
  art='<svg xmlns="http://www.w3.org/2000/svg" width="120" height="100"><style>circle,path{fill:none;stroke:#69875e;stroke-width:1.5}.solid{fill:#69875e;stroke:none}</style>'+body+'</svg>'
- d=svg2rlg(io.BytesIO(art.encode()));scale=82/120;d.scale(scale,scale);renderPDF.draw(d,c,center-41,H-211-100*scale)
+ d=svg2rlg(io.BytesIO(art.encode()));dw,dh=d.width,d.height;scale=82/dw;d.scale(scale,scale);renderPDF.draw(d,c,center-41,H-211-dh*scale)
  txt(g,center,297,20,MUTED,align='center')
  txt(t,center,329,13,bold=True,align='center')
  txt(sub,center,356,7.8,MUTED,align='center')
