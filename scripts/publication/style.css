@@ -46,3 +46,5 @@ html:lang(en) .hero h1{font-family:Georgia,var(--serif);font-size:clamp(42px,4.4
 /* Keep the presentation entry visible in both languages and at narrow widths. */
 .header-presentation{background:var(--ink);color:var(--paper);font-weight:600}.header-presentation:hover{background:var(--ink);opacity:.85}
 @media(max-width:700px){.site-header .header-actions{flex-basis:100%;flex-wrap:wrap;justify-content:center}.site-header .brand{margin-inline:auto}}
+
+.reading-actions{flex-wrap:wrap;row-gap:12px}.reading-actions .designed-pdf{font-weight:600}

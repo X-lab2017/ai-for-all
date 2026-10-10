@@ -13,6 +13,7 @@ def fragments(s):
  return [v.strip() for v in re.split(r'\*\*',s)if v.strip()]
 
 UI={
+'下载设计版 PDF ↓':'Designed PDF (Chinese) ↓','Markdown 原文 ↓':'Markdown source ↓',
 '互动演示':'Interactive demo',
 '互动演示 · v1.2':'Interactive presentation · v1.2','互动演示 · v1.1':'Presentation archive · v1.1',
 'AI 普惠宣言':'AI for All Manifesto','让 AI 用得起，更用得好':'Make AI affordable and useful','X-lab AI 开放实验室 · v1.2 · 2026 年 10 月 10 日':'X-lab AI Open Laboratory · v1.2 · 10 October 2026',
