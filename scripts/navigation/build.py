@@ -26,7 +26,6 @@ for section,folder in [('manifesto',''),('film','film/'),('presentation','presen
   s=re.sub(r'<body([^>]*)>',fr'<body\1 data-navigation-section="{section}">',s,count=1) if 'data-navigation-section=' not in s else s
   if section=='resources':
    if '../preferences.js' not in s:s=s.replace('</head>','<script src="../preferences.js"></script></head>')
-   if 'archive-notice' not in s:s=s.replace(header,header+f'<aside class="archive-notice">{t("大会发布资料 · v1.1 历史版本。当前宣言为 v1.2，最新影片为 V5。","Conference materials · v1.1 archive. The current manifesto is v1.2; the latest film is V5.")} <a href="{items[1][1]}">{t("观看最新影片","Watch the latest film")} →</a></aside>')
   if section=='manifesto':
    actions=f'<div class="hero-actions"><a class="primary" href="#fulltext">{t("阅读完整宣言","Read the manifesto")} ↓</a><a class="text-link" href="{items[1][1]}">{t("观看宣言影片","Watch the film")} →</a><a class="text-link" href="{items[2][1]}">{t("进入互动演示","Explore the presentation")} →</a></div>'
    s=re.sub(r'<div class="hero-actions">.*?</div>',lambda _:actions,s,count=1,flags=re.S)

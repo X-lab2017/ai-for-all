@@ -1,3 +1,7 @@
+# 历史归档 · v1.1 大会发布包
+
+本目录记录 2026-10-09 的旧版材料，不代表当前 v1.2 宣言。历史入口：https://www.x-lab.info/ai-for-all/launch/archive-v1.1.html 。当前资料：https://www.x-lab.info/ai-for-all/launch/ 。
+
 # 正式发布包 Release 1
 
 统一入口：https://www.x-lab.info/ai-for-all/launch/

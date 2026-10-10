@@ -54,7 +54,8 @@ for lang in ['zh','en']:
 <footer><span>X-lab AI · AI for All</span><div class="credits-links"><a href="{REPO}">GitHub</a><a href="{REPO}/blob/main/PROGRESS.md">{t('公开进展','Public progress')}</a><a href="{REPO}/blob/main/CHANGELOG.md">{t('版本记录','Changelog')}</a></div></footer></div></body></html>'''
     notice=t('本页视频、PPT、PDF 及全景图对应 v1.1（2026-10-09）。当前中文宣言已更新至 v1.2。','These films, slides, PDFs and diagrams are v1.1 materials (2026-10-09). The current Chinese manifesto is v1.2.')
     page=page.replace('<body>','<body><aside style="padding:16px 24px;text-align:center;background:#e8eddc;color:#173b31">'+notice+' <a href="../index.html">'+t('阅读当前宣言 →','Read the current manifesto →')+'</a></aside>',1)
-    (OUT/('index.html' if zh else 'en.html')).write_text(page)
+    page=page.replace('href="en.html"','href="archive-v1.1-en.html"').replace('href="index.html"','href="archive-v1.1.html"')
+    (OUT/('archive-v1.1.html' if zh else 'archive-v1.1-en.html')).write_text(page)
 
 def inline(s):
     s=e(s.replace("’", "'").replace("‘", "'"))
@@ -84,4 +85,6 @@ print('Built bilingual release hub, manifesto print editions and event display p
 
 # Current approved film is distinct from the historical v1.1 conference package.
 import subprocess,sys
+subprocess.run([sys.executable,str(ROOT/'scripts/build_current_release.py')],check=True)
 subprocess.run([sys.executable,str(ROOT/'scripts/build_film.py')],check=True)
+subprocess.run([sys.executable,str(ROOT/'scripts/package_current_release.py')],check=True)

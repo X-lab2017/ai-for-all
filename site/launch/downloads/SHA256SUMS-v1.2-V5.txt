@@ -1,0 +1,13 @@
+4a0c64d5710db828b62e1dec5ea2ee367632fbaa56900f6ff5c52bd07f035679  manifesto/AI-for-All-v1.2-ZH.md
+59a66b39a340d77641a6cfac6e3b05ecb0563f74b1f87d839079f79547eba2ec  manifesto/AI-for-All-v1.2-EN.md
+b7e16ad67efec6bf25778f6ef741677d52a1f8d8d14de13d69984d19b00fc14e  manifesto/AI-for-All-Manifesto-v1.2-Designed-ZH.pdf
+e830171ce26e08dbab8ed7d9a6807758ad70c30d036b4382e990a56d432a9201  film/AI-for-All-Manifesto-V5.mp4
+59244d8c53ce1a59a65c54f5c1cd5b4d45d57da950aeffccdc432f05e0447a1a  film/AI-for-All-Manifesto-V5-Source.zip
+73ff09f10dc0726e60c9897ad4f9c106f90b5e3cb63ae7132ebf9bbb5d233e39  presentation/notes-ZH.md
+d32770678a2f277eff63c2aa9ac61d4c68cc52a21b8d63d57ca67d0df00217a4  qr/AI-for-All-Launch-QR.png
+f07863206e597854aadfe51041bfb5f94d6277dd14b1f8b4f8306cae484c6bd5  qr/AI-for-All-Launch-QR.svg
+958080ae4890f220f6b0ca5ae61e7c11b51fed523c1f68e0e91710565bd75f0a  NOTICE.md
+bb82d9c76d225246840aa0b166b145b1badb76d0647b02b89ecc341a0434a5d5  README.txt
+
+# Package
+9962b89f1b0460bfd7827937a958bd4e3f062a2fdab469b1a14faef016ec6bd1  AI-for-All-v1.2-V5-Release.zip
