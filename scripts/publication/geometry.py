@@ -73,7 +73,7 @@ def growth_art(loop):
   markers=markers.replace('data-phase="0.0000"',f'data-phase="{k/10:.4f}" data-appear="{level*5+7}"').replace('data-period="42000"',f'data-period="{24000+(k%5)*3000}"')
   s+=markers
  s+='</g>'
- s+=loop('M300 437 C115 445 51 336 62 272 C67 241 82 217 102 202', 'growth-feed',1,True)
+ s+=loop('M300 437 C115 445 51 336 62 272 C67 241 82 217 102 202', 'growth-feed',1)
  s+=loop('M491 163 C575 283 551 445 320 451 C311 451 304 449 300 441','growth-return',1)
  for x,y,n,sub in [(300,442,'实践','立足需求'),(185,292,'记录','积累证据'),(385,263,'检验','多方参与'),(307,153,'改进','持续演化')]:
   s+=f'<g class="growth-label"><circle cx="{x}" cy="{y}" r="29"/>'+label(x,y+6,n,'label')+label(x,y+49,sub,'growth-subtitle')+'</g>'
@@ -83,8 +83,6 @@ def growth_art(loop):
 def panorama():
  goal='<svg viewBox="0 0 110 100" aria-hidden="true"><circle cx="55" cy="55" r="31"/><circle class="orb-fill" cx="55" cy="55" r="12"/>'
  for x,y,r in [(55,24,8),(82,71,8),(28,71,8)]:goal+=f'<circle class="orb-fill" cx="{x}" cy="{y}" r="{r}"/>'
- goal+='<path class="faint" d="M41 24A14 14 0 0 1 69 24"/>'
- for x,y in [(41,24),(55,10),(69,24)]:goal+=f'<circle class="solid" cx="{x}" cy="{y}" r="2"/>'
  goal+='</svg>'
  pair='<svg viewBox="0 0 110 100" aria-hidden="true"><circle cx="40" cy="49" r="25"/><circle cx="70" cy="49" r="25"/><path d="M55 74V88"/><circle class="solid" cx="55" cy="88" r="3"/></svg>'
  pts=[(55,50)]+[(55+40*math.sqrt(i/18)*math.cos(i*2.39996),50+37*math.sqrt(i/18)*math.sin(i*2.39996))for i in range(1,19)]
@@ -96,7 +94,7 @@ def panorama():
  for i,j in sorted(edges):network+=f'<path class="faint" d="M{pts[i][0]} {pts[i][1]}L{pts[j][0]} {pts[j][1]}"/>'
  for x,y in pts:network+=f'<circle class="solid" cx="{x}" cy="{y}" r="2"/>'
  network+='<circle class="orb-fill" cx="55" cy="50" r="9"/></svg>'
- tree='<svg viewBox="0 0 110 110" aria-hidden="true"><path d="M55 92C51 65 55 39 56 17M54 62L31 44L20 27M31 44L36 23M55 49L78 31L88 15M78 31L71 14M56 30L43 13M55 75L81 59L93 41M81 59L83 44"/><path class="faint" d="M94 23C123 86 82 107 55 92"/>'
+ tree='<svg viewBox="0 0 110 110" aria-hidden="true"><path d="M55 92C51 65 55 39 56 17M54 62L31 44L20 27M31 44L36 23M55 49L78 31L88 15M78 31L71 14M56 30L43 13M55 75L81 59L93 41M81 59L83 44"/>'
  for x,y in [(20,27),(36,23),(56,17),(88,15),(71,14),(43,13),(93,41),(83,44)]:tree+=f'<ellipse class="solid" cx="{x}" cy="{y}" rx="3.6" ry="2" transform="rotate(-35 {x} {y})"/>'
  tree+='<circle class="solid" cx="55" cy="92" r="3"/></svg>'
  def connector(label):return f'<div class="pan-link"><i></i><span>{label}</span><i></i></div>'
