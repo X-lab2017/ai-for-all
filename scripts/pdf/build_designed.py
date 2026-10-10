@@ -13,6 +13,8 @@ from reportlab.lib.colors import HexColor
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import Paragraph
 from reportlab.graphics import renderPDF
+from reportlab.graphics.barcode.qr import QrCodeWidget
+from reportlab.graphics.shapes import Drawing
 from svglib.svglib import svg2rlg
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -185,14 +187,31 @@ para(sections[4]['blocks'][0],M,181,IW,16,25)
 growth(118,199,360,305)
 paras(sections[4]['blocks'][1:-2],M,506,IW,11,19)
 
-# 09 / Panorama and invitation
-page('五层相连，就是 AI 普惠的全景。','FROM VISION TO PRACTICE')
-labels=[('一','一心普惠','让 AI 用得起，更用得好。'),('二','二力相生','以开源降低门槛，以创造拓展可能。'),('三','三重飞轮','数据 · 人才 · 价值'),('万','万千可能','共享成果，连接多样实践。'),('生','生生不息','让每一轮实践，成为下一轮的起点。')]
-line(77,222,77,488,'#94a583',1)
-for i,(g,t,sub) in enumerate(labels):
- yy=222+i*67;circle(77,yy,21,'#a5b295',PALE);txt(g,77,yy-10,21,align='center');txt(t,118,yy-17,17,bold=True);txt(sub,118,yy+10,10,MUTED)
-y=para(sections[4]['blocks'][-2],M,541,IW,11,20)
-y=para(sections[4]['blocks'][-1],M,y+5,IW,14,25)
-box(M,708,IW,56,INK,3);txt('阅读宣言',M+18,726,11,PAPER,bold=True);txt('观看互动演示',M+145,726,11,PAPER,bold=True);txt('参与共建',M+315,726,11,PAPER,bold=True)
-for x,w,url in [(M,120,'https://www.x-lab.info/ai-for-all/?lang=zh'),(M+127,164,'https://www.x-lab.info/ai-for-all/presentation/?lang=zh'),(M+297,200,'https://github.com/X-lab2017/ai-for-all/issues')]:c.linkURL(url,(x,H-764,x+w,H-708),relative=0,thickness=0)
+# 09 / The exact five geometric motifs from interactive slide 12.
+page('从共同愿景，到共同实践','FROM VISION TO PRACTICE')
+source=(ROOT/'site/presentation/index.html').read_text()
+slide=source.split('id="s12"',1)[1].split('</section>',1)[0]
+icons=re.findall(r'<svg[^>]*>(.*?)</svg>',slide,re.S)
+assert len(icons)==5
+labels=[('一','一心普惠','共同愿景'),('二','二力相生','开放 × 创造'),('三','三重飞轮','数据 · 人才 · 价值'),('万','万千可能','回应多样需要'),('生','生生不息','实践 · 反馈 · 演化')]
+for i,((g,t,sub),body) in enumerate(zip(labels,icons)):
+ x=M+i*(IW/5);center=x+IW/10
+ art='<svg xmlns="http://www.w3.org/2000/svg" width="120" height="100"><style>circle,path{fill:none;stroke:#69875e;stroke-width:1.5}.solid{fill:#69875e;stroke:none}</style>'+body+'</svg>'
+ d=svg2rlg(io.BytesIO(art.encode()));scale=82/120;d.scale(scale,scale);renderPDF.draw(d,c,center-41,H-211-100*scale)
+ txt(g,center,297,20,MUTED,align='center')
+ txt(t,center,329,13,bold=True,align='center')
+ txt(sub,center,356,7.8,MUTED,align='center')
+line(M,391,W-M,391)
+para('五层相连，就是 AI 普惠的全景。',M,412,IW,22,30)
+y=para(sections[4]['blocks'][-2],M,466,IW,11,20)
+para(sections[4]['blocks'][-1],M,y+5,IW,13,23)
+links=[('阅读宣言','https://www.x-lab.info/ai-for-all/?lang=zh'),('观看互动演示','https://www.x-lab.info/ai-for-all/presentation/?lang=zh'),('参与共建','https://github.com/X-lab2017/ai-for-all/issues')]
+for i,(label,url) in enumerate(links):
+ center=M+IW*(i+.5)/3;size=94;x=center-size/2;top=638
+ box(x,top,size,size,'#ffffff')
+ qr=QrCodeWidget(url,barLevel='M',barBorder=4);bounds=qr.getBounds();qw=bounds[2]-bounds[0];qh=bounds[3]-bounds[1]
+ d=Drawing(size,size,transform=[size/qw,0,0,size/qh,0,0]);d.add(qr);renderPDF.draw(d,c,x,H-top-size)
+ c.linkURL(url,(x,H-top-size,x+size,H-top),relative=0,thickness=0)
+ txt(label,center,746,11,bold=True,align='center')
+ txt('扫描或点击二维码',center,768,8,MUTED,align='center')
 c.save();print(f'Created {page_no} pages: {args.output}')
