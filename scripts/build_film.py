@@ -26,3 +26,6 @@ files=['AI-for-All-Manifesto-V5.mp4','AI-for-All-Manifesto-V5-Source.zip']
 (OUT/'SHA256SUMS.txt').write_text(''.join(hashlib.sha256((OUT/n).read_bytes()).hexdigest()+'  '+n+'\n' for n in files))
 (OUT/'chapters.json').write_text(json.dumps([dict(start=s,zh=z,en=e) for s,z,e in zip(cuts,zh,en)],ensure_ascii=False,indent=2)+'\n')
 print('V5 film pages, chapters and linked entrances built')
+
+import subprocess,sys
+subprocess.run([sys.executable,str(ROOT/'scripts/navigation/build.py')],check=True)
