@@ -20,6 +20,7 @@ def build_english(out):
     if tag=='html'and k=='lang':v='en'
     if tag=='script'and k=='src'and v=='data.js':v='data-en.js'
     if tag=='a'and k=='href'and v=='en.html':v='index.html'
+    if tag=='a'and k=='href'and v=='../?lang=zh':v='../en.html?lang=en'
     a.append(k+'="'+html.escape(v,quote=True)+'"')
    self.parts.append('<'+tag+(' '+' '.join(a)if a else '')+'>')
   def handle_endtag(self,tag):self.parts.append('</'+tag+'>')
