@@ -81,3 +81,7 @@ for lang,source in [('zh','versions/v1.1.zh.md'),('en','versions/v1.1.en.md')]:
 (OUT/'qr-display.html').write_text(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>AI for All · Participate</title><link rel="stylesheet" href="print.css"></head><body class="qr-display"><main><img class="qr-brand" src="../assets/XlabAI_Horizontal_ColorDark.svg" alt="X-lab AI"><div class="qr-layout"><div><p class="qr-kicker">AI FOR ALL / BUILD TOGETHER</p><h1>让愿景成为行动</h1><h2>Turn a shared vision<br>into action</h2><p class="qr-actions">阅读宣言 · 下载材料 · 参与共建<br>Read. Explore. Contribute.</p></div><div class="qr-box"><img src="downloads/AI-for-All-Launch-QR.png" alt="Scan to participate"><p>扫码了解与参与<br>Scan to take part</p></div></div><p class="qr-url">www.x-lab.info/ai-for-all/launch/</p></main></body></html>''')
 (OUT/'panoramas.html').write_text('''<!doctype html><html lang="en"><head><meta charset="utf-8"><title>AI for All Framework</title><link rel="stylesheet" href="print.css"></head><body class="panoramas"><img src="downloads/AI-for-All-Panorama-ZH.png" alt="中文全景"><img src="downloads/AI-for-All-Panorama-EN.png" alt="English framework"></body></html>''')
 print('Built bilingual release hub, manifesto print editions and event display pages.')
+
+# Current approved film is distinct from the historical v1.1 conference package.
+import subprocess,sys
+subprocess.run([sys.executable,str(ROOT/'scripts/build_film.py')],check=True)
