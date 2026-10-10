@@ -30,3 +30,23 @@ for para in body.split('\n\n'):assert re.sub(r'^#{1,3} ','',para.replace('**',''
 assert body in (SITE/'AI-for-All-manifesto.md').read_text()
 assert '正式发布建议稿' not in s
 print('PASS: current v1.2 chapters, canonical text, download, SVGs, local links, controls and geometry counts.')
+
+# The English route must contain the complete current translation, not the archive.
+s=(SITE/'en.html').read_text();p=CurrentPage();p.feed(s)
+ids=[d['id']for _,d in p.tags if 'id'in d];assert len(ids)==len(set(ids))
+assert '<html lang="en">' in s
+for _,d in p.tags:
+ for key in ['href','src']:
+  v=d.get(key,'')
+  if v.startswith('#'):assert v[1:]in ids,v
+  elif v and not re.match(r'^[a-z]+:',v):assert (SITE/v.split('#')[0].split('?')[0]).exists(),v
+ for key in ['aria-controls','data-track','aria-labelledby']:
+  if key in d:assert all(x in ids for x in d[key].split())
+for v in re.findall(r'<svg.*?</svg>',s,re.S):ET.fromstring(v)
+body=(ROOT/'translations/en.md').read_text().split('<!-- manifesto:start -->')[1].split('<!-- manifesto:end -->')[0].strip()
+for para in body.split('\n\n'):assert re.sub(r'^#{1,3} ','',para.replace('**',''))in ''.join(p.text)
+assert body in (SITE/'AI-for-All-manifesto-EN.md').read_text()
+assert all(x in ids for x in ['language','theme','motion'])
+assert 'en-v1.1.html' in s
+assert '[data-theme="dark"]' in (SITE/'manifesto.css').read_text()
+print('PASS: current English text and download, localized controls, SVGs, links and theme assets.')

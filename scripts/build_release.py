@@ -60,7 +60,7 @@ def inline(s):
     s=e(s.replace("’", "'").replace("‘", "'"))
     s=re.sub(r'\*\*(.+?)\*\*',r'<strong>\1</strong>',s)
     return re.sub(r'\[([^]]+)\]\(([^)]+)\)',lambda m:f'<a href="{m[2]}">{m[1]}</a>',s)
-for lang,source in [('zh','versions/v1.1.zh.md'),('en','translations/en.md')]:
+for lang,source in [('zh','versions/v1.1.zh.md'),('en','versions/v1.1.en.md')]:
     raw=(ROOT/source).read_text().split('<!-- manifesto:start -->')[1].split('<!-- manifesto:end -->')[0]
     parts=re.split(r'^## ',raw.strip(),flags=re.M)[1:]
     sections=[]

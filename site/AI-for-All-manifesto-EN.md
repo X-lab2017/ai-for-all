@@ -4,9 +4,6 @@
 
 X-lab AI Open Laboratory · v1.2 · 10 October 2026
 
-[中文](../README.md) · [Read online](https://www.x-lab.info/ai-for-all/en.html)
-
-<!-- manifesto:start -->
 Artificial intelligence (AI) is changing how people learn, create and solve problems. We advocate broader access to AI capabilities so that more people can put them to use, take part in creating and share in the benefits of technological progress.
 
 Inclusive access requires open, usable technology, people with the ability to create, communities that maintain shared work and sustained resources. Guided by a common vision, we bring these forces together: learning builds capability, contributions earn recognition and creation benefits more people.
@@ -98,6 +95,3 @@ Through practice, documentation, evaluation and improvement, we continually turn
 We invite developers to contribute tools and knowledge; businesses, educational institutions and public bodies to offer resources and practical opportunities; and international organizations, communities and regional partners to share experience and build together. Through collaboration, people from different backgrounds can deepen mutual understanding and expand what they can create together.
 
 **Unite two forces around a shared vision, nurture countless possibilities through three flywheels, and sustain AI for All through continued practice.**
-<!-- manifesto:end -->
-
-The Chinese manifesto is the authoritative text. This translation follows v1.2. [Archived v1.1 English edition](../versions/v1.1.en.md).

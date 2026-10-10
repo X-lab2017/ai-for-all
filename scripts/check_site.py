@@ -18,7 +18,7 @@ class Page(HTMLParser):
   if t=='script':self.in_data=False
  def handle_data(self,s):
   if self.in_data:self.data.append(json.loads(s))
-for name,lang in [('v1.1.html','zh'),('en.html','en')]:
+for name,lang in [('v1.1.html','zh'),('en-v1.1.html','en')]:
  p=Page();p.feed((SITE/name).read_text());assert p.figures==5,(name,p.figures)
  assert len(p.ids)==len(set(p.ids)),f'duplicate IDs in {name}'
  for target in p.controls:assert target in p.ids,(name,target)

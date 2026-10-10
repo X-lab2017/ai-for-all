@@ -41,8 +41,8 @@ def render(s,lang='zh',anchored=False):
 def body(path):return (ROOT/path).read_text().split('<!-- manifesto:start -->')[1].split('<!-- manifesto:end -->')[0]
 export_all()
 for lang in ['zh','en']:
- zh=lang=='zh';filename='v1.1.html' if zh else 'en.html';title='AI 普惠宣言' if zh else 'AI for All Manifesto';subtitle='让 AI 用得起，更用得好' if zh else 'Make AI affordable and useful';intro='以数据与评价为内核，让开源之力与开发者之力相互促进，通过数字公共品走向 AI 普惠。' if zh else 'Open source and developer creativity, connected by data and evaluation. A path to AI for All through digital public goods.'
- text=body('versions/v1.1.zh.md' if zh else 'translations/en.md');progress=(ROOT/('PROGRESS.md' if zh else 'translations/progress.en.md')).read_text()
+ zh=lang=='zh';filename='v1.1.html' if zh else 'en-v1.1.html';title='AI 普惠宣言' if zh else 'AI for All Manifesto';subtitle='让 AI 用得起，更用得好' if zh else 'Make AI affordable and useful';intro='以数据与评价为内核，让开源之力与开发者之力相互促进，通过数字公共品走向 AI 普惠。' if zh else 'Open source and developer creativity, connected by data and evaluation. A path to AI for All through digital public goods.'
+ text=body('versions/v1.1.zh.md' if zh else 'versions/v1.1.en.md');progress=(ROOT/('PROGRESS.md' if zh else 'translations/progress.en.md')).read_text()
  links=''.join(f'<a href="#{a}">{i+1:02d}　{e(n)}</a>' for i,(a,n) in enumerate(zip(ANCHORS,NAV[lang])))
  fw=[('goal-path','一个目标','AI 普惠','One goal','AI for All'),('dual-forces','两股力量','开源 × 开发者','Two forces','Open source × Developers'),('evaluation-core','一个内核','数据与评价','One core','Data and evaluation'),('twin-flywheels','两个飞轮','成长与持续投入','Two cycles','Growth and resources'),('inclusion-views','三重普惠','多样的受益视角','Three perspectives','Diverse needs')]
  framework=''.join(f'<a href="#{id}"><span>{z if zh else en}</span><strong>{z2 if zh else en2}</strong></a>' for id,z,z2,en,en2 in fw)
