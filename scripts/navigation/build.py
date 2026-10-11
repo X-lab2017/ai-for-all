@@ -14,8 +14,7 @@ for section,folder in [('manifesto',''),('film','film/'),('presentation','presen
   theme=extract('button','theme') or f'<button id="theme" type="button">{t("切换主题","Switch theme")}</button>'
   motion=extract('button','motion')
   home=prefix+('en.html?lang=en' if en else 'index.html?lang=zh')
-  items=[('manifesto',home,t('宣言正文','Manifesto')),('film',prefix+'film/'+('en.html' if en else 'index.html')+'?lang='+lang,t('宣言影片','Film')),('presentation',prefix+'presentation/'+('en.html' if en else 'index.html')+'?lang='+lang,t('互动演示','Presentation')),('resources',prefix+'launch/'+('en.html' if en else 'index.html')+'?lang='+lang,t('发布资料','Resources'))]
-  items=[item for item in items if item[0]!='resources']
+  items=[('manifesto',home,t('宣言正文','Manifesto')),('presentation',prefix+'presentation/'+('en.html' if en else 'index.html')+'?lang='+lang,t('互动演示','Presentation')),('film',prefix+'film/'+('en.html' if en else 'index.html')+'?lang='+lang,t('宣言影片','Film')),('resources',prefix+'launch/'+('en.html' if en else 'index.html')+'?lang='+lang,t('发布资料','Resources'))]
   links=''.join(f'<a href="{url}"'+(' aria-current="page"' if key==section else '')+f'>{name}</a>' for key,url,name in items)
   settings=f'<details class="nav-settings"><summary>{t("显示设置","Display")}<span aria-hidden="true">⌄</span></summary><div class="nav-settings-panel">{theme}{motion}</div></details>'
   brand=f'<a class="nav-brand" href="{home}" aria-label="{t("AI 普惠宣言首页","AI for All home")}"><img class="nav-logo-light" src="{prefix}assets/brand.svg" alt="X-lab AI" width="132" height="40"><img class="nav-logo-dark" src="{prefix}assets/brand-dark.svg" alt="" width="132" height="40"></a>'
@@ -28,11 +27,21 @@ for section,folder in [('manifesto',''),('film','film/'),('presentation','presen
   if section=='resources':
    if '../preferences.js' not in s:s=s.replace('</head>','<script src="../preferences.js"></script></head>')
   if section=='manifesto':
-   actions=f'<div class="hero-actions"><a class="primary" href="#fulltext">{t("阅读完整宣言","Read the manifesto")} ↓</a><a class="text-link" href="{items[1][1]}">{t("观看宣言影片","Watch the film")} →</a><a class="text-link" href="{items[2][1]}">{t("进入互动演示","Explore the presentation")} →</a></div>'
+   actions=f'<div class="hero-actions"><a class="primary" href="#fulltext">{t("阅读完整宣言","Read the manifesto")} ↓</a><a class="text-link" href="{items[2][1]}">{t("观看宣言影片","Watch the film")} →</a><a class="text-link" href="{items[1][1]}">{t("进入互动演示","Explore the presentation")} →</a></div>'
    s=re.sub(r'<div class="hero-actions">.*?</div>',lambda _:actions,s,count=1,flags=re.S)
   if section!='presentation':
    footer=f'<nav class="resource-nav" aria-label="{t("相关内容","Related content")}">{links}<a href="https://github.com/X-lab2017/ai-for-all/blob/main/CONTRIBUTING.md">{t("参与共建","Contribute")} ↗</a></nav>'
    s=re.sub(r'<nav class="resource-nav".*?</nav>','',s,flags=re.S)
    s=s.replace('</footer>',footer+'</footer>',1)
+  if 'og:image' not in s:
+   s=s.replace('</head>', '<meta property="og:image" content="https://www.x-lab.info/ai-for-all/launch/assets/social-preview.png"><meta name="twitter:card" content="summary_large_image"></head>')
   p.write_text(s)
 print('Shared navigation built: 4 sections × 2 languages')
+
+for en in [False,True]:
+ p=SITE/"launch"/("article-en.html" if en else "article.html")
+ s=p.read_text();hub=(SITE/"launch"/("en.html" if en else "index.html")).read_text()
+ header=re.search(r"<header\b.*?</header>",hub,re.S).group(0)
+ header=header.replace("en.html?lang=en\" lang", "article-en.html?lang=en\" lang").replace("index.html?lang=zh\" lang", "article.html?lang=zh\" lang")
+ s=re.sub(r"<header\b.*?</header>",lambda _:header,s,count=1,flags=re.S)
+ p.write_text(s)

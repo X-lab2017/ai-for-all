@@ -13,8 +13,7 @@ for english in [False,True]:
 # Idempotently insert entrances after the existing generators have run.
 for path,marker,target,label in [
  ('index.html','<div class="header-actions">','film/?lang=zh','宣言影片'),('en.html','<div class="header-actions">','film/en.html?lang=en','Manifesto film'),
- ('presentation/index.html','<div class="display-controls">','../film/?lang=zh','宣言影片'),('presentation/en.html','<div class="display-controls">','../film/en.html?lang=en','Manifesto film'),
- ('launch/index.html','</nav>','../film/?lang=zh','最新宣言影片 · v1.2 / V5'),('launch/en.html','</nav>','../film/en.html?lang=en','Latest manifesto film · v1.2 / V5')]:
+ ('presentation/index.html','<div class="display-controls">','../film/?lang=zh','宣言影片'),('presentation/en.html','<div class="display-controls">','../film/en.html?lang=en','Manifesto film')]:
  p=SITE/path;s=p.read_text();link=f'<a class="utility-control film-entry" href="{target}">{label} ↗</a>'
  if 'film-entry' not in s:
   assert marker in s,path

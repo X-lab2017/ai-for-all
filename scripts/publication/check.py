@@ -47,6 +47,6 @@ body=(ROOT/'translations/en.md').read_text().split('<!-- manifesto:start -->')[1
 for para in body.split('\n\n'):assert re.sub(r'^#{1,3} ','',para.replace('**',''))in ''.join(p.text)
 assert body in (SITE/'AI-for-All-manifesto-EN.md').read_text()
 assert all(x in ids for x in ['language','theme','motion'])
-assert 'en-v1.1.html' in s
+assert 'en-v1.1.html' not in s
 assert '[data-theme="dark"]' in (SITE/'manifesto.css').read_text()
 print('PASS: current English text and download, localized controls, SVGs, links and theme assets.')

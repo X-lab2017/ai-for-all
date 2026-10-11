@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Build archived v1.1 resources, then the current v1.2 Chinese publication."""
+"""Build the approved v1.2 publication and 13-chapter presentation."""
 from pathlib import Path
 import subprocess,sys
 HERE=Path(__file__).resolve().parent
-for script in [HERE/'build_legacy_site.py',HERE/'publication/build.py',HERE/'presentation/build.py']:
+for script in [HERE/'publication/build.py',HERE/'presentation/build.py']:
  subprocess.run([sys.executable,str(script)],check=True)

@@ -1,5 +1,12 @@
 # Progress
 
+## Current release · 11 October 2026
+
+Four editions are approved: manifesto v1.2, the bilingual 13-chapter presentation, film V5 and the Chinese publication article. The [release hub](https://www.x-lab.info/ai-for-all/launch/en.html) provides these editions and current visual materials. Earlier videos, PowerPoints, framework graphics and speaking scripts are excluded from this release.
+
+The entries below are dated historical progress records, not the current download inventory.
+
+
 We keep public records of our foundations, current actions and next steps.
 
 ## Practical foundations

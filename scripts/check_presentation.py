@@ -1,4 +1,4 @@
-"""Check current bilingual presentation and retained historical presentation."""
+"""Check the approved current bilingual presentation."""
 from pathlib import Path
 from html.parser import HTMLParser
 import json, re, subprocess, sys, xml.etree.ElementTree as ET
@@ -42,5 +42,4 @@ for svg in (DECK/'assets').glob('*.svg'):
         assert node.tag.split('}')[-1] not in ['script', 'foreignObject']
         assert not any(k.lower().startswith('on') for k in node.attrib)
 for js in DECK.glob('*.js'): subprocess.run(['node', '--check', str(js)], check=True)
-subprocess.run([sys.executable, str(ROOT/'scripts/check_presentation_legacy.py')], check=True)
-print('PASS: bilingual 13 chapters, 180-second tour, data, panorama, local assets, SVGs, theme logos, JavaScript syntax and v1.1 archive.')
+print('PASS: bilingual 13 chapters, 180-second tour, data, panorama, local assets, SVGs, theme logos, JavaScript syntax.')
